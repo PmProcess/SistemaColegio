@@ -15,6 +15,8 @@
     <meta property="og:site_name" content="Keenthemes | Metronic" />
     <link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
     <link rel="shortcut icon" href="{{ asset('metronic/media/logos/favicon.ico') }}" />
+
+    @yield('vue-css')
     <!--begin::Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
     <!--end::Fonts-->
@@ -29,7 +31,7 @@
 </head>
 <!--end::Head-->
 <!--begin::Body-->
-
+@routes
 <body id="kt_body"
     class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed aside-enabled aside-fixed"
     style="--kt-toolbar-height:55px;--kt-toolbar-height-tablet-and-mobile:55px">
@@ -82,419 +84,7 @@
                         <!--begin::Menu-->
                         <div class="menu menu-column menu-title-gray-800 menu-state-title-primary menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-500"
                             id="#kt_aside_menu" data-kt-menu="true">
-                            <div class="menu-item">
-                                <div class="menu-content pb-2">
-                                    <span class="menu-section text-muted text-uppercase fs-8 ls-1">Dashboard</span>
-                                </div>
-                            </div>
-                            <div class="menu-item">
-                                <a class="menu-link active" href="../../demo1/dist/index.html">
-                                    <span class="menu-icon">
-                                        <!--begin::Svg Icon | path: icons/duotune/general/gen025.svg-->
-                                        <span class="svg-icon svg-icon-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none">
-                                                <rect x="2" y="2" width="9" height="9" rx="2" fill="black" />
-                                                <rect opacity="0.3" x="13" y="2" width="9" height="9" rx="2"
-                                                    fill="black" />
-                                                <rect opacity="0.3" x="13" y="13" width="9" height="9" rx="2"
-                                                    fill="black" />
-                                                <rect opacity="0.3" x="2" y="13" width="9" height="9" rx="2"
-                                                    fill="black" />
-                                            </svg>
-                                        </span>
-                                        <!--end::Svg Icon-->
-                                    </span>
-                                    <span class="menu-title">Default</span>
-                                </a>
-                            </div>
-                            <div class="menu-item">
-                                <div class="menu-content pt-8 pb-2">
-                                    <span class="menu-section text-muted text-uppercase fs-8 ls-1">Crafted</span>
-                                </div>
-                            </div>
-                            <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-                                <span class="menu-link">
-                                    <span class="menu-icon">
-                                        <!--begin::Svg Icon | path: icons/duotune/ecommerce/ecm007.svg-->
-                                        <span class="svg-icon svg-icon-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none">
-                                                <path
-                                                    d="M21 9V11C21 11.6 20.6 12 20 12H14V8H20C20.6 8 21 8.4 21 9ZM10 8H4C3.4 8 3 8.4 3 9V11C3 11.6 3.4 12 4 12H10V8Z"
-                                                    fill="black" />
-                                                <path
-                                                    d="M15 2C13.3 2 12 3.3 12 5V8H15C16.7 8 18 6.7 18 5C18 3.3 16.7 2 15 2Z"
-                                                    fill="black" />
-                                                <path opacity="0.3"
-                                                    d="M9 2C10.7 2 12 3.3 12 5V8H9C7.3 8 6 6.7 6 5C6 3.3 7.3 2 9 2ZM4 12V21C4 21.6 4.4 22 5 22H10V12H4ZM20 12V21C20 21.6 19.6 22 19 22H14V12H20Z"
-                                                    fill="black" />
-                                            </svg>
-                                        </span>
-                                        <!--end::Svg Icon-->
-                                    </span>
-                                    <span class="menu-title">Pages</span>
-                                    <span class="menu-arrow"></span>
-                                </span>
-                                <div class="menu-sub menu-sub-accordion menu-active-bg">
-                                    <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-                                        <span class="menu-link">
-                                            <span class="menu-bullet">
-                                                <span class="bullet bullet-dot"></span>
-                                            </span>
-                                            <span class="menu-title">Profile</span>
-                                            <span class="menu-arrow"></span>
-                                        </span>
-                                        <div class="menu-sub menu-sub-accordion menu-active-bg">
-                                            <div class="menu-item">
-                                                <a class="menu-link"
-                                                    href="../../demo1/dist/pages/profile/overview.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">Overview</span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item">
-                                                <a class="menu-link"
-                                                    href="../../demo1/dist/pages/profile/projects.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">Projects</span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item">
-                                                <a class="menu-link"
-                                                    href="../../demo1/dist/pages/profile/campaigns.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">Campaigns</span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item">
-                                                <a class="menu-link"
-                                                    href="../../demo1/dist/pages/profile/documents.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">Documents</span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item">
-                                                <a class="menu-link"
-                                                    href="../../demo1/dist/pages/profile/connections.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">Connections</span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item">
-                                                <a class="menu-link"
-                                                    href="../../demo1/dist/pages/profile/activity.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">Activity</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-                                        <span class="menu-link">
-                                            <span class="menu-bullet">
-                                                <span class="bullet bullet-dot"></span>
-                                            </span>
-                                            <span class="menu-title">Projects</span>
-                                            <span class="menu-arrow"></span>
-                                        </span>
-                                        <div class="menu-sub menu-sub-accordion menu-active-bg">
-                                            <div class="menu-item">
-                                                <a class="menu-link"
-                                                    href="../../demo1/dist/pages/projects/list.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">My Projects</span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item">
-                                                <a class="menu-link"
-                                                    href="../../demo1/dist/pages/projects/project.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">View Project</span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item">
-                                                <a class="menu-link"
-                                                    href="../../demo1/dist/pages/projects/targets.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">Targets</span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item">
-                                                <a class="menu-link"
-                                                    href="../../demo1/dist/pages/projects/budget.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">Budget</span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item">
-                                                <a class="menu-link"
-                                                    href="../../demo1/dist/pages/projects/users.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">Users</span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item">
-                                                <a class="menu-link"
-                                                    href="../../demo1/dist/pages/projects/files.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">Files</span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item">
-                                                <a class="menu-link"
-                                                    href="../../demo1/dist/pages/projects/activity.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">Activity</span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item">
-                                                <a class="menu-link"
-                                                    href="../../demo1/dist/pages/projects/settings.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">Settings</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-                                        <span class="menu-link">
-                                            <span class="menu-bullet">
-                                                <span class="bullet bullet-dot"></span>
-                                            </span>
-                                            <span class="menu-title">Wizards</span>
-                                            <span class="menu-arrow"></span>
-                                        </span>
-                                        <div class="menu-sub menu-sub-accordion menu-active-bg">
-                                            <div class="menu-item">
-                                                <a class="menu-link"
-                                                    href="../../demo1/dist/pages/wizards/horizontal.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">Horizontal</span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item">
-                                                <a class="menu-link"
-                                                    href="../../demo1/dist/pages/wizards/vertical.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">Vertical</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-                                        <span class="menu-link">
-                                            <span class="menu-bullet">
-                                                <span class="bullet bullet-dot"></span>
-                                            </span>
-                                            <span class="menu-title">Search</span>
-                                            <span class="menu-arrow"></span>
-                                        </span>
-                                        <div class="menu-sub menu-sub-accordion menu-active-bg">
-                                            <div class="menu-item">
-                                                <a class="menu-link"
-                                                    href="../../demo1/dist/pages/search/horizontal.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">Horizontal</span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item">
-                                                <a class="menu-link"
-                                                    href="../../demo1/dist/pages/search/vertical.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">Vertical</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-                                        <span class="menu-link">
-                                            <span class="menu-bullet">
-                                                <span class="bullet bullet-dot"></span>
-                                            </span>
-                                            <span class="menu-title">Blog</span>
-                                            <span class="menu-arrow"></span>
-                                        </span>
-                                        <div class="menu-sub menu-sub-accordion menu-active-bg">
-                                            <div class="menu-item">
-                                                <a class="menu-link" href="../../demo1/dist/pages/blog/home.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">Blog Home</span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item">
-                                                <a class="menu-link" href="../../demo1/dist/pages/blog/post.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">Blog Post</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-                                        <span class="menu-link">
-                                            <span class="menu-bullet">
-                                                <span class="bullet bullet-dot"></span>
-                                            </span>
-                                            <span class="menu-title">Company</span>
-                                            <span class="menu-arrow"></span>
-                                        </span>
-                                        <div class="menu-sub menu-sub-accordion menu-active-bg">
-                                            <div class="menu-item">
-                                                <a class="menu-link"
-                                                    href="../../demo1/dist/pages/company/about.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">About Us</span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item">
-                                                <a class="menu-link"
-                                                    href="../../demo1/dist/pages/company/pricing.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">Pricing</span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item">
-                                                <a class="menu-link"
-                                                    href="../../demo1/dist/pages/company/contact.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">Contact Us</span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item">
-                                                <a class="menu-link"
-                                                    href="../../demo1/dist/pages/company/team.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">Our Team</span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item">
-                                                <a class="menu-link"
-                                                    href="../../demo1/dist/pages/company/licenses.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">Licenses</span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item">
-                                                <a class="menu-link"
-                                                    href="../../demo1/dist/pages/company/sitemap.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">Sitemap</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-                                        <span class="menu-link">
-                                            <span class="menu-bullet">
-                                                <span class="bullet bullet-dot"></span>
-                                            </span>
-                                            <span class="menu-title">Careers</span>
-                                            <span class="menu-arrow"></span>
-                                        </span>
-                                        <div class="menu-sub menu-sub-accordion menu-active-bg">
-                                            <div class="menu-item">
-                                                <a class="menu-link"
-                                                    href="../../demo1/dist/pages/careers/list.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">Careers List</span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item">
-                                                <a class="menu-link"
-                                                    href="../../demo1/dist/pages/careers/apply.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">Careers Apply</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-                                        <span class="menu-link">
-                                            <span class="menu-bullet">
-                                                <span class="bullet bullet-dot"></span>
-                                            </span>
-                                            <span class="menu-title">FAQ</span>
-                                            <span class="menu-arrow"></span>
-                                        </span>
-                                        <div class="menu-sub menu-sub-accordion menu-active-bg">
-                                            <div class="menu-item">
-                                                <a class="menu-link"
-                                                    href="../../demo1/dist/pages/faq/classic.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">Classic</span>
-                                                </a>
-                                            </div>
-                                            <div class="menu-item">
-                                                <a class="menu-link"
-                                                    href="../../demo1/dist/pages/faq/extended.html">
-                                                    <span class="menu-bullet">
-                                                        <span class="bullet bullet-dot"></span>
-                                                    </span>
-                                                    <span class="menu-title">Extended</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            @include('layout.rutas.index')
                         </div>
                         <!--end::Menu-->
                     </div>
@@ -2696,7 +2286,7 @@
                                     <!--begin::Search-->
                                     <div class="d-flex align-items-stretch ms-1 ms-lg-3">
                                         <!--begin::Search-->
-                                        <div id="kt_header_search" class="d-flex align-items-stretch"
+                                        {{-- <div id="kt_header_search" class="d-flex align-items-stretch"
                                             data-kt-search-keypress="true" data-kt-search-min-length="2"
                                             data-kt-search-enter="enter" data-kt-search-layout="menu"
                                             data-kt-menu-trigger="auto" data-kt-menu-overflow="false"
@@ -3690,12 +3280,12 @@
                                                 <!--end::Preferences-->
                                             </div>
                                             <!--end::Menu-->
-                                        </div>
+                                        </div> --}}
                                         <!--end::Search-->
                                     </div>
                                     <!--end::Search-->
                                     <!--begin::Activities-->
-                                    <div class="d-flex align-items-center ms-1 ms-lg-3">
+                                    {{-- <div class="d-flex align-items-center ms-1 ms-lg-3">
                                         <!--begin::Drawer toggle-->
                                         <div class="btn btn-icon btn-active-light-primary w-30px h-30px w-md-40px h-md-40px"
                                             id="kt_activities_toggle">
@@ -3713,10 +3303,10 @@
                                             <!--end::Svg Icon-->
                                         </div>
                                         <!--end::Drawer toggle-->
-                                    </div>
+                                    </div> --}}
                                     <!--end::Activities-->
                                     <!--begin::Notifications-->
-                                    <div class="d-flex align-items-center ms-1 ms-lg-3">
+                                    {{-- <div class="d-flex align-items-center ms-1 ms-lg-3">
                                         <!--begin::Menu- wrapper-->
                                         <div class="btn btn-icon btn-active-light-primary position-relative w-30px h-30px w-md-40px h-md-40px"
                                             data-kt-menu-trigger="click" data-kt-menu-attach="parent"
@@ -4420,7 +4010,7 @@
                                         </div>
                                         <!--end::Menu-->
                                         <!--end::Menu wrapper-->
-                                    </div>
+                                    </div> --}}
                                     <!--end::Notifications-->
                                     <!--begin::Chat-->
                                     <div class="d-flex align-items-center ms-1 ms-lg-3">
@@ -4446,7 +4036,7 @@
                                     </div>
                                     <!--end::Chat-->
                                     <!--begin::Quick links-->
-                                    <div class="d-flex align-items-center ms-1 ms-lg-3">
+                                    {{-- <div class="d-flex align-items-center ms-1 ms-lg-3">
                                         <!--begin::Menu wrapper-->
                                         <div class="btn btn-icon btn-active-light-primary w-30px h-30px w-md-40px h-md-40px"
                                             data-kt-menu-trigger="click" data-kt-menu-attach="parent"
@@ -4596,11 +4186,10 @@
                                         </div>
                                         <!--end::Menu-->
                                         <!--end::Menu wrapper-->
-                                    </div>
+                                    </div> --}}
                                     <!--end::Quick links-->
                                     <!--begin::User-->
-                                    <div class="d-flex align-items-center ms-1 ms-lg-3"
-                                        id="kt_header_user_menu_toggle">
+                                    <div class="d-flex align-items-center ms-1 ms-lg-3" id="kt_header_user_menu_toggle">
                                         <!--begin::Menu wrapper-->
                                         <div class="cursor-pointer symbol symbol-30px symbol-md-40px"
                                             data-kt-menu-trigger="click" data-kt-menu-attach="parent"
@@ -4621,13 +4210,13 @@
                                                     <!--end::Avatar-->
                                                     <!--begin::Username-->
                                                     <div class="d-flex flex-column">
-                                                        <div class="fw-bolder d-flex align-items-center fs-5">Max
-                                                            Smith
+                                                        <div class="fw-bolder d-flex align-items-center fs-5">
+                                                            {{ Auth::user()->name }}
                                                             <span
                                                                 class="badge badge-light-success fw-bolder fs-8 px-2 py-1 ms-2">Pro</span>
                                                         </div>
                                                         <a href="#"
-                                                            class="fw-bold text-muted text-hover-primary fs-7">max@kt.com</a>
+                                                            class="fw-bold text-muted text-hover-primary fs-7">{{ Auth::user()->email }}</a>
                                                     </div>
                                                     <!--end::Username-->
                                                 </div>
@@ -4643,19 +4232,7 @@
                                             </div>
                                             <!--end::Menu item-->
                                             <!--begin::Menu item-->
-                                            <div class="menu-item px-5">
-                                                <a href="../../demo1/dist/pages/projects/list.html"
-                                                    class="menu-link px-5">
-                                                    <span class="menu-text">My Projects</span>
-                                                    <span class="menu-badge">
-                                                        <span
-                                                            class="badge badge-light-danger badge-circle fw-bolder fs-7">3</span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <!--end::Menu item-->
-                                            <!--begin::Menu item-->
-                                            <div class="menu-item px-5" data-kt-menu-trigger="hover"
+                                            {{-- <div class="menu-item px-5" data-kt-menu-trigger="hover"
                                                 data-kt-menu-placement="left-start">
                                                 <a href="#" class="menu-link px-5">
                                                     <span class="menu-title">My Subscription</span>
@@ -4709,118 +4286,15 @@
                                                     <!--end::Menu item-->
                                                 </div>
                                                 <!--end::Menu sub-->
-                                            </div>
-                                            <!--end::Menu item-->
-                                            <!--begin::Menu item-->
-                                            <div class="menu-item px-5">
-                                                <a href="../../demo1/dist/account/statements.html"
-                                                    class="menu-link px-5">My Statements</a>
-                                            </div>
+                                            </div> --}}
                                             <!--end::Menu item-->
                                             <!--begin::Menu separator-->
                                             <div class="separator my-2"></div>
                                             <!--end::Menu separator-->
-                                            <!--begin::Menu item-->
-                                            <div class="menu-item px-5" data-kt-menu-trigger="hover"
-                                                data-kt-menu-placement="left-start">
-                                                <a href="#" class="menu-link px-5">
-                                                    <span class="menu-title position-relative">Language
-                                                        <span
-                                                            class="fs-8 rounded bg-light px-3 py-2 position-absolute translate-middle-y top-50 end-0">English
-                                                            <img class="w-15px h-15px rounded-1 ms-2"
-                                                                src="{{ asset('metronic/media/flags/united-states.svg') }}"
-                                                                alt="" /></span></span>
-                                                </a>
-                                                <!--begin::Menu sub-->
-                                                <div class="menu-sub menu-sub-dropdown w-175px py-4">
-                                                    <!--begin::Menu item-->
-                                                    <div class="menu-item px-3">
-                                                        <a href="../../demo1/dist/account/settings.html"
-                                                            class="menu-link d-flex px-5 active">
-                                                            <span class="symbol symbol-20px me-4">
-                                                                <img class="rounded-1"
-                                                                    src="{{ asset('metronic/media/flags/united-states.svg') }}"
-                                                                    alt="" />
-                                                            </span>English</a>
-                                                    </div>
-                                                    <!--end::Menu item-->
-                                                    <!--begin::Menu item-->
-                                                    <div class="menu-item px-3">
-                                                        <a href="../../demo1/dist/account/settings.html"
-                                                            class="menu-link d-flex px-5">
-                                                            <span class="symbol symbol-20px me-4">
-                                                                <img class="rounded-1"
-                                                                    src="{{ asset('metronic/media/flags/spain.svg') }}"
-                                                                    alt="" />
-                                                            </span>Spanish</a>
-                                                    </div>
-                                                    <!--end::Menu item-->
-                                                    <!--begin::Menu item-->
-                                                    <div class="menu-item px-3">
-                                                        <a href="../../demo1/dist/account/settings.html"
-                                                            class="menu-link d-flex px-5">
-                                                            <span class="symbol symbol-20px me-4">
-                                                                <img class="rounded-1"
-                                                                    src="{{ asset('metronic/media/flags/germany.svg') }}"
-                                                                    alt="" />
-                                                            </span>German</a>
-                                                    </div>
-                                                    <!--end::Menu item-->
-                                                    <!--begin::Menu item-->
-                                                    <div class="menu-item px-3">
-                                                        <a href="../../demo1/dist/account/settings.html"
-                                                            class="menu-link d-flex px-5">
-                                                            <span class="symbol symbol-20px me-4">
-                                                                <img class="rounded-1"
-                                                                    src="{{ asset('metronic/media/flags/japan.svg') }}"
-                                                                    alt="" />
-                                                            </span>Japanese</a>
-                                                    </div>
-                                                    <!--end::Menu item-->
-                                                    <!--begin::Menu item-->
-                                                    <div class="menu-item px-3">
-                                                        <a href="../../demo1/dist/account/settings.html"
-                                                            class="menu-link d-flex px-5">
-                                                            <span class="symbol symbol-20px me-4">
-                                                                <img class="rounded-1"
-                                                                    src="{{ asset('metronic/media/flags/france.svg') }}"
-                                                                    alt="" />
-                                                            </span>French</a>
-                                                    </div>
-                                                    <!--end::Menu item-->
-                                                </div>
-                                                <!--end::Menu sub-->
-                                            </div>
-                                            <!--end::Menu item-->
-                                            <!--begin::Menu item-->
-                                            <div class="menu-item px-5 my-1">
-                                                <a href="../../demo1/dist/account/settings.html"
-                                                    class="menu-link px-5">Account Settings</a>
-                                            </div>
-                                            <!--end::Menu item-->
                                             <!--begin::Menu item-->
                                             <div class="menu-item px-5">
                                                 <a href="../../demo1/dist/authentication/flows/basic/sign-in.html"
-                                                    class="menu-link px-5">Sign Out</a>
-                                            </div>
-                                            <!--end::Menu item-->
-                                            <!--begin::Menu separator-->
-                                            <div class="separator my-2"></div>
-                                            <!--end::Menu separator-->
-                                            <!--begin::Menu item-->
-                                            <div class="menu-item px-5">
-                                                <div class="menu-content px-5">
-                                                    <label
-                                                        class="form-check form-switch form-check-custom form-check-solid pulse pulse-success"
-                                                        for="kt_user_menu_dark_mode_toggle">
-                                                        <input class="form-check-input w-30px h-20px" type="checkbox"
-                                                            value="1" name="mode" id="kt_user_menu_dark_mode_toggle"
-                                                            data-kt-url="../../demo1/dist/index.html" />
-                                                        <span class="pulse-ring ms-n1"></span>
-                                                        <span class="form-check-label text-gray-600 fs-7">Dark
-                                                            Mode</span>
-                                                    </label>
-                                                </div>
+                                                    class="menu-link px-5">Cerrar Session</a>
                                             </div>
                                             <!--end::Menu item-->
                                         </div>
@@ -4829,7 +4303,7 @@
                                     </div>
                                     <!--end::User -->
                                     <!--begin::Heaeder menu toggle-->
-                                    <div class="d-flex align-items-center d-lg-none ms-2 me-n3"
+                                    {{-- <div class="d-flex align-items-center d-lg-none ms-2 me-n3"
                                         title="Show header menu">
                                         <div class="btn btn-icon btn-active-light-primary w-30px h-30px w-md-40px h-md-40px"
                                             id="kt_header_menu_mobile_toggle">
@@ -4847,7 +4321,7 @@
                                             </span>
                                             <!--end::Svg Icon-->
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <!--end::Heaeder menu toggle-->
                                 </div>
                                 <!--end::Toolbar wrapper-->
@@ -4860,7 +4334,7 @@
                 </div>
                 <!--end::Header-->
                 <!--begin::Content-->
-                <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+                {{-- <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
                     <!--begin::Toolbar-->
                     <div class="toolbar" id="kt_toolbar">
                         <!--begin::Container-->
@@ -8386,6 +7860,10 @@
                         <!--end::Container-->
                     </div>
                     <!--end::Post-->
+                </div> --}}
+
+                <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+                    @yield('contenido')
                 </div>
                 <!--end::Content-->
                 <!--begin::Footer-->
@@ -8412,7 +7890,7 @@
     <!--end::Root-->
     <!--begin::Drawers-->
     <!--begin::Activities drawer-->
-    <div id="kt_activities" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="activities"
+    {{-- <div id="kt_activities" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="activities"
         data-kt-drawer-activate="true" data-kt-drawer-overlay="true"
         data-kt-drawer-width="{default:'300px', 'lg': '900px'}" data-kt-drawer-direction="end"
         data-kt-drawer-toggle="#kt_activities_toggle" data-kt-drawer-close="#kt_activities_close">
@@ -9133,7 +8611,7 @@
             </div>
             <!--end::Footer-->
         </div>
-    </div>
+    </div> --}}
     <!--end::Activities drawer-->
     <!--begin::Chat drawer-->
     <div id="kt_drawer_chat" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="chat"
@@ -9549,14 +9027,14 @@
     </div>
     <!--end::Chat drawer-->
     <!--begin::Exolore drawer toggle-->
-    <button id="kt_explore_toggle"
+    {{-- <button id="kt_explore_toggle"
         class="explore-toggle btn btn-sm bg-body btn-color-gray-700 btn-active-primary shadow-sm position-fixed px-5 fw-bolder zindex-2 top-50 mt-10 end-0 transform-90 fs-6 rounded-top-0"
         title="Explore Metronic" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-trigger="hover">
         <span id="kt_explore_toggle_label">Explore</span>
-    </button>
+    </button> --}}
     <!--end::Exolore drawer toggle-->
     <!--begin::Exolore drawer-->
-    <div id="kt_explore" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="explore"
+    {{-- <div id="kt_explore" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="explore"
         data-kt-drawer-activate="true" data-kt-drawer-overlay="true"
         data-kt-drawer-width="{default:'350px', 'lg': '475px'}" data-kt-drawer-direction="end"
         data-kt-drawer-toggle="#kt_explore_toggle" data-kt-drawer-close="#kt_explore_close">
@@ -10036,12 +9514,12 @@
             <!--end::Body-->
         </div>
         <!--end::Card-->
-    </div>
+    </div> --}}
     <!--end::Exolore drawer-->
     <!--end::Drawers-->
     <!--begin::Modals-->
     <!--begin::Modal - Invite Friends-->
-    <div class="modal fade" id="kt_modal_invite_friends" tabindex="-1" aria-hidden="true">
+    {{-- <div class="modal fade" id="kt_modal_invite_friends" tabindex="-1" aria-hidden="true">
         <!--begin::Modal dialog-->
         <div class="modal-dialog mw-650px">
             <!--begin::Modal content-->
@@ -10642,10 +10120,10 @@
             <!--end::Modal content-->
         </div>
         <!--end::Modal dialog-->
-    </div>
+    </div> --}}
     <!--end::Modal - Invite Friend-->
     <!--begin::Modal - Create App-->
-    <div class="modal fade" id="kt_modal_create_app" tabindex="-1" aria-hidden="true">
+    {{-- <div class="modal fade" id="kt_modal_create_app" tabindex="-1" aria-hidden="true">
         <!--begin::Modal dialog-->
         <div class="modal-dialog modal-dialog-centered mw-900px">
             <!--begin::Modal content-->
@@ -11434,10 +10912,10 @@
             <!--end::Modal content-->
         </div>
         <!--end::Modal dialog-->
-    </div>
+    </div> --}}
     <!--end::Modal - Create App-->
     <!--begin::Modal - Upgrade plan-->
-    <div class="modal fade" id="kt_modal_upgrade_plan" tabindex="-1" aria-hidden="true">
+    {{-- <div class="modal fade" id="kt_modal_upgrade_plan" tabindex="-1" aria-hidden="true">
         <!--begin::Modal dialog-->
         <div class="modal-dialog modal-xl">
             <!--begin::Modal content-->
@@ -12071,11 +11549,11 @@
             <!--end::Modal content-->
         </div>
         <!--end::Modal dialog-->
-    </div>
+    </div> --}}
     <!--end::Modal - Upgrade plan-->
     <!--end::Modals-->
     <!--begin::Scrolltop-->
-    <div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+    {{-- <div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
         <!--begin::Svg Icon | path: icons/duotune/arrows/arr066.svg-->
         <span class="svg-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -12087,25 +11565,29 @@
             </svg>
         </span>
         <!--end::Svg Icon-->
-    </div>
+    </div> --}}
     <!--end::Scrolltop-->
     <!--end::Main-->
-    <script>
+    {{-- <script>
         var hostUrl = "assets/";
-    </script>
+    </script> --}}
+    @yield('vue-script')
+    <script>var hostUrl = "assets/";</script>
+
     <!--begin::Javascript-->
     <!--begin::Global Javascript Bundle(used by all pages)-->
     <script src="{{ asset('metronic/plugins/global/plugins.bundle.js') }}"></script>
     <script src="{{ asset('metronic/js/scripts.bundle.js') }}"></script>
     <!--end::Global Javascript Bundle-->
     <!--begin::Page Vendors Javascript(used by this page)-->
-    <script src="{{ asset('metronic/plugins/custom/fullcalendar/fullcalendar.bundle.js') }}"></script>
+    {{-- <script src="{{ asset('metronic/plugins/custom/fullcalendar/fullcalendar.bundle.js') }}"></>
+    <script src="{{ asset('metronic/js/custom/modals/create-account.js') }}"></script> --}}
     <!--end::Page Vendors Javascript-->
-    <!--begin::Page Custom Javascript(used by this page)-->
+    {{-- <!--begin::Page Custom Javascript(used by this page)-->
     <script src="{{ asset('metronic/js/custom/widgets.js') }}"></script>
-    <script src="{{ asset('metronic/js/custom/apps/chat/chat.js') }}"></script>
-    <script src="{{ asset('metronic/js/custom/modals/create-app.js') }}"></script>
-    <script src="{{ asset('metronic/js/custom/modals/upgrade-plan.js') }}"></script>
+    <script src="{{ asset('metronic/js/custom/apps/chat/chat.js') }}"></script> --}}
+    {{-- <script src="{{ asset('metronic/js/custom/modals/create-app.js') }}"></script>
+    <script src="{{ asset('metronic/js/custom/modals/upgrade-plan.js') }}"></script> --}}
     <!--end::Page Custom Javascript-->
     <!--end::Javascript-->
 </body>

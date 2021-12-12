@@ -3,6 +3,18 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
+import Vue from "vue";
+import helperJs from "./helpers.js"
+
+
+const plugin={
+    install()
+    {
+        Vue.helperJs=helperJs,
+        Vue.prototype.$helperJs=helperJs
+    }
+}
+Vue.use(plugin)
 
 require('./bootstrap');
 
@@ -19,8 +31,10 @@ window.Vue = require('vue').default;
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-
+Vue.component('tipoempleadoindex-component', require('./Components/Personal/TipoEmpleadoIndexComponent.vue').default);
+Vue.component('empleadoindex-component', require('./Components/Personal/EmpleadoIndexComponent.vue').default);
+Vue.component('empleadocreate-component', require('./Components/Personal/EmpleadoCreateComponent.vue').default);
+Vue.component('empleadoedit-component', require('./Components/Personal/EmpleadoEditComponent.vue').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

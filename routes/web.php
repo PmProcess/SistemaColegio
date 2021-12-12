@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\InicioController;
+use App\Http\Controllers\Personal\EmpleadoController;
+use App\Http\Controllers\Personal\TipoEmpleadoController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -29,4 +31,21 @@ Auth::routes();
 //--------Inicio de la Pagina
 Route::prefix('Inicio')->group(function () {
     Route::get('/',[InicioController::class,'index'])->name('Inicio')->middleware('auth');
+});
+
+Route::prefix('tipoEmpleado')->middleware('auth')->group(function(){
+    Route::get('/',[TipoEmpleadoController::class,'index'])->name('tipoEmpleado.index');
+    Route::post('/store',[TipoEmpleadoController::class,'store'])->name('tipoEmpleado.store');
+    Route::post('/update/{id}',[TipoEmpleadoController::class,'update'])->name('tipoEmpleado.update');
+    Route::post('/destroy/{id}',[TipoEmpleadoController::class,'destroy'])->name('tipoEmpleado.destroy');
+    Route::get('/getList',[TipoEmpleadoController::class,'getList'])->name('tipoEmpleado.getList');
+});
+Route::prefix('empleado')->middleware('auth')->group(function(){
+    Route::get('/',[EmpleadoController::class,'index'])->name('empleado.index');
+    Route::get('/create',[EmpleadoController::class,'create'])->name('empleado.create');
+    Route::post('/store',[EmpleadoController::class,'store'])->name('empleado.store');
+    Route::get('/edit/{id}',[EmpleadoController::class,'edit'])->name('empleado.edit');
+    Route::post('/update/{id}',[EmpleadoController::class,'update'])->name('empleado.update');
+    Route::post('/destroy/{id}',[EmpleadoController::class,'destroy'])->name('empleado.destroy');
+    Route::get('/getList',[EmpleadoController::class,'getList'])->name('empleado.getList');
 });
