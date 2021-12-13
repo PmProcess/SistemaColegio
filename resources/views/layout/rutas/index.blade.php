@@ -73,7 +73,8 @@
     </div>
 
 @endif
-@if (auth()->user()->can('haveaccess', 'rol.index'))
+@if (auth()->user()->can('haveaccess', 'rol.index') ||
+    auth()->user()->can('haveaccess', 'grado.index'))
     <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
         <span class="menu-link @yield('administracion-active')">
             <span class="menu-icon">
@@ -98,11 +99,21 @@
 
             @if (auth()->user()->can('haveaccess', 'rol.index'))
                 <div class="menu-item ">
-                    <a class="menu-link @yield('rol-active')" href="{{route('rol.index')}}">
+                    <a class="menu-link @yield('rol-active')" href="{{ route('rol.index') }}">
                         <span class="menu-bullet">
                             <span class="bullet bullet-dot"></span>
                         </span>
                         <span class="menu-title">Roles</span>
+                    </a>
+                </div>
+            @endif
+            @if (auth()->user()->can('haveaccess', 'grado.index'))
+                <div class="menu-item ">
+                    <a class="menu-link @yield('grado-active')" href="{{ route('grado.index') }}">
+                        <span class="menu-bullet">
+                            <span class="bullet bullet-dot"></span>
+                        </span>
+                        <span class="menu-title">Grados</span>
                     </a>
                 </div>
             @endif

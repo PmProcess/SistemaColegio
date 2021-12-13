@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Administracion\GradoController;
 use App\Http\Controllers\Administracion\RolController;
 use App\Http\Controllers\InicioController;
 use App\Http\Controllers\Personal\EmpleadoController;
@@ -59,4 +60,12 @@ Route::prefix('rol')->middleware('auth')->group(function(){
     Route::post('/update/{id}',[RolController::class,'update'])->name('rol.update');
     Route::post('/destroy/{id}',[RolController::class,'destroy'])->name('rol.destroy');
     Route::get('/getList',[RolController::class,'getList'])->name('rol.getList');
+});
+
+Route::prefix('grado')->middleware('auth')->group(function(){
+    Route::get('/',[GradoController::class,'index'])->name('grado.index');
+    Route::post('/store',[GradoController::class,'store'])->name('grado.store');
+    Route::post('/update/{id}',[GradoController::class,'update'])->name('grado.update');
+    Route::post('/destroy/{id}',[GradoController::class,'destroy'])->name('grado.destroy');
+    Route::get('/getList',[GradoController::class,'getList'])->name('grado.getList');
 });

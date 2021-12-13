@@ -281,7 +281,7 @@
             </div>
             <!--end::Modal dialog-->
         </div>
-                <div
+        <div
             class="modal fade"
             id="modalEditTipoEmpleado"
             tabindex="-1"
@@ -450,11 +450,11 @@ export default {
                 tipo: "",
                 descripcion: "",
             },
-            modeloEdit:{
-                tipo:"",
-                descripcion:""
+            modeloEdit: {
+                tipo: "",
+                descripcion: "",
             },
-            id:"",
+            id: "",
             table: null,
         };
     },
@@ -462,10 +462,10 @@ export default {
         let $this = this;
         $(document).on("click", ".btn-edit", function () {
             let row = $this.table.row($(this).closest("tr")).data();
-            $this.id=row.id
-            $this.modeloEdit.tipo=row.tipo
-            $this.modeloEdit.descripcion=row.descripcion
-            $("#modalEditTipoEmpleado").modal('show')
+            $this.id = row.id;
+            $this.modeloEdit.tipo = row.tipo;
+            $this.modeloEdit.descripcion = row.descripcion;
+            $("#modalEditTipoEmpleado").modal("show");
         });
         $(document).on("click", ".btn-delete", function () {
             let row = $this.table.row($(this).closest("tr")).data();
@@ -568,20 +568,25 @@ export default {
         editarTipoEmpleado: function () {
             var $this = this;
             toastr.options = this.$helperJs.getOptionToastr();
-            if (this.modeloEdit.tipo == "" || this.modeloEdit.descripcion == "") {
+            if (
+                this.modeloEdit.tipo == "" ||
+                this.modeloEdit.descripcion == ""
+            ) {
                 toastr.error("Ingrese todo los datos", "Error");
             } else {
                 let data = new FormData();
                 data.append("tipo", $this.modeloEdit.tipo);
                 data.append("descripcion", $this.modeloEdit.descripcion);
-                axios.post(route("tipoEmpleado.update",$this.id), data).then((value) => {
-                    if (value.data.success) {
-                        $this.table.ajax.reload();
-                        $("#modalEditTipoEmpleado").modal("hide");
-                    } else {
-                        toastr.error("Ocurrio un error");
-                    }
-                });
+                axios
+                    .post(route("tipoEmpleado.update", $this.id), data)
+                    .then((value) => {
+                        if (value.data.success) {
+                            $this.table.ajax.reload();
+                            $("#modalEditTipoEmpleado").modal("hide");
+                        } else {
+                            toastr.error("Ocurrio un error");
+                        }
+                    });
             }
         },
     },
