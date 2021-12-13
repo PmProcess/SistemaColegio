@@ -35,6 +35,10 @@ Vue.component('tipoempleadoindex-component', require('./Components/Personal/Tipo
 Vue.component('empleadoindex-component', require('./Components/Personal/EmpleadoIndexComponent.vue').default);
 Vue.component('empleadocreate-component', require('./Components/Personal/EmpleadoCreateComponent.vue').default);
 Vue.component('empleadoedit-component', require('./Components/Personal/EmpleadoEditComponent.vue').default);
+
+Vue.component('rolindex-component', require('./Components/Administracion/RolIndexComponent.vue').default);
+Vue.component('rolcreate-component', require('./Components/Administracion/RolCreateComponent.vue').default);
+Vue.component('roledit-component', require('./Components/Administracion/RolEditComponent.vue').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Administracion\RolController;
 use App\Http\Controllers\InicioController;
 use App\Http\Controllers\Personal\EmpleadoController;
 use App\Http\Controllers\Personal\TipoEmpleadoController;
@@ -48,4 +49,14 @@ Route::prefix('empleado')->middleware('auth')->group(function(){
     Route::post('/update/{id}',[EmpleadoController::class,'update'])->name('empleado.update');
     Route::post('/destroy/{id}',[EmpleadoController::class,'destroy'])->name('empleado.destroy');
     Route::get('/getList',[EmpleadoController::class,'getList'])->name('empleado.getList');
+});
+
+Route::prefix('rol')->middleware('auth')->group(function(){
+    Route::get('/',[RolController::class,'index'])->name('rol.index');
+    Route::get('/create',[RolController::class,'create'])->name('rol.create');
+    Route::post('/store',[RolController::class,'store'])->name('rol.store');
+    Route::get('/edit/{id}',[RolController::class,'edit'])->name('rol.edit');
+    Route::post('/update/{id}',[RolController::class,'update'])->name('rol.update');
+    Route::post('/destroy/{id}',[RolController::class,'destroy'])->name('rol.destroy');
+    Route::get('/getList',[RolController::class,'getList'])->name('rol.getList');
 });

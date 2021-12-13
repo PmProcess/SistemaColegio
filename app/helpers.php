@@ -4,6 +4,7 @@ use App\Models\Personal\TipoEmpleado;
 use App\Models\Ubigeo\Departamento;
 use App\Models\Ubigeo\Distrito;
 use App\Models\Ubigeo\Provincia;
+use App\Permission\Models\Permission;
 
 if (!function_exists('departamentos')) {
     function departamentos()
@@ -27,5 +28,11 @@ if (!function_exists('tipoEmpleados')) {
     function tipoEmpleados()
     {
         return TipoEmpleado::get();
+    }
+}
+if(!function_exists('permisos'))
+{
+    function permisos(){
+        return Permission::get();
     }
 }
