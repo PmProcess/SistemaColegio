@@ -15,4 +15,8 @@ class Grado extends Model
         'estado'
     ];
     public $timestamps = true;
+    public function secciones()
+    {
+        return $this->belongsToMany(Seccion::class,'grado_seccion','grado_id','seccion_id')->withTimestamps()->withPivot(['n_alumnos','descripcion']);
+    }
 }

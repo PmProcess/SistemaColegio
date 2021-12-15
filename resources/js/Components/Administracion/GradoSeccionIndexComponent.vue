@@ -85,7 +85,7 @@
                     <a
                         href="#"
                         class="btn btn-sm btn-primary"
-                        @click="createGrado()"
+                        @click="createSeccion()"
                         ><i class="fa fa-plus"></i> Create</a
                     >
                 </div>
@@ -99,7 +99,95 @@
                 <div class="card">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-12">
+                            <div
+                                class="col-md-6 col-lg-4 col-xl-3"
+                                v-for="item in secciones"
+                                :key="item.id"
+                            >
+                                <!--begin::Card-->
+                                <div class="card h-100">
+                                    <!--begin::Card body-->
+                                    <div
+                                        class="
+                                            card-body
+                                            d-flex
+                                            justify-content-center
+                                            text-center
+                                            flex-column
+                                            p-8
+                                        "
+                                    >
+                                        <!--begin::Name-->
+                                        <a
+                                            href="#"
+                                            class="
+                                                text-gray-800 text-hover-primary
+                                                d-flex
+                                                flex-column
+                                            "
+                                        >
+                                            <!--begin::Image-->
+                                            <div
+                                                class="symbol symbol-75px mb-5"
+                                            >
+                                                <img
+                                                    :src="
+                                                        rutaprincipal +
+                                                        'metronic/media/svg/files/folder-document.svg'
+                                                    "
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <!--end::Image-->
+                                            <!--begin::Title-->
+                                            <div class="fs-5 fw-bolder mb-2">
+                                                {{ "Seccion: " + item.seccion }}
+                                            </div>
+                                            <!--end::Title-->
+                                        </a>
+                                        <!--end::Name-->
+                                        <!--begin::Description-->
+                                        <div class="fs-7 fw-bold text-gray-400">
+                                            {{
+                                                "N alumnos: " +
+                                                item.pivot.n_alumnos
+                                            }}
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <button
+                                                    @click="editSeccion(item)"
+                                                    class="
+                                                        btn btn-warning btn-sm
+                                                    "
+                                                >
+                                                    <i
+                                                        class="
+                                                            fas
+                                                            fa-pencil-alt
+                                                        "
+                                                    ></i>
+                                                </button>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <button @click="deleteSeccion(item)"
+                                                    class="
+                                                        btn btn-danger btn-sm
+                                                    "
+                                                >
+                                                    <i class="fa fa-trash"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <!--end::Description-->
+                                    </div>
+                                    <!--end::Card body-->
+                                </div>
+                                <!--end::Card-->
+                            </div>
+                            <!-- <div class="col-md-12">
                                 <table
                                     id="tableRoles"
                                     class="
@@ -119,7 +207,7 @@
                                         </tr>
                                     </thead>
                                 </table>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -127,7 +215,7 @@
         </div>
         <div
             class="modal fade"
-            id="modalGrado"
+            id="modalSeccion"
             tabindex="-1"
             aria-hidden="true"
         >
@@ -201,7 +289,7 @@
                             <!--begin::Heading-->
                             <div class="mb-13 text-center">
                                 <!--begin::Title-->
-                                <h1 class="mb-3">Crear Grado</h1>
+                                <h1 class="mb-3">Crear Seccion</h1>
                                 <!--end::Title-->
                             </div>
                             <!--end::Heading-->
@@ -217,7 +305,7 @@
                                         mb-2
                                     "
                                 >
-                                    <span class="required">Grado</span>
+                                    <span class="required">Seccion</span>
                                     <i
                                         class="
                                             fas
@@ -226,19 +314,19 @@
                                             fs-7
                                         "
                                         data-bs-toggle="tooltip"
-                                        title="Especifica el Grado"
+                                        title="Especifica la seccion"
                                     ></i>
                                 </label>
                                 <!--end::Label-->
                                 <input
                                     type="text"
                                     class="form-control form-control-solid"
-                                    placeholder="Ingrese el Grado"
-                                    v-model="modelo.grado"
-                                    name="grado"
+                                    placeholder="Ingrese la Seccion"
+                                    v-model="modelo.seccion"
+                                    name="seccion"
                                 />
                                 <div
-                                    v-if="errores.grado.error"
+                                    v-if="errores.seccion.error"
                                     class="
                                         fv-plugins-message-container
                                         invalid-feedback
@@ -248,7 +336,54 @@
                                         data-field="text_input"
                                         data-validator="notEmpty"
                                     >
-                                        {{ errores.grado.mensaje }}
+                                        {{ errores.seccion.mensaje }}
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end::Input group-->
+                            <!--begin::Input group-->
+                            <div class="d-flex flex-column mb-8 fv-row">
+                                <!--begin::Label-->
+                                <label
+                                    class="
+                                        d-flex
+                                        align-items-center
+                                        fs-6
+                                        fw-bold
+                                        mb-2
+                                    "
+                                >
+                                    <span class="required">N° Alumnos</span>
+                                    <i
+                                        class="
+                                            fas
+                                            fa-exclamation-circle
+                                            ms-2
+                                            fs-7
+                                        "
+                                        data-bs-toggle="tooltip"
+                                        title="N° de Alumnos de la seccion"
+                                    ></i>
+                                </label>
+                                <!--end::Label-->
+                                <input
+                                    class="form-control form-control-solid"
+                                    name="n_alumnos"
+                                    v-model="modelo.n_alumnos"
+                                    placeholder="Ingrese el numero de alumnos en la seccion"
+                                />
+                                <div
+                                    v-if="errores.n_alumnos.error"
+                                    class="
+                                        fv-plugins-message-container
+                                        invalid-feedback
+                                    "
+                                >
+                                    <div
+                                        data-field="text_input"
+                                        data-validator="notEmpty"
+                                    >
+                                        {{ errores.n_alumnos.mensaje }}
                                     </div>
                                 </div>
                             </div>
@@ -274,7 +409,7 @@
                                             fs-7
                                         "
                                         data-bs-toggle="tooltip"
-                                        title="Descripcion del Grado"
+                                        title="Descripcion de la Seccion"
                                     ></i>
                                 </label>
                                 <!--end::Label-->
@@ -283,7 +418,7 @@
                                     rows="3"
                                     name="descripcion"
                                     v-model="modelo.descripcion"
-                                    placeholder="Ingrese la descripcion del Grado"
+                                    placeholder="Ingrese la descripcion de la Seccion"
                                 ></textarea>
                                 <div
                                     v-if="errores.descripcion.error"
@@ -320,22 +455,28 @@
 </template>
 
 <script>
-import "datatables.net-bs4";
-import "datatables.net-buttons-bs4";
 export default {
-    props: ["csrf", "errores_laravel", "old", "tipo", "id"],
-
+    props: [
+        "old",
+        "errores_laravel",
+        "error",
+        "id",
+        "idgrado",
+        "csrf",
+        "secciones",
+        "tipo",
+    ],
     data() {
         return {
-            ruta: "",
-            rutaEdit: "",
+            ruta: null,
+            rutaprincipal: null,
             modelo: {
-                id: null,
-                grado: null,
+                seccion: null,
+                n_alumnos: null,
                 descripcion: null,
             },
             errores: {
-                grado: {
+                seccion: {
                     error: false,
                     mensaje: "",
                 },
@@ -343,48 +484,64 @@ export default {
                     error: false,
                     mensaje: "",
                 },
+                n_alumnos: {
+                    error: false,
+                    mensaje: "",
+                },
             },
         };
     },
-    created() {},
-    mounted() {
+    created() {
         let $this = this;
-        window.addEventListener("load", () => {
-            if ($this.tipo != null) {
-                if (this.tipo == "create") {
-                    this.ruta = route("grado.store");
-                } else if (this.tipo == "edit") {
-                    this.ruta = route("grado.update", this.id);
-                }
-                let old_values = Object.entries(this.old);
-                old_values.forEach((value, index, array) => {
-                    $this.modelo[value[0]] = value[1];
-                });
-                let errores_laravel_values = Object.entries(
-                    this.errores_laravel
-                );
-                errores_laravel_values.forEach((value, index, array) => {
-                    $this.errores[value[0]].error = true;
-                    $this.errores[value[0]].mensaje = value[1][0];
-                });
-                $("#modalGrado").modal("show");
+        $this.rutaprincipal = window.location.origin + "/";
+        if (this.errores_laravel != null) {
+            let errores_laravel_values = Object.entries(this.errores_laravel);
+            errores_laravel_values.forEach((value, index, array) => {
+                $this.errores[value[0]].error = true;
+                $this.errores[value[0]].mensaje = value[1][0];
+            });
+        }
+        let old_values = Object.entries(this.old);
+        old_values.forEach((value, index, array) => {
+            if (value != "_token") {
+                $this.modelo[value[0]] = value[1];
             }
         });
-        $(document).on("click",'.btn-list',function(){
-            let row = $this.table.row($(this).closest("tr")).data();
-            window.location.href=route('grado.seccion.index',row.id);
-        })
-        $(document).on("click", ".btn-edit", function () {
-            let row = $this.table.row($(this).closest("tr")).data();
-            $this.limpiarErrores();
-            $this.limpiarModelo();
-            $this.ruta = route("grado.update",row.id);
-            $this.modelo.grado=row.grado
-            $this.modelo.descripcion=row.descripcion
-            $("#modalGrado").modal("show");
+        window.addEventListener("load", () => {
+            if ($this.tipo != null) {
+                if ($this.tipo == "create") {
+                    $this.ruta = route("grado.seccion.store", {
+                        grado_id: $this.idgrado,
+                    });
+                } else {
+                    $this.ruta = route("grado.seccion.update", {
+                        grado_id: $this.idgrado,
+                        id: $this.id,
+                    });
+                }
+                $("#modalSeccion").modal("show");
+            }
         });
-        $(document).on("click", ".btn-delete", function () {
-            let row = $this.table.row($(this).closest("tr")).data();
+    },
+    methods: {
+        createSeccion: function () {
+            this.ruta = route("grado.seccion.store", {
+                grado_id: this.idgrado,
+            });
+            $("#modalSeccion").modal("show");
+        },
+        editSeccion: function (item) {
+            let $this = this;
+            $this.ruta = route("grado.seccion.update", {
+                id: item.id,
+                grado_id: item.pivot.grado_id,
+            });
+            $this.modelo.seccion = item.seccion;
+            $this.modelo.n_alumnos = item.pivot.n_alumnos;
+            $this.modelo.descripcion = item.pivot.descripcion;
+            $("#modalSeccion").modal("show");
+        },
+        deleteSeccion: function (item) {
             Swal.fire({
                 title: "Estas Seguro?",
                 text: "Tu deseas eliminar este Registro",
@@ -396,94 +553,11 @@ export default {
                 cancelButtonText: "Cancelar",
             }).then(async (result) => {
                 if (result.isConfirmed) {
-                    await axios
-                        .post(route("grado.destroy", row.id))
-                        .then((value) => {
-                            $this.table.ajax.reload();
-                            Swal.fire(
-                                "Elimando!",
-                                "Tu Registro se ha eliminado con Exito",
-                                "success"
-                            );
-                        });
+                    window.location.href = route("grado.seccion.destroy", {
+                        id: item.id,
+                        grado_id: item.pivot.grado_id,
+                    });
                 }
-            });
-        });
-        $this.dataTableInicializacion();
-    },
-    methods: {
-        createGrado: function () {
-            this.limpiarErrores();
-            this.limpiarModelo();
-            this.ruta = route("grado.store");
-            $("#modalGrado").modal("show");
-        },
-        limpiarErrores: function () {
-            let $this = this;
-            let errores_values = Object.entries(this.errores);
-            errores_values.forEach((value, index, array) => {
-                $this.errores[value[0]].error=false
-                $this.errores[value[0]].mensaje=""
-            })
-        },
-        limpiarModelo: function () {
-            let $this = this;
-            let create_values = Object.entries(this.modelo);
-            create_values.forEach((value, index, array) => {
-                $this.modelo[value[0]] = null;
-            });
-        },
-        dataTableInicializacion: function () {
-            this.table = $("#tableRoles").DataTable({
-                bPaginate: true,
-                bLengthChange: true,
-                bFilter: true,
-                bInfo: true,
-                bAutoWidth: false,
-                processing: true,
-                language: {
-                    url: window.location.origin + "/Spanish.json",
-                },
-                ajax: route("grado.getList"),
-                columns: [
-                    {
-                        data: null,
-                        className: "text-center",
-                        width:"5%",
-                        render: function (data) {
-                            data;
-                            return data.id;
-                        },
-                    },
-                    {
-                        data: null,
-                        className: "text-center",
-                        width:"20%",
-                        render: function (data) {
-                            return data.grado;
-                        },
-                    },
-                    {
-                        data: null,
-                        width:"40%",
-                        render: function (data) {
-                            return data.descripcion;
-                        },
-                    },
-                    {
-                        data: null,
-                        className:"text-center",
-                        render: function (data) {
-                            return (
-                                "<div class='btn-group'>" +
-                                "<button title='Editar Grado' class='btn btn-primary btn-sm btn-edit'><i class='fas fa-pencil-alt'></i></button>" +
-                                "<button title='Ver secciones' class='btn btn-secondary btn-sm btn-list'><i class='fas fa-list'></i></button>" +
-                                "<button title='Elimar Grado' class='btn btn-danger btn-sm btn-delete'><i class='fa fa-trash'></i></button>" +
-                                "</div>"
-                            );
-                        },
-                    },
-                ],
             });
         },
     },

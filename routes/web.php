@@ -2,9 +2,12 @@
 
 use App\Http\Controllers\Administracion\GradoController;
 use App\Http\Controllers\Administracion\RolController;
+use App\Http\Controllers\GradoSeccionController;
 use App\Http\Controllers\InicioController;
 use App\Http\Controllers\Personal\EmpleadoController;
 use App\Http\Controllers\Personal\TipoEmpleadoController;
+use App\Models\Administracion\Grado;
+use App\Models\Administracion\Seccion;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -68,4 +71,18 @@ Route::prefix('grado')->middleware('auth')->group(function(){
     Route::post('/update/{id}',[GradoController::class,'update'])->name('grado.update');
     Route::post('/destroy/{id}',[GradoController::class,'destroy'])->name('grado.destroy');
     Route::get('/getList',[GradoController::class,'getList'])->name('grado.getList');
+
+    Route::prefix('seccion')->middleware('auth')->group(function(){
+        Route::get('/{id}',[GradoSeccionController::class,'index'])->name('grado.seccion.index');
+        Route::post('/store/{grado_id}',[GradoSeccionController::class,'store'])->name('grado.seccion.store');
+        Route::post('/update/{id}/{grado_id}',[GradoSeccionController::class,'update'])->name('grado.seccion.update');
+        Route::get('/destroy/{id}/{grado_id}',[GradoSeccionController::class,'destroy'])->name('grado.seccion.destroy');
+        Route::get('/getList/{id}',[GradoSeccionController::class,'index'])->name('grado.seccion.getList');
+    });
 });
+// Route::get('prueba', function () {
+// $grado=Grado::findOrFail(1);
+// $grado->secciones()->detach();
+// // return $grado->secciones;
+// //return $grado->secciones()->sync([3 =>['n_alumnos'=>10]]);
+// });
