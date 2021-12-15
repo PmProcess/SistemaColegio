@@ -42,6 +42,7 @@ Vue.component('roledit-component', require('./Components/Administracion/RolEditC
 
 Vue.component('gradoindex-component', require('./Components/Administracion/GradoIndexComponent.vue').default);
 Vue.component('gradoseccionindex-component', require('./Components/Administracion/GradoSeccionIndexComponent.vue').default);
+Vue.component('gradocursoindex-component', require('./Components/Administracion/GradoCursoIndexComponent.vue').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

@@ -3,16 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Models\Administracion\Grado;
-use App\Models\Administracion\Seccion;
+use App\Models\Administracion\Curso;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
-use Illuminate\Validation\Rule;
 
-class GradoSeccionController extends Controller
+class GradoCursoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -21,7 +20,7 @@ class GradoSeccionController extends Controller
      */
     public function index($id)
     {
-        return view('administracion.grado.seccion.index', ['secciones' => Grado::findOrFail($id)->secciones,'idgrado'=>$id]);
+        return view('administracion.grado.curso.index', ['cursos' => Grado::findOrFail($id)->cursos, 'idgrado' => $id]);
     }
 
     /**
@@ -45,14 +44,14 @@ class GradoSeccionController extends Controller
         DB::beginTransaction();
         try {
             $rules = [
-                'seccion' => ['required'],
+                'curso' => ['required'],
                 'descripcion' => 'required',
-                'n_alumnos' => 'required'
+                'horas' => 'required'
             ];
             $mensaje = [
-                'seccion.required' => "El campo seccion es obligatorio",
+                'curso.required' => "El campo curso es obligatorio",
                 'descripcion.required' => "El campo descripcion es obligatorio",
-                'n_alumnos.required' => "El campo numero de alumnos es requerido"
+                'horas.required' => "El campo horas es requerido"
             ];
             $validator = Validator::make($request->all(), $rules, $mensaje);
             if ($validator->fails()) {
@@ -60,21 +59,19 @@ class GradoSeccionController extends Controller
                 Session::flash("tipo", 'create');
                 return redirect()->back()->withInput()->with("errores", $validator->errors());
             }
-            $seccion = Seccion::where('seccion', $request->seccion);
-            if ($seccion->count()==0) {
-                $seccion = Seccion::create($request->only(['seccion']));
-                $grado->secciones()->attach($seccion->id, [
-                    'n_alumnos' => $request->n_alumnos,
+            $curso = Curso::where('curso', $request->curso);
+            if ($curso->count() == 0) {
+                $curso = Curso::create($request->only(['curso']));
+                $grado->cursos()->attach($curso->id, [
+                    'horas' => $request->horas,
                     'descripcion' => $request->descripcion,
-                    'url_imagen'=>$request->url_imagen,
-                    'nombre_imagen'=>$request->nombre_imagen,
                 ]);
             } else {
-                $seccion=$seccion->first();
-                $grado->secciones()->attach($seccion->id, ['n_alumnos' => $request->n_alumnos, 'descripcion' => $request->descripcion]);
+                $curso = $curso->first();
+                $grado->cursos()->attach($curso->id, ['horas' => $request->horas, 'descripcion' => $request->descripcion]);
             }
             DB::commit();
-            return redirect()->route('grado.seccion.index', ['id' => $grado_id]);
+            return redirect()->route('grado.curso.index', ['id' => $grado_id]);
         } catch (Exception $e) {
             DB::rollback();
             Session::flash("tipo", 'create');
@@ -112,37 +109,39 @@ class GradoSeccionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id,$grado_id)
+    public function update(Request $request, $id, $grado_id)
     {
         $grado = Grado::findOrFail($grado_id);
         DB::beginTransaction();
         try {
             $rules = [
-                'seccion' => ['required'],
+                'curso' => ['required'],
                 'descripcion' => 'required',
-                'n_alumnos' => 'required'
+                'horas' => 'required'
             ];
             $mensaje = [
-                'seccion.required' => "El campo seccion es obligatorio",
+                'curso.required' => "El campo curso es obligatorio",
                 'descripcion.required' => "El campo descripcion es obligatorio",
-                'n_alumnos.required' => "El campo numero de alumnos es requerido"
+                'horas.required' => "El campo horas es requerido"
             ];
             $validator = Validator::make($request->all(), $rules, $mensaje);
             if ($validator->fails()) {
                 //120508
-                Session::flash("tipo", 'create');
+                Session::flash("id", $id);
+                Session::flash("tipo", 'edit');
                 return redirect()->back()->withInput()->with("errores", $validator->errors());
             }
-            $seccion = Seccion::findOrFail($id);
-            $seccion->seccion=$request->seccion;
-            $seccion->save();
-            $grado->secciones()->detach($seccion->id);
-            $grado->secciones()->attach($seccion->id, ['n_alumnos' => $request->n_alumnos, 'descripcion' => $request->descripcion]);
+            $curso = Curso::findOrFail($id);
+            $curso->curso = $request->curso;
+            $curso->save();
+            $grado->cursos()->detach($curso->id);
+            $grado->cursos()->attach($curso->id, ['horas' => $request->horas, 'descripcion' => $request->descripcion]);
             DB::commit();
-            return redirect()->route('grado.seccion.index', ['id' => $grado_id]);
+            return redirect()->route('grado.curso.index', ['id' => $grado_id]);
         } catch (Exception $e) {
             DB::rollback();
-            Session::flash("tipo", 'create');
+            Session::flash("id", $id);
+            Session::flash("tipo", 'edit');
             Log::info($e);
             return redirect()->back();
         }
@@ -154,11 +153,11 @@ class GradoSeccionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id,$grado_id)
+    public function destroy($id, $grado_id)
     {
-        $grado=Grado::findOrFail($grado_id);
-        $seccion=Seccion::findOrFail($id);
-        $grado->secciones()->detach($seccion->id);
-        return redirect()->route('grado.seccion.index', ['id' => $grado_id]);
+        $grado = Grado::findOrFail($grado_id);
+        $curso = Curso::findOrFail($id);
+        $grado->cursos()->detach($curso->id);
+        return redirect()->route('grado.curso.index', ['id' => $grado_id]);
     }
 }

@@ -19,4 +19,8 @@ class Grado extends Model
     {
         return $this->belongsToMany(Seccion::class,'grado_seccion','grado_id','seccion_id')->withTimestamps()->withPivot(['n_alumnos','descripcion']);
     }
+    public function cursos()
+    {
+        return $this->belongsToMany(Curso::class,'grado_curso','grado_id','curso_id')->withTimestamps()->withPivot(['horas','descripcion']);
+    }
 }

@@ -32,7 +32,7 @@
                             my-1
                         "
                     >
-                        Grado
+                        Seccion
                     </h1>
                     <!--end::Title-->
                     <!--begin::Separator-->
@@ -73,7 +73,7 @@
                         <!--end::Item-->
                         <!--begin::Item-->
                         <li class="breadcrumb-item text-dark">
-                            Lista de Grados
+                            Lista de Seccion
                         </li>
                         <!--end::Item-->
                     </ul>
