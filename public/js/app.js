@@ -2065,6 +2065,3633 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Alumno/AlumnoCreateComponent.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Alumno/AlumnoCreateComponent.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var select2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! select2 */ "./node_modules/select2/dist/js/select2.js");
+/* harmony import */ var select2__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(select2__WEBPACK_IMPORTED_MODULE_0__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: ["departamentos", "provincias", "distritos", "old", "errores_laravel", "csrf", "error"],
+  data: function data() {
+    return {
+      modelo: {
+        tipo_documento: null,
+        direccion: null,
+        telefono: null,
+        fecha_nacimiento: null,
+        genero: null,
+        distrito_id: null,
+        nombres: null,
+        apellidos: null,
+        dni: null,
+        nombre_comercial: null,
+        razon_social: null,
+        ruc: null,
+        email: null,
+        confirm_password: null,
+        password: null,
+        tipo_id: null
+      },
+      errores: {
+        tipo_documento: {
+          error: false,
+          mensaje: ""
+        },
+        direccion: {
+          error: false,
+          mensaje: ""
+        },
+        telefono: {
+          error: false,
+          mensaje: ""
+        },
+        fecha_nacimiento: {
+          error: false,
+          mensaje: ""
+        },
+        genero: {
+          error: false,
+          mensaje: ""
+        },
+        distrito_id: {
+          error: false,
+          mensaje: ""
+        },
+        nombres: {
+          error: false,
+          mensaje: ""
+        },
+        apellidos: {
+          error: false,
+          mensaje: ""
+        },
+        dni: {
+          error: false,
+          mensaje: ""
+        },
+        nombre_comercial: {
+          error: false,
+          mensaje: ""
+        },
+        razon_social: {
+          error: false,
+          mensaje: ""
+        },
+        ruc: {
+          error: false,
+          mensaje: ""
+        },
+        email: {
+          error: false,
+          mensaje: ""
+        },
+        confirm_password: {
+          error: false,
+          mensaje: ""
+        },
+        password: {
+          error: false,
+          mensaje: ""
+        }
+      },
+      ruta: ""
+    };
+  },
+  created: function created() {// this.modelo.
+  },
+  mounted: function mounted() {
+    var $this = this;
+    $this.ruta = route("alumno.store");
+    var old_values = Object.entries(this.old);
+    old_values.forEach(function (value, index, array) {
+      if (value[0] != "_token") {
+        if (value[0] == "distrito_id") {
+          $this.getUbigeoOld(value[1]);
+        } else {
+          $this.modelo[value[0]] = value[1];
+        }
+      }
+    });
+
+    if (this.errores_laravel != null) {
+      var errores_laravel_values = Object.entries(this.errores_laravel);
+      errores_laravel_values.forEach(function (value, index, array) {
+        $this.errores[value[0]].error = true;
+        $this.errores[value[0]].mensaje = value[1][0];
+      });
+    }
+
+    if (this.error != null) {
+      var error_value = Object.entries(this.error);
+    }
+
+    window.addEventListener("load", function () {
+      $this.iniciarFormulario();
+      $("#departamento_id").on("change", function (e) {
+        $this.cargarProvincia(null);
+      });
+      $("#provincia_id").on("change", function (e) {
+        $this.cargarDistrito(null);
+      });
+      $("#tipo_documento").on("change", function (e) {
+        $this.modelo.tipo_documento = $("#tipo_documento").val();
+      });
+      $("#genero").on("change", function (e) {
+        $this.modelo.genero = $("#genero").val();
+      });
+      $("#distrito_id").on("change", function (e) {
+        $this.modelo.distrito_id = $("#distrito_id").val();
+      });
+      $("#distrito_id").on("change", function (e) {
+        $this.modelo.tipo_id = $("#tipo_id").val();
+      });
+    });
+  },
+  methods: {
+    cargarProvincia: function cargarProvincia(e) {
+      var $this = this;
+      var departamento = $("#departamento_id").val();
+      $("#provincia_id").empty().trigger("change");
+      $this.provincias.forEach(function (element) {
+        if (element.departamento_id == departamento) {
+          var newOption;
+
+          if (e == null) {
+            newOption = new Option(element.nombre, element.id, false, false);
+          } else {
+            if (e.id == element.id) {
+              newOption = new Option(element.nombre, element.id, true, true);
+            } else {
+              newOption = new Option(element.nombre, element.id, false, false);
+            }
+          }
+
+          $("#provincia_id").append(newOption);
+        }
+      });
+      $("#provincia_id").trigger("change");
+    },
+    cargarDistrito: function cargarDistrito(e) {
+      var $this = this;
+      var provincia = $("#provincia_id").val();
+      $("#distrito_id").empty().trigger("change");
+      $this.distritos.forEach(function (element) {
+        if (element.provincia_id == provincia) {
+          var newOption;
+
+          if (e == null) {
+            newOption = new Option(element.nombre, element.id, false, false);
+          } else {
+            if (e.id == element.id) {
+              newOption = new Option(element.nombre, element.id, true, true);
+            } else {
+              newOption = new Option(element.nombre, element.id, false, false);
+            }
+          }
+
+          $("#distrito_id").append(newOption);
+        }
+      });
+      $("#distrito_id").trigger("change");
+    },
+    getUbigeoOld: function getUbigeoOld(distrito_id) {
+      var $this = this;
+      var distrito = null;
+      var departamento = null;
+      var provincia = null;
+      distrito = this.distritos.find(function (e) {
+        return e.id == distrito_id;
+      });
+      provincia = this.provincias.find(function (e) {
+        return e.id == distrito.provincia.id;
+      });
+      departamento = this.departamentos.find(function (e) {
+        return e.id == provincia.departamento.id;
+      });
+      $("#departamento_id").val(departamento.id).trigger("change");
+      $this.cargarProvincia(provincia);
+      $this.cargarDistrito(distrito); // $("#provincia_id").val(provincia.id).trigger("change");
+      // $("#distrito_id").val(distrito.id).trigger("change");
+    },
+    iniciarFormulario: function iniciarFormulario() {
+      var stepper = document.querySelector("#kt_create_account_stepper");
+      var stepperObj = new KTStepper(stepper);
+      var formSubmitButton = stepper.querySelector('[data-kt-stepper-action="submit"]');
+      var formContinueButton = stepper.querySelector('[data-kt-stepper-action="next"]');
+      stepperObj.on("kt.stepper.changed", function (stepper) {
+        if (stepperObj.getCurrentStepIndex() === 2) {
+          formSubmitButton.classList.remove("d-none");
+          formSubmitButton.classList.add("d-inline-block");
+          formContinueButton.classList.add("d-none");
+        } else {
+          formSubmitButton.classList.remove("d-inline-block");
+          formSubmitButton.classList.remove("d-none");
+          formContinueButton.classList.remove("d-none");
+        }
+      }); // Validation before going to next page
+
+      stepperObj.on("kt.stepper.next", function (stepper) {
+        console.log("stepper.next");
+        stepper.goNext();
+        KTUtil.scrollTop(); // Validate form before change stepper step
+      }); // Prev event
+
+      stepperObj.on("kt.stepper.previous", function (stepper) {
+        console.log("stepper.previous");
+        stepper.goPrevious();
+        KTUtil.scrollTop();
+      });
+      $("#img_avatar_profile").css("background-image", "url(" + window.location.origin + "/metronic/media/avatars/blank.png" + ")");
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Alumno/AlumnoEditComponent.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Alumno/AlumnoEditComponent.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var select2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! select2 */ "./node_modules/select2/dist/js/select2.js");
+/* harmony import */ var select2__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(select2__WEBPACK_IMPORTED_MODULE_0__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: ["departamentos", "provincias", "distritos", "old", "errores_laravel", "csrf", "error", "alumno"],
+  data: function data() {
+    return {
+      modelo: {
+        id: null,
+        tipo_documento: null,
+        direccion: null,
+        telefono: null,
+        fecha_nacimiento: null,
+        genero: null,
+        distrito_id: null,
+        nombres: null,
+        apellidos: null,
+        dni: null,
+        nombre_comercial: null,
+        razon_social: null,
+        ruc: null,
+        email: null,
+        confirm_password: null,
+        password: null,
+        tipo_id: null
+      },
+      errores: {
+        tipo_documento: {
+          error: false,
+          mensaje: ""
+        },
+        direccion: {
+          error: false,
+          mensaje: ""
+        },
+        telefono: {
+          error: false,
+          mensaje: ""
+        },
+        fecha_nacimiento: {
+          error: false,
+          mensaje: ""
+        },
+        genero: {
+          error: false,
+          mensaje: ""
+        },
+        distrito_id: {
+          error: false,
+          mensaje: ""
+        },
+        nombres: {
+          error: false,
+          mensaje: ""
+        },
+        apellidos: {
+          error: false,
+          mensaje: ""
+        },
+        dni: {
+          error: false,
+          mensaje: ""
+        },
+        nombre_comercial: {
+          error: false,
+          mensaje: ""
+        },
+        razon_social: {
+          error: false,
+          mensaje: ""
+        },
+        ruc: {
+          error: false,
+          mensaje: ""
+        },
+        email: {
+          error: false,
+          mensaje: ""
+        },
+        confirm_password: {
+          error: false,
+          mensaje: ""
+        },
+        password: {
+          error: false,
+          mensaje: ""
+        },
+        tipo_id: {
+          error: false,
+          mensaje: ""
+        }
+      },
+      ruta: ""
+    };
+  },
+  created: function created() {
+    this.modelo = this.alumno[0];
+  },
+  mounted: function mounted() {
+    var $this = this; // console.log(this.errores_laravel)
+    // console.log(this.error)
+
+    $this.ruta = route("alumno.update", this.modelo.id);
+    var old_values = Object.entries(this.old);
+    old_values.forEach(function (value, index, array) {
+      if (value[0] != "_token") {
+        if (value[0] == "distrito_id") {
+          $this.getUbigeoOld(value[1]);
+        } else {
+          $this.modelo[value[0]] = value[1];
+        }
+      }
+    });
+
+    if (this.errores_laravel != null) {
+      var errores_laravel_values = Object.entries(this.errores_laravel);
+      errores_laravel_values.forEach(function (value, index, array) {
+        $this.errores[value[0]].error = true;
+        $this.errores[value[0]].mensaje = value[1][0];
+      });
+    }
+
+    if (this.error != null) {// let error_value = Object.entries(this.error);
+    }
+
+    window.addEventListener("load", function () {
+      // $("#tipo_documento").select2("readonly", true);
+      $this.iniciarFormulario();
+      $this.getUbigeoOld($this.modelo.distrito_id);
+      $("#departamento_id").on("change", function (e) {
+        $this.cargarProvincia(null);
+      });
+      $("#provincia_id").on("change", function (e) {
+        $this.cargarDistrito(null);
+      });
+      $("#tipo_documento").on("change", function (e) {
+        $this.modelo.tipo_documento = $("#tipo_documento").val();
+      });
+      $("#genero").on("change", function (e) {
+        $this.modelo.genero = $("#genero").val();
+      });
+      $("#distrito_id").on("change", function (e) {
+        $this.modelo.distrito_id = $("#distrito_id").val();
+      });
+      $("#distrito_id").on("change", function (e) {
+        $this.modelo.tipo_id = $("#tipo_id").val();
+      });
+    });
+  },
+  methods: {
+    cargarProvincia: function cargarProvincia(e) {
+      var $this = this;
+      var departamento = $("#departamento_id").val();
+      $("#provincia_id").empty().trigger("change");
+      $this.provincias.forEach(function (element) {
+        if (element.departamento_id == departamento) {
+          var newOption;
+
+          if (e == null) {
+            newOption = new Option(element.nombre, element.id, false, false);
+          } else {
+            if (e.id == element.id) {
+              newOption = new Option(element.nombre, element.id, true, true);
+            } else {
+              newOption = new Option(element.nombre, element.id, false, false);
+            }
+          }
+
+          $("#provincia_id").append(newOption);
+        }
+      });
+      $("#provincia_id").trigger("change");
+    },
+    cargarDistrito: function cargarDistrito(e) {
+      var $this = this;
+      var provincia = $("#provincia_id").val();
+      $("#distrito_id").empty().trigger("change");
+      $this.distritos.forEach(function (element) {
+        if (element.provincia_id == provincia) {
+          var newOption;
+
+          if (e == null) {
+            newOption = new Option(element.nombre, element.id, false, false);
+          } else {
+            if (e.id == element.id) {
+              newOption = new Option(element.nombre, element.id, true, true);
+            } else {
+              newOption = new Option(element.nombre, element.id, false, false);
+            }
+          }
+
+          $("#distrito_id").append(newOption);
+        }
+      });
+      $("#distrito_id").trigger("change");
+    },
+    getUbigeoOld: function getUbigeoOld(distrito_id) {
+      var $this = this;
+      var distrito = null;
+      var departamento = null;
+      var provincia = null;
+      distrito = this.distritos.find(function (e) {
+        return e.id == distrito_id;
+      });
+      provincia = this.provincias.find(function (e) {
+        return e.id == distrito.provincia.id;
+      });
+      departamento = this.departamentos.find(function (e) {
+        return e.id == provincia.departamento.id;
+      });
+      $("#departamento_id").val(departamento.id).trigger("change");
+      $this.cargarProvincia(provincia);
+      $this.cargarDistrito(distrito); // $("#provincia_id").val(provincia.id).trigger("change");
+      // $("#distrito_id").val(distrito.id).trigger("change");
+    },
+    iniciarFormulario: function iniciarFormulario() {
+      var stepper = document.querySelector("#kt_create_account_stepper");
+      var stepperObj = new KTStepper(stepper);
+      var formSubmitButton = stepper.querySelector('[data-kt-stepper-action="submit"]');
+      var formContinueButton = stepper.querySelector('[data-kt-stepper-action="next"]');
+      stepperObj.on("kt.stepper.changed", function (stepper) {
+        if (stepperObj.getCurrentStepIndex() === 2) {
+          formSubmitButton.classList.remove("d-none");
+          formSubmitButton.classList.add("d-inline-block");
+          formContinueButton.classList.add("d-none");
+        } else {
+          formSubmitButton.classList.remove("d-inline-block");
+          formSubmitButton.classList.remove("d-none");
+          formContinueButton.classList.remove("d-none");
+        }
+      }); // Validation before going to next page
+
+      stepperObj.on("kt.stepper.next", function (stepper) {
+        console.log("stepper.next");
+        stepper.goNext();
+        KTUtil.scrollTop(); // Validate form before change stepper step
+      }); // Prev event
+
+      stepperObj.on("kt.stepper.previous", function (stepper) {
+        console.log("stepper.previous");
+        stepper.goPrevious();
+        KTUtil.scrollTop();
+      });
+
+      if (this.alumno[0].url_imagen == null) {
+        $("#img_avatar_profile").css("background-image", "url(" + window.location.origin + "/metronic/media/avatars/blank.png" + ")");
+      } else {
+        $("#img_avatar_profile").css("background-image", "url(" + window.location.origin + "/" + this.alumno[0].url_imagen.replace("public", "storage") + ")");
+      }
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Alumno/AlumnoIndexComponent.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Alumno/AlumnoIndexComponent.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: [],
+  data: function data() {
+    return {
+      table: null
+    };
+  },
+  mounted: function mounted() {
+    var $this = this;
+    $this.dataTableInicializacion();
+    $(document).on("click", ".btn-edit", function () {
+      var row = $this.table.row($(this).closest("tr")).data();
+      window.location.href = route('alumno.edit', row.id);
+    });
+    $(document).on("click", ".btn-delete", function () {
+      var row = $this.table.row($(this).closest("tr")).data();
+      Swal.fire({
+        title: "Estas Seguro?",
+        text: "Tu deseas eliminar este Registro",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Aceptar",
+        cancelButtonText: "Cancelar"
+      }).then( /*#__PURE__*/function () {
+        var _ref = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee(result) {
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
+            while (1) {
+              switch (_context.prev = _context.next) {
+                case 0:
+                  if (!result.isConfirmed) {
+                    _context.next = 3;
+                    break;
+                  }
+
+                  _context.next = 3;
+                  return axios.post(route("alumno.destroy", row.id)).then(function (value) {
+                    // $this.table
+                    //     .row($(this).closest("tr"))
+                    //     .remove()
+                    //     .draw();
+                    $this.table.ajax.reload();
+                    Swal.fire("Elimando!", "Tu Registro se ha eliminado con Exito", "success");
+                  });
+
+                case 3:
+                case "end":
+                  return _context.stop();
+              }
+            }
+          }, _callee);
+        }));
+
+        return function (_x) {
+          return _ref.apply(this, arguments);
+        };
+      }());
+    });
+  },
+  methods: {
+    dataTableInicializacion: function dataTableInicializacion() {
+      this.table = $("#tableAlumnos").DataTable({
+        bPaginate: true,
+        bLengthChange: true,
+        bFilter: true,
+        bInfo: true,
+        bAutoWidth: false,
+        processing: true,
+        language: {
+          url: window.location.origin + "/Spanish.json"
+        },
+        ajax: route("alumno.getList"),
+        columns: [{
+          data: null,
+          className: "text-center",
+          render: function render(data) {
+            return data.id;
+          }
+        }, {
+          data: null,
+          render: function render(data) {
+            return data.persona.tipo_persona.nombres + " " + data.persona.tipo_persona.apellidos;
+          }
+        }, {
+          data: null,
+          className: "text-center",
+          render: function render(data) {
+            return data.persona.tipo_persona.dni;
+          }
+        }, {
+          data: null,
+          render: function render(data) {
+            return "<div class='btn-group'>" + "<button class='btn btn-primary btn-sm btn-edit'><i class='fas fa-pencil-alt'></i></button>" + "<button class='btn btn-danger btn-sm btn-delete'><i class='fa fa-trash'></i></button>" + "</div>";
+          }
+        }]
+      });
+    },
+    createAlumno: function createAlumno() {
+      window.location.href = route('alumno.create');
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/GradoCursoIndexComponent.vue?vue&type=script&lang=js&":
 /*!**********************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/GradoCursoIndexComponent.vue?vue&type=script&lang=js& ***!
@@ -8531,6 +12158,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ["departamentos", "provincias", "distritos", "old", "errores_laravel", "csrf", "error", "tipo_empleados", "empleado"],
@@ -8780,7 +12408,12 @@ __webpack_require__.r(__webpack_exports__);
         stepper.goPrevious();
         KTUtil.scrollTop();
       });
-      $("#img_avatar_profile").css("background-image", "url(" + window.location.origin + "/metronic/media/avatars/blank.png" + ")");
+
+      if (this.empleado[0].url_imagen == null) {
+        $("#img_avatar_profile").css("background-image", "url(" + window.location.origin + "/metronic/media/avatars/blank.png" + ")");
+      } else {
+        $("#img_avatar_profile").css("background-image", "url(" + window.location.origin + "/" + this.empleado[0].url_imagen.replace("public", "storage") + ")");
+      }
     }
   }
 });
@@ -9710,6 +13343,9 @@ vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('tipoempleadoindex-compone
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('empleadoindex-component', (__webpack_require__(/*! ./Components/Personal/EmpleadoIndexComponent.vue */ "./resources/js/Components/Personal/EmpleadoIndexComponent.vue")["default"]));
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('empleadocreate-component', (__webpack_require__(/*! ./Components/Personal/EmpleadoCreateComponent.vue */ "./resources/js/Components/Personal/EmpleadoCreateComponent.vue")["default"]));
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('empleadoedit-component', (__webpack_require__(/*! ./Components/Personal/EmpleadoEditComponent.vue */ "./resources/js/Components/Personal/EmpleadoEditComponent.vue")["default"]));
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('alumnoindex-component', (__webpack_require__(/*! ./Components/Administracion/Alumno/AlumnoIndexComponent.vue */ "./resources/js/Components/Administracion/Alumno/AlumnoIndexComponent.vue")["default"]));
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('alumnocreate-component', (__webpack_require__(/*! ./Components/Administracion/Alumno/AlumnoCreateComponent.vue */ "./resources/js/Components/Administracion/Alumno/AlumnoCreateComponent.vue")["default"]));
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('alumnoedit-component', (__webpack_require__(/*! ./Components/Administracion/Alumno/AlumnoEditComponent.vue */ "./resources/js/Components/Administracion/Alumno/AlumnoEditComponent.vue")["default"]));
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('rolindex-component', (__webpack_require__(/*! ./Components/Administracion/RolIndexComponent.vue */ "./resources/js/Components/Administracion/RolIndexComponent.vue")["default"]));
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('rolcreate-component', (__webpack_require__(/*! ./Components/Administracion/RolCreateComponent.vue */ "./resources/js/Components/Administracion/RolCreateComponent.vue")["default"]));
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('roledit-component', (__webpack_require__(/*! ./Components/Administracion/RolEditComponent.vue */ "./resources/js/Components/Administracion/RolEditComponent.vue")["default"]));
@@ -9805,6 +13441,30 @@ var _require = __webpack_require__(/*! axios */ "./node_modules/axios/index.js")
     };
   }
 });
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Alumno/AlumnoEditComponent.vue?vue&type=style&index=0&lang=css&":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Alumno/AlumnoEditComponent.vue?vue&type=style&index=0&lang=css& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\nselect[readonly].select2-hidden-accessible + .select2-container {\n    pointer-events: none;\n    touch-action: none;\n}\nselect[readonly].select2-hidden-accessible\n    + .select2-container\n    .select2-selection {\n    background: #eee;\n    box-shadow: none;\n}\nselect[readonly].select2-hidden-accessible\n    + .select2-container\n    .select2-selection__arrow,\nselect[readonly].select2-hidden-accessible\n    + .select2-container\n    .select2-selection__clear {\n    display: none;\n}\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
 
 /***/ }),
 
@@ -65893,6 +69553,36 @@ S2.define('jquery.select2',[
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Alumno/AlumnoEditComponent.vue?vue&type=style&index=0&lang=css&":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Alumno/AlumnoEditComponent.vue?vue&type=style&index=0&lang=css& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_AlumnoEditComponent_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AlumnoEditComponent.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Alumno/AlumnoEditComponent.vue?vue&type=style&index=0&lang=css&");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_AlumnoEditComponent_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_AlumnoEditComponent_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Personal/EmpleadoEditComponent.vue?vue&type=style&index=0&lang=css&":
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Personal/EmpleadoEditComponent.vue?vue&type=style&index=0&lang=css& ***!
@@ -66199,6 +69889,125 @@ module.exports = function (list, options) {
     lastIdentifiers = newLastIdentifiers;
   };
 };
+
+/***/ }),
+
+/***/ "./resources/js/Components/Administracion/Alumno/AlumnoCreateComponent.vue":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/Components/Administracion/Alumno/AlumnoCreateComponent.vue ***!
+  \*********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _AlumnoCreateComponent_vue_vue_type_template_id_b448ae12___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AlumnoCreateComponent.vue?vue&type=template&id=b448ae12& */ "./resources/js/Components/Administracion/Alumno/AlumnoCreateComponent.vue?vue&type=template&id=b448ae12&");
+/* harmony import */ var _AlumnoCreateComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AlumnoCreateComponent.vue?vue&type=script&lang=js& */ "./resources/js/Components/Administracion/Alumno/AlumnoCreateComponent.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _AlumnoCreateComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _AlumnoCreateComponent_vue_vue_type_template_id_b448ae12___WEBPACK_IMPORTED_MODULE_0__.render,
+  _AlumnoCreateComponent_vue_vue_type_template_id_b448ae12___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Components/Administracion/Alumno/AlumnoCreateComponent.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/Components/Administracion/Alumno/AlumnoEditComponent.vue":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/Components/Administracion/Alumno/AlumnoEditComponent.vue ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _AlumnoEditComponent_vue_vue_type_template_id_91386bae___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AlumnoEditComponent.vue?vue&type=template&id=91386bae& */ "./resources/js/Components/Administracion/Alumno/AlumnoEditComponent.vue?vue&type=template&id=91386bae&");
+/* harmony import */ var _AlumnoEditComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AlumnoEditComponent.vue?vue&type=script&lang=js& */ "./resources/js/Components/Administracion/Alumno/AlumnoEditComponent.vue?vue&type=script&lang=js&");
+/* harmony import */ var _AlumnoEditComponent_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AlumnoEditComponent.vue?vue&type=style&index=0&lang=css& */ "./resources/js/Components/Administracion/Alumno/AlumnoEditComponent.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+;
+
+
+/* normalize component */
+
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _AlumnoEditComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _AlumnoEditComponent_vue_vue_type_template_id_91386bae___WEBPACK_IMPORTED_MODULE_0__.render,
+  _AlumnoEditComponent_vue_vue_type_template_id_91386bae___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Components/Administracion/Alumno/AlumnoEditComponent.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/Components/Administracion/Alumno/AlumnoIndexComponent.vue":
+/*!********************************************************************************!*\
+  !*** ./resources/js/Components/Administracion/Alumno/AlumnoIndexComponent.vue ***!
+  \********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _AlumnoIndexComponent_vue_vue_type_template_id_2442f625___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AlumnoIndexComponent.vue?vue&type=template&id=2442f625& */ "./resources/js/Components/Administracion/Alumno/AlumnoIndexComponent.vue?vue&type=template&id=2442f625&");
+/* harmony import */ var _AlumnoIndexComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AlumnoIndexComponent.vue?vue&type=script&lang=js& */ "./resources/js/Components/Administracion/Alumno/AlumnoIndexComponent.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _AlumnoIndexComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _AlumnoIndexComponent_vue_vue_type_template_id_2442f625___WEBPACK_IMPORTED_MODULE_0__.render,
+  _AlumnoIndexComponent_vue_vue_type_template_id_2442f625___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Components/Administracion/Alumno/AlumnoIndexComponent.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
 
 /***/ }),
 
@@ -66594,6 +70403,54 @@ component.options.__file = "resources/js/Components/Personal/TipoEmpleadoIndexCo
 
 /***/ }),
 
+/***/ "./resources/js/Components/Administracion/Alumno/AlumnoCreateComponent.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************!*\
+  !*** ./resources/js/Components/Administracion/Alumno/AlumnoCreateComponent.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AlumnoCreateComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AlumnoCreateComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Alumno/AlumnoCreateComponent.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AlumnoCreateComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/Components/Administracion/Alumno/AlumnoEditComponent.vue?vue&type=script&lang=js&":
+/*!********************************************************************************************************!*\
+  !*** ./resources/js/Components/Administracion/Alumno/AlumnoEditComponent.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AlumnoEditComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AlumnoEditComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Alumno/AlumnoEditComponent.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AlumnoEditComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/Components/Administracion/Alumno/AlumnoIndexComponent.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************!*\
+  !*** ./resources/js/Components/Administracion/Alumno/AlumnoIndexComponent.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AlumnoIndexComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AlumnoIndexComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Alumno/AlumnoIndexComponent.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AlumnoIndexComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
 /***/ "./resources/js/Components/Administracion/GradoCursoIndexComponent.vue?vue&type=script&lang=js&":
 /*!******************************************************************************************************!*\
   !*** ./resources/js/Components/Administracion/GradoCursoIndexComponent.vue?vue&type=script&lang=js& ***!
@@ -66754,6 +70611,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Components/Administracion/Alumno/AlumnoEditComponent.vue?vue&type=style&index=0&lang=css&":
+/*!****************************************************************************************************************!*\
+  !*** ./resources/js/Components/Administracion/Alumno/AlumnoEditComponent.vue?vue&type=style&index=0&lang=css& ***!
+  \****************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_AlumnoEditComponent_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/style-loader/dist/cjs.js!../../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AlumnoEditComponent.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Alumno/AlumnoEditComponent.vue?vue&type=style&index=0&lang=css&");
+
+
+/***/ }),
+
 /***/ "./resources/js/Components/Personal/EmpleadoEditComponent.vue?vue&type=style&index=0&lang=css&":
 /*!*****************************************************************************************************!*\
   !*** ./resources/js/Components/Personal/EmpleadoEditComponent.vue?vue&type=style&index=0&lang=css& ***!
@@ -66763,6 +70633,57 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_EmpleadoEditComponent_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader/dist/cjs.js!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./EmpleadoEditComponent.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Personal/EmpleadoEditComponent.vue?vue&type=style&index=0&lang=css&");
+
+
+/***/ }),
+
+/***/ "./resources/js/Components/Administracion/Alumno/AlumnoCreateComponent.vue?vue&type=template&id=b448ae12&":
+/*!****************************************************************************************************************!*\
+  !*** ./resources/js/Components/Administracion/Alumno/AlumnoCreateComponent.vue?vue&type=template&id=b448ae12& ***!
+  \****************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AlumnoCreateComponent_vue_vue_type_template_id_b448ae12___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AlumnoCreateComponent_vue_vue_type_template_id_b448ae12___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AlumnoCreateComponent_vue_vue_type_template_id_b448ae12___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AlumnoCreateComponent.vue?vue&type=template&id=b448ae12& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Alumno/AlumnoCreateComponent.vue?vue&type=template&id=b448ae12&");
+
+
+/***/ }),
+
+/***/ "./resources/js/Components/Administracion/Alumno/AlumnoEditComponent.vue?vue&type=template&id=91386bae&":
+/*!**************************************************************************************************************!*\
+  !*** ./resources/js/Components/Administracion/Alumno/AlumnoEditComponent.vue?vue&type=template&id=91386bae& ***!
+  \**************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AlumnoEditComponent_vue_vue_type_template_id_91386bae___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AlumnoEditComponent_vue_vue_type_template_id_91386bae___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AlumnoEditComponent_vue_vue_type_template_id_91386bae___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AlumnoEditComponent.vue?vue&type=template&id=91386bae& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Alumno/AlumnoEditComponent.vue?vue&type=template&id=91386bae&");
+
+
+/***/ }),
+
+/***/ "./resources/js/Components/Administracion/Alumno/AlumnoIndexComponent.vue?vue&type=template&id=2442f625&":
+/*!***************************************************************************************************************!*\
+  !*** ./resources/js/Components/Administracion/Alumno/AlumnoIndexComponent.vue?vue&type=template&id=2442f625& ***!
+  \***************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AlumnoIndexComponent_vue_vue_type_template_id_2442f625___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AlumnoIndexComponent_vue_vue_type_template_id_2442f625___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AlumnoIndexComponent_vue_vue_type_template_id_2442f625___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AlumnoIndexComponent.vue?vue&type=template&id=2442f625& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Alumno/AlumnoIndexComponent.vue?vue&type=template&id=2442f625&");
 
 
 /***/ }),
@@ -66933,6 +70854,4229 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TipoEmpleadoIndexComponent_vue_vue_type_template_id_3d9149c4___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TipoEmpleadoIndexComponent_vue_vue_type_template_id_3d9149c4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./TipoEmpleadoIndexComponent.vue?vue&type=template&id=3d9149c4& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Personal/TipoEmpleadoIndexComponent.vue?vue&type=template&id=3d9149c4&");
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Alumno/AlumnoCreateComponent.vue?vue&type=template&id=b448ae12&":
+/*!*******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Alumno/AlumnoCreateComponent.vue?vue&type=template&id=b448ae12& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "post d-flex flex-column-fluid",
+        attrs: { id: "kt_post" },
+      },
+      [
+        _c(
+          "div",
+          {
+            staticClass: "container-xxl",
+            attrs: { id: "kt_content_container" },
+          },
+          [
+            _c("div", { staticClass: "card" }, [
+              _c("div", { staticClass: "container" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-md-12 p-1" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "\n                                    stepper stepper-links\n                                    d-flex\n                                    flex-column\n                                    pt-15\n                                ",
+                        attrs: { id: "kt_create_account_stepper" },
+                      },
+                      [
+                        _vm._m(1),
+                        _vm._v(" "),
+                        _c(
+                          "form",
+                          {
+                            attrs: {
+                              action: _vm.ruta,
+                              method: "POST",
+                              enctype: "multipart/form-data",
+                            },
+                          },
+                          [
+                            _c(
+                              "div",
+                              {
+                                staticClass: "current",
+                                attrs: { "data-kt-stepper-element": "content" },
+                              },
+                              [
+                                _c(
+                                  "div",
+                                  { staticClass: "container-fluid p-0" },
+                                  [
+                                    _c("div", { staticClass: "row" }, [
+                                      _c("div", { staticClass: "col-md-6" }, [
+                                        _c("div", { staticClass: "row" }, [
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-6" },
+                                            [
+                                              _c("input", {
+                                                attrs: {
+                                                  type: "hidden",
+                                                  name: "_token",
+                                                },
+                                                domProps: { value: _vm.csrf },
+                                              }),
+                                              _vm._v(" "),
+                                              _vm._m(2),
+                                              _vm._v(" "),
+                                              _c(
+                                                "select",
+                                                {
+                                                  directives: [
+                                                    {
+                                                      name: "model",
+                                                      rawName: "v-model",
+                                                      value:
+                                                        _vm.modelo
+                                                          .tipo_documento,
+                                                      expression:
+                                                        "\n                                                                    modelo.tipo_documento\n                                                                ",
+                                                    },
+                                                  ],
+                                                  staticClass:
+                                                    "\n                                                                    form-select\n                                                                    form-select-white\n                                                                ",
+                                                  class: _vm.errores
+                                                    .tipo_documento.error
+                                                    ? "is-invalid"
+                                                    : "",
+                                                  attrs: {
+                                                    name: "tipo_documento",
+                                                    id: "tipo_documento",
+                                                    "data-control": "select2",
+                                                    "data-placeholder":
+                                                      "Select an option",
+                                                  },
+                                                  on: {
+                                                    change: function ($event) {
+                                                      var $$selectedVal =
+                                                        Array.prototype.filter
+                                                          .call(
+                                                            $event.target
+                                                              .options,
+                                                            function (o) {
+                                                              return o.selected
+                                                            }
+                                                          )
+                                                          .map(function (o) {
+                                                            var val =
+                                                              "_value" in o
+                                                                ? o._value
+                                                                : o.value
+                                                            return val
+                                                          })
+                                                      _vm.$set(
+                                                        _vm.modelo,
+                                                        "tipo_documento",
+                                                        $event.target.multiple
+                                                          ? $$selectedVal
+                                                          : $$selectedVal[0]
+                                                      )
+                                                    },
+                                                  },
+                                                },
+                                                [
+                                                  _c("option"),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "option",
+                                                    { attrs: { value: "DNI" } },
+                                                    [
+                                                      _vm._v(
+                                                        "\n                                                                    DNI\n                                                                "
+                                                      ),
+                                                    ]
+                                                  ),
+                                                ]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "div",
+                                                {
+                                                  staticClass:
+                                                    "\n                                                                    invalid-feedback\n                                                                ",
+                                                },
+                                                [
+                                                  _vm._v(
+                                                    "\n                                                                " +
+                                                      _vm._s(
+                                                        _vm.errores
+                                                          .tipo_documento
+                                                          .mensaje
+                                                      ) +
+                                                      "\n                                                            "
+                                                  ),
+                                                ]
+                                              ),
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-6" },
+                                            [
+                                              _vm._m(3),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                directives: [
+                                                  {
+                                                    name: "model",
+                                                    rawName: "v-model",
+                                                    value: _vm.modelo.dni,
+                                                    expression:
+                                                      "\n                                                                    modelo.dni\n                                                                ",
+                                                  },
+                                                ],
+                                                staticClass:
+                                                  "\n                                                                    form-control\n                                                                    form-control-sm\n                                                                    form-control-solid\n                                                                ",
+                                                attrs: {
+                                                  type: "text",
+                                                  name: "dni",
+                                                },
+                                                domProps: {
+                                                  value: _vm.modelo.dni,
+                                                },
+                                                on: {
+                                                  input: function ($event) {
+                                                    if (
+                                                      $event.target.composing
+                                                    ) {
+                                                      return
+                                                    }
+                                                    _vm.$set(
+                                                      _vm.modelo,
+                                                      "dni",
+                                                      $event.target.value
+                                                    )
+                                                  },
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _vm.errores.dni.error ||
+                                              _vm.errores.ruc.error
+                                                ? _c(
+                                                    "div",
+                                                    {
+                                                      staticClass:
+                                                        "\n                                                                    fv-plugins-message-container\n                                                                    invalid-feedback\n                                                                ",
+                                                    },
+                                                    [
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          attrs: {
+                                                            "data-field":
+                                                              "text_input",
+                                                            "data-validator":
+                                                              "notEmpty",
+                                                          },
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            "\n                                                                    " +
+                                                              _vm._s(
+                                                                _vm.errores
+                                                                  .tipo_documento
+                                                                  .error ==
+                                                                  false
+                                                                  ? _vm.errores
+                                                                      .dni
+                                                                      .mensaje ==
+                                                                    ""
+                                                                    ? _vm
+                                                                        .errores
+                                                                        .ruc
+                                                                        .mensaje
+                                                                    : _vm
+                                                                        .errores
+                                                                        .dni
+                                                                        .mensaje
+                                                                  : ""
+                                                              ) +
+                                                              "\n                                                                "
+                                                          ),
+                                                        ]
+                                                      ),
+                                                    ]
+                                                  )
+                                                : _vm._e(),
+                                            ]
+                                          ),
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("div", { staticClass: "row" }, [
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-6" },
+                                            [
+                                              _vm._m(4),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                directives: [
+                                                  {
+                                                    name: "model",
+                                                    rawName: "v-model",
+                                                    value: _vm.modelo.nombres,
+                                                    expression:
+                                                      "\n                                                                    modelo.nombres\n                                                                ",
+                                                  },
+                                                ],
+                                                staticClass:
+                                                  "\n                                                                    form-control\n                                                                    form-control-sm\n                                                                    form-control-solid\n                                                                ",
+                                                attrs: {
+                                                  type: "text",
+                                                  name: "nombres",
+                                                },
+                                                domProps: {
+                                                  value: _vm.modelo.nombres,
+                                                },
+                                                on: {
+                                                  input: function ($event) {
+                                                    if (
+                                                      $event.target.composing
+                                                    ) {
+                                                      return
+                                                    }
+                                                    _vm.$set(
+                                                      _vm.modelo,
+                                                      "nombres",
+                                                      $event.target.value
+                                                    )
+                                                  },
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _vm.errores.nombres.error
+                                                ? _c(
+                                                    "div",
+                                                    {
+                                                      staticClass:
+                                                        "\n                                                                    fv-plugins-message-container\n                                                                    invalid-feedback\n                                                                ",
+                                                    },
+                                                    [
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          attrs: {
+                                                            "data-field":
+                                                              "text_input",
+                                                            "data-validator":
+                                                              "notEmpty",
+                                                          },
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            "\n                                                                    " +
+                                                              _vm._s(
+                                                                _vm.errores
+                                                                  .nombres
+                                                                  .mensaje
+                                                              ) +
+                                                              "\n                                                                "
+                                                          ),
+                                                        ]
+                                                      ),
+                                                    ]
+                                                  )
+                                                : _vm._e(),
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-6" },
+                                            [
+                                              _vm._m(5),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                directives: [
+                                                  {
+                                                    name: "model",
+                                                    rawName: "v-model",
+                                                    value: _vm.modelo.apellidos,
+                                                    expression:
+                                                      "\n                                                                    modelo.apellidos\n                                                                ",
+                                                  },
+                                                ],
+                                                staticClass:
+                                                  "\n                                                                    form-control\n                                                                    form-control-sm\n                                                                    form-control-solid\n                                                                ",
+                                                attrs: {
+                                                  type: "text",
+                                                  name: "apellidos",
+                                                },
+                                                domProps: {
+                                                  value: _vm.modelo.apellidos,
+                                                },
+                                                on: {
+                                                  input: function ($event) {
+                                                    if (
+                                                      $event.target.composing
+                                                    ) {
+                                                      return
+                                                    }
+                                                    _vm.$set(
+                                                      _vm.modelo,
+                                                      "apellidos",
+                                                      $event.target.value
+                                                    )
+                                                  },
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _vm.errores.apellidos.error
+                                                ? _c(
+                                                    "div",
+                                                    {
+                                                      staticClass:
+                                                        "\n                                                                    fv-plugins-message-container\n                                                                    invalid-feedback\n                                                                ",
+                                                    },
+                                                    [
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          attrs: {
+                                                            "data-field":
+                                                              "text_input",
+                                                            "data-validator":
+                                                              "notEmpty",
+                                                          },
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            "\n                                                                    " +
+                                                              _vm._s(
+                                                                _vm.errores
+                                                                  .apellidos
+                                                                  .mensaje
+                                                              ) +
+                                                              "\n                                                                "
+                                                          ),
+                                                        ]
+                                                      ),
+                                                    ]
+                                                  )
+                                                : _vm._e(),
+                                            ]
+                                          ),
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("div", { staticClass: "row" }, [
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-6" },
+                                            [
+                                              _vm._m(6),
+                                              _vm._v(" "),
+                                              _c(
+                                                "select",
+                                                {
+                                                  staticClass:
+                                                    "\n                                                                    form-select\n                                                                    form-select-white\n                                                                ",
+                                                  attrs: {
+                                                    id: "departamento_id",
+                                                    "data-control": "select2",
+                                                    "data-placeholder":
+                                                      "Seleciona una opcion",
+                                                  },
+                                                },
+                                                [
+                                                  _c("option", {
+                                                    attrs: { value: "" },
+                                                  }),
+                                                  _vm._v(" "),
+                                                  _vm._l(
+                                                    _vm.departamentos,
+                                                    function (item) {
+                                                      return _c(
+                                                        "option",
+                                                        {
+                                                          key: item.id,
+                                                          domProps: {
+                                                            value: item.id,
+                                                          },
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            "\n                                                                    " +
+                                                              _vm._s(
+                                                                item.nombre
+                                                              ) +
+                                                              "\n                                                                "
+                                                          ),
+                                                        ]
+                                                      )
+                                                    }
+                                                  ),
+                                                ],
+                                                2
+                                              ),
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _vm._m(7),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-6" },
+                                            [
+                                              _vm._m(8),
+                                              _vm._v(" "),
+                                              _c("select", {
+                                                staticClass:
+                                                  "\n                                                                    form-select\n                                                                    form-select-white\n                                                                ",
+                                                class: _vm.errores.distrito_id
+                                                  .error
+                                                  ? "is-invalid"
+                                                  : "",
+                                                attrs: {
+                                                  name: "distrito_id",
+                                                  id: "distrito_id",
+                                                  "data-control": "select2",
+                                                  "data-placeholder":
+                                                    "Seleciona una opcion",
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _c(
+                                                "div",
+                                                {
+                                                  staticClass:
+                                                    "\n                                                                    invalid-feedback\n                                                                ",
+                                                },
+                                                [
+                                                  _vm._v(
+                                                    "\n                                                                " +
+                                                      _vm._s(
+                                                        _vm.errores.distrito_id
+                                                          .mensaje
+                                                      ) +
+                                                      "\n                                                            "
+                                                  ),
+                                                ]
+                                              ),
+                                            ]
+                                          ),
+                                        ]),
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("div", { staticClass: "col-md-6" }, [
+                                        _c("div", { staticClass: "row" }, [
+                                          _c(
+                                            "div",
+                                            {
+                                              staticClass:
+                                                "\n                                                                col-md-12\n                                                            ",
+                                            },
+                                            [
+                                              _vm._m(9),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                directives: [
+                                                  {
+                                                    name: "model",
+                                                    rawName: "v-model",
+                                                    value: _vm.modelo.direccion,
+                                                    expression:
+                                                      "\n                                                                    modelo.direccion\n                                                                ",
+                                                  },
+                                                ],
+                                                staticClass:
+                                                  "\n                                                                    form-control\n                                                                    form-control-sm\n                                                                    form-control-solid\n                                                                ",
+                                                attrs: {
+                                                  type: "text",
+                                                  name: "direccion",
+                                                },
+                                                domProps: {
+                                                  value: _vm.modelo.direccion,
+                                                },
+                                                on: {
+                                                  input: function ($event) {
+                                                    if (
+                                                      $event.target.composing
+                                                    ) {
+                                                      return
+                                                    }
+                                                    _vm.$set(
+                                                      _vm.modelo,
+                                                      "direccion",
+                                                      $event.target.value
+                                                    )
+                                                  },
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _vm.errores.direccion.error
+                                                ? _c(
+                                                    "div",
+                                                    {
+                                                      staticClass:
+                                                        "\n                                                                    fv-plugins-message-container\n                                                                    invalid-feedback\n                                                                ",
+                                                    },
+                                                    [
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          attrs: {
+                                                            "data-field":
+                                                              "text_input",
+                                                            "data-validator":
+                                                              "notEmpty",
+                                                          },
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            "\n                                                                    " +
+                                                              _vm._s(
+                                                                _vm.errores
+                                                                  .direccion
+                                                                  .mensaje
+                                                              ) +
+                                                              "\n                                                                "
+                                                          ),
+                                                        ]
+                                                      ),
+                                                    ]
+                                                  )
+                                                : _vm._e(),
+                                            ]
+                                          ),
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("div", { staticClass: "row" }, [
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-6" },
+                                            [
+                                              _vm._m(10),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                directives: [
+                                                  {
+                                                    name: "model",
+                                                    rawName: "v-model",
+                                                    value: _vm.modelo.telefono,
+                                                    expression:
+                                                      "\n                                                                    modelo.telefono\n                                                                ",
+                                                  },
+                                                ],
+                                                staticClass:
+                                                  "\n                                                                    form-control\n                                                                    form-control-sm\n                                                                    form-control-solid\n                                                                ",
+                                                attrs: {
+                                                  type: "number",
+                                                  name: "telefono",
+                                                },
+                                                domProps: {
+                                                  value: _vm.modelo.telefono,
+                                                },
+                                                on: {
+                                                  input: function ($event) {
+                                                    if (
+                                                      $event.target.composing
+                                                    ) {
+                                                      return
+                                                    }
+                                                    _vm.$set(
+                                                      _vm.modelo,
+                                                      "telefono",
+                                                      $event.target.value
+                                                    )
+                                                  },
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _vm.errores.telefono.error
+                                                ? _c(
+                                                    "div",
+                                                    {
+                                                      staticClass:
+                                                        "\n                                                                    fv-plugins-message-container\n                                                                    invalid-feedback\n                                                                ",
+                                                    },
+                                                    [
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          attrs: {
+                                                            "data-field":
+                                                              "text_input",
+                                                            "data-validator":
+                                                              "notEmpty",
+                                                          },
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            "\n                                                                    " +
+                                                              _vm._s(
+                                                                _vm.errores
+                                                                  .telefono
+                                                                  .mensaje
+                                                              ) +
+                                                              "\n                                                                "
+                                                          ),
+                                                        ]
+                                                      ),
+                                                    ]
+                                                  )
+                                                : _vm._e(),
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-6" },
+                                            [
+                                              _vm._m(11),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                directives: [
+                                                  {
+                                                    name: "model",
+                                                    rawName: "v-model",
+                                                    value:
+                                                      _vm.modelo
+                                                        .fecha_nacimiento,
+                                                    expression:
+                                                      "\n                                                                    modelo.fecha_nacimiento\n                                                                ",
+                                                  },
+                                                ],
+                                                staticClass:
+                                                  "\n                                                                    form-control\n                                                                    form-control-sm\n                                                                    form-control-solid\n                                                                ",
+                                                attrs: {
+                                                  type: "date",
+                                                  name: "fecha_nacimiento",
+                                                  id: "fecha_nacimiento",
+                                                },
+                                                domProps: {
+                                                  value:
+                                                    _vm.modelo.fecha_nacimiento,
+                                                },
+                                                on: {
+                                                  input: function ($event) {
+                                                    if (
+                                                      $event.target.composing
+                                                    ) {
+                                                      return
+                                                    }
+                                                    _vm.$set(
+                                                      _vm.modelo,
+                                                      "fecha_nacimiento",
+                                                      $event.target.value
+                                                    )
+                                                  },
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _vm.errores.fecha_nacimiento.error
+                                                ? _c(
+                                                    "div",
+                                                    {
+                                                      staticClass:
+                                                        "\n                                                                    fv-plugins-message-container\n                                                                    invalid-feedback\n                                                                ",
+                                                    },
+                                                    [
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          attrs: {
+                                                            "data-field":
+                                                              "text_input",
+                                                            "data-validator":
+                                                              "notEmpty",
+                                                          },
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            "\n                                                                    " +
+                                                              _vm._s(
+                                                                _vm.errores
+                                                                  .fecha_nacimiento
+                                                                  .mensaje
+                                                              ) +
+                                                              "\n                                                                "
+                                                          ),
+                                                        ]
+                                                      ),
+                                                    ]
+                                                  )
+                                                : _vm._e(),
+                                            ]
+                                          ),
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("div", { staticClass: "row" }, [
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-6" },
+                                            [
+                                              _vm._m(12),
+                                              _vm._v(" "),
+                                              _c(
+                                                "select",
+                                                {
+                                                  directives: [
+                                                    {
+                                                      name: "model",
+                                                      rawName: "v-model",
+                                                      value: _vm.modelo.genero,
+                                                      expression:
+                                                        "\n                                                                    modelo.genero\n                                                                ",
+                                                    },
+                                                  ],
+                                                  staticClass:
+                                                    "\n                                                                    form-select\n                                                                    form-select-white\n                                                                ",
+                                                  class: _vm.errores.genero
+                                                    .error
+                                                    ? "is-invalid"
+                                                    : "",
+                                                  attrs: {
+                                                    name: "genero",
+                                                    id: "genero",
+                                                    "data-control": "select2",
+                                                    "data-placeholder":
+                                                      "Seleciona una opcion",
+                                                  },
+                                                  on: {
+                                                    change: function ($event) {
+                                                      var $$selectedVal =
+                                                        Array.prototype.filter
+                                                          .call(
+                                                            $event.target
+                                                              .options,
+                                                            function (o) {
+                                                              return o.selected
+                                                            }
+                                                          )
+                                                          .map(function (o) {
+                                                            var val =
+                                                              "_value" in o
+                                                                ? o._value
+                                                                : o.value
+                                                            return val
+                                                          })
+                                                      _vm.$set(
+                                                        _vm.modelo,
+                                                        "genero",
+                                                        $event.target.multiple
+                                                          ? $$selectedVal
+                                                          : $$selectedVal[0]
+                                                      )
+                                                    },
+                                                  },
+                                                },
+                                                [
+                                                  _c("option", {
+                                                    attrs: { value: "" },
+                                                  }),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "option",
+                                                    { attrs: { value: "M" } },
+                                                    [
+                                                      _vm._v(
+                                                        "\n                                                                    MASCULINO\n                                                                "
+                                                      ),
+                                                    ]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "option",
+                                                    { attrs: { value: "F" } },
+                                                    [
+                                                      _vm._v(
+                                                        "\n                                                                    FEMENINO\n                                                                "
+                                                      ),
+                                                    ]
+                                                  ),
+                                                ]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "div",
+                                                {
+                                                  staticClass:
+                                                    "\n                                                                    invalid-feedback\n                                                                ",
+                                                },
+                                                [
+                                                  _vm._v(
+                                                    "\n                                                                " +
+                                                      _vm._s(
+                                                        _vm.errores.genero
+                                                          .mensaje
+                                                      ) +
+                                                      "\n                                                            "
+                                                  ),
+                                                ]
+                                              ),
+                                            ]
+                                          ),
+                                        ]),
+                                      ]),
+                                    ]),
+                                  ]
+                                ),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                attrs: { "data-kt-stepper-element": "content" },
+                              },
+                              [
+                                _c(
+                                  "div",
+                                  { staticClass: "container-fluid p-0" },
+                                  [
+                                    _c("div", { staticClass: "row" }, [
+                                      _c("div", { staticClass: "col-md-6" }, [
+                                        _c("div", { staticClass: "row" }, [
+                                          _c(
+                                            "div",
+                                            {
+                                              staticClass:
+                                                "\n                                                                col-md-12\n                                                            ",
+                                            },
+                                            [
+                                              _vm._m(13),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass:
+                                                  "\n                                                                    form-control\n                                                                    form-control-solid\n                                                                ",
+                                                attrs: {
+                                                  type: "email",
+                                                  autocomplete: "username",
+                                                  name: "email",
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _vm.errores.email.error
+                                                ? _c(
+                                                    "div",
+                                                    {
+                                                      staticClass:
+                                                        "\n                                                                    fv-plugins-message-container\n                                                                    invalid-feedback\n                                                                ",
+                                                    },
+                                                    [
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          attrs: {
+                                                            "data-field":
+                                                              "text_input",
+                                                            "data-validator":
+                                                              "notEmpty",
+                                                          },
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            "\n                                                                    " +
+                                                              _vm._s(
+                                                                _vm.errores
+                                                                  .email.mensaje
+                                                              ) +
+                                                              "\n                                                                "
+                                                          ),
+                                                        ]
+                                                      ),
+                                                    ]
+                                                  )
+                                                : _vm._e(),
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-6" },
+                                            [
+                                              _vm._m(14),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass:
+                                                  "\n                                                                    form-control\n                                                                    form-control-solid\n                                                                ",
+                                                attrs: {
+                                                  type: "password",
+                                                  autocomplete:
+                                                    "current-password",
+                                                  name: "password",
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _vm.errores.password.error
+                                                ? _c(
+                                                    "div",
+                                                    {
+                                                      staticClass:
+                                                        "\n                                                                    fv-plugins-message-container\n                                                                    invalid-feedback\n                                                                ",
+                                                    },
+                                                    [
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          attrs: {
+                                                            "data-field":
+                                                              "text_input",
+                                                            "data-validator":
+                                                              "notEmpty",
+                                                          },
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            "\n                                                                    " +
+                                                              _vm._s(
+                                                                _vm.errores
+                                                                  .password
+                                                                  .mensaje
+                                                              ) +
+                                                              "\n                                                                "
+                                                          ),
+                                                        ]
+                                                      ),
+                                                    ]
+                                                  )
+                                                : _vm._e(),
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-6" },
+                                            [
+                                              _vm._m(15),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass:
+                                                  "\n                                                                    form-control\n                                                                    form-control-solid\n                                                                ",
+                                                attrs: {
+                                                  type: "password",
+                                                  autocomplete:
+                                                    "current-password",
+                                                  name: "confirm_password",
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _vm.errores.confirm_password.error
+                                                ? _c(
+                                                    "div",
+                                                    {
+                                                      staticClass:
+                                                        "\n                                                                    fv-plugins-message-container\n                                                                    invalid-feedback\n                                                                ",
+                                                    },
+                                                    [
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          attrs: {
+                                                            "data-field":
+                                                              "text_input",
+                                                            "data-validator":
+                                                              "notEmpty",
+                                                          },
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            "\n                                                                    " +
+                                                              _vm._s(
+                                                                _vm.errores
+                                                                  .confirm_password
+                                                                  .mensaje
+                                                              ) +
+                                                              "\n                                                                "
+                                                          ),
+                                                        ]
+                                                      ),
+                                                    ]
+                                                  )
+                                                : _vm._e(),
+                                            ]
+                                          ),
+                                        ]),
+                                      ]),
+                                      _vm._v(" "),
+                                      _vm._m(16),
+                                    ]),
+                                  ]
+                                ),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              { staticClass: "d-flex flex-stack pt-15" },
+                              [
+                                _c("div", { staticClass: "mr-2" }),
+                                _vm._v(" "),
+                                _c("div", [
+                                  _c(
+                                    "button",
+                                    {
+                                      staticClass:
+                                        "\n                                                    btn\n                                                    btn-sm\n                                                    btn-light-primary\n                                                    me-3\n                                                ",
+                                      attrs: {
+                                        type: "button",
+                                        "data-kt-stepper-action": "previous",
+                                      },
+                                    },
+                                    [
+                                      _c(
+                                        "span",
+                                        {
+                                          staticClass:
+                                            "\n                                                        svg-icon svg-icon-4\n                                                        me-1\n                                                    ",
+                                        },
+                                        [
+                                          _c(
+                                            "svg",
+                                            {
+                                              attrs: {
+                                                xmlns:
+                                                  "http://www.w3.org/2000/svg",
+                                                width: "24",
+                                                height: "24",
+                                                viewBox: "0 0 24 24",
+                                                fill: "none",
+                                              },
+                                            },
+                                            [
+                                              _c("rect", {
+                                                attrs: {
+                                                  opacity: "0.5",
+                                                  x: "6",
+                                                  y: "11",
+                                                  width: "13",
+                                                  height: "2",
+                                                  rx: "1",
+                                                  fill: "black",
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _c("path", {
+                                                attrs: {
+                                                  d: "M8.56569 11.4343L12.75 7.25C13.1642 6.83579 13.1642 6.16421 12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75L5.70711 11.2929C5.31658 11.6834 5.31658 12.3166 5.70711 12.7071L11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25C13.1642 17.8358 13.1642 17.1642 12.75 16.75L8.56569 12.5657C8.25327 12.2533 8.25327 11.7467 8.56569 11.4343Z",
+                                                  fill: "black",
+                                                },
+                                              }),
+                                            ]
+                                          ),
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _vm._v(
+                                        "Atras\n                                            "
+                                      ),
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "button",
+                                    {
+                                      staticClass:
+                                        "\n                                                    btn btn-sm btn-primary\n                                                    me-3\n                                                ",
+                                      attrs: {
+                                        type: "submit",
+                                        "data-kt-stepper-action": "submit",
+                                      },
+                                    },
+                                    [
+                                      _c(
+                                        "span",
+                                        { staticClass: "indicator-label" },
+                                        [
+                                          _vm._v(
+                                            "Guardar\n                                                    "
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "span",
+                                            {
+                                              staticClass:
+                                                "\n                                                            svg-icon\n                                                            svg-icon-3\n                                                            ms-2\n                                                            me-0\n                                                        ",
+                                            },
+                                            [
+                                              _c(
+                                                "svg",
+                                                {
+                                                  attrs: {
+                                                    xmlns:
+                                                      "http://www.w3.org/2000/svg",
+                                                    width: "24",
+                                                    height: "24",
+                                                    viewBox: "0 0 24 24",
+                                                    fill: "none",
+                                                  },
+                                                },
+                                                [
+                                                  _c("rect", {
+                                                    attrs: {
+                                                      opacity: "0.5",
+                                                      x: "18",
+                                                      y: "13",
+                                                      width: "13",
+                                                      height: "2",
+                                                      rx: "1",
+                                                      transform:
+                                                        "rotate(-180 18 13)",
+                                                      fill: "black",
+                                                    },
+                                                  }),
+                                                  _vm._v(" "),
+                                                  _c("path", {
+                                                    attrs: {
+                                                      d: "M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z",
+                                                      fill: "black",
+                                                    },
+                                                  }),
+                                                ]
+                                              ),
+                                            ]
+                                          ),
+                                        ]
+                                      ),
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "button",
+                                    {
+                                      staticClass:
+                                        "\n                                                    btn btn-sm btn-primary\n                                                ",
+                                      attrs: {
+                                        type: "button",
+                                        "data-kt-stepper-action": "next",
+                                      },
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n                                                Continuar\n                                                "
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "span",
+                                        {
+                                          staticClass:
+                                            "\n                                                        svg-icon svg-icon-4\n                                                        ms-1\n                                                        me-0\n                                                    ",
+                                        },
+                                        [
+                                          _c(
+                                            "svg",
+                                            {
+                                              attrs: {
+                                                xmlns:
+                                                  "http://www.w3.org/2000/svg",
+                                                width: "24",
+                                                height: "24",
+                                                viewBox: "0 0 24 24",
+                                                fill: "none",
+                                              },
+                                            },
+                                            [
+                                              _c("rect", {
+                                                attrs: {
+                                                  opacity: "0.5",
+                                                  x: "18",
+                                                  y: "13",
+                                                  width: "13",
+                                                  height: "2",
+                                                  rx: "1",
+                                                  transform:
+                                                    "rotate(-180 18 13)",
+                                                  fill: "black",
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _c("path", {
+                                                attrs: {
+                                                  d: "M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z",
+                                                  fill: "black",
+                                                },
+                                              }),
+                                            ]
+                                          ),
+                                        ]
+                                      ),
+                                    ]
+                                  ),
+                                ]),
+                              ]
+                            ),
+                          ]
+                        ),
+                      ]
+                    ),
+                  ]),
+                ]),
+              ]),
+            ]),
+          ]
+        ),
+      ]
+    ),
+  ])
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "toolbar", attrs: { id: "kt_toolbar" } }, [
+      _c(
+        "div",
+        {
+          staticClass: "container-fluid d-flex flex-stack",
+          attrs: { id: "kt_toolbar_container" },
+        },
+        [
+          _c(
+            "div",
+            {
+              staticClass:
+                "\n                    page-title\n                    d-flex\n                    align-items-center\n                    flex-wrap\n                    me-3\n                    mb-5 mb-lg-0\n                ",
+              attrs: {
+                "data-kt-swapper": "true",
+                "data-kt-swapper-mode": "prepend",
+                "data-kt-swapper-parent":
+                  "{default: '#kt_content_container', 'lg': '#kt_toolbar_container'}",
+              },
+            },
+            [
+              _c(
+                "h1",
+                {
+                  staticClass:
+                    "\n                        d-flex\n                        align-items-center\n                        text-dark\n                        fw-bolder\n                        fs-3\n                        my-1\n                    ",
+                },
+                [_vm._v("\n                    Empleado\n                ")]
+              ),
+              _vm._v(" "),
+              _c("span", {
+                staticClass: "h-20px border-gray-200 border-start mx-4",
+              }),
+              _vm._v(" "),
+              _c(
+                "ul",
+                {
+                  staticClass:
+                    "\n                        breadcrumb breadcrumb-separatorless\n                        fw-bold\n                        fs-7\n                        my-1\n                    ",
+                },
+                [
+                  _c("li", { staticClass: "breadcrumb-item text-dark" }, [
+                    _vm._v(
+                      "\n                        Lista de Empleados\n                    "
+                    ),
+                  ]),
+                ]
+              ),
+            ]
+          ),
+        ]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "stepper-nav mb-5" }, [
+      _c(
+        "div",
+        {
+          staticClass: "stepper-item current",
+          attrs: { "data-kt-stepper-element": "nav" },
+        },
+        [
+          _c("h3", { staticClass: "stepper-title" }, [
+            _vm._v(
+              "\n                                            Datos Personales\n                                        "
+            ),
+          ]),
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "stepper-item",
+          attrs: { "data-kt-stepper-element": "nav" },
+        },
+        [
+          _c("h3", { staticClass: "stepper-title" }, [
+            _vm._v(
+              "\n                                            Datos Usuario\n                                        "
+            ),
+          ]),
+        ]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                                    d-flex\n                                                                    align-items-center\n                                                                    fs-6\n                                                                    fw-bold\n                                                                    mt-4\n                                                                    mb-2\n                                                                ",
+      },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "\n                                                                        required\n                                                                    ",
+          },
+          [
+            _vm._v(
+              "Tipo\n                                                                    Documento"
+            ),
+          ]
+        ),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                                        fas\n                                                                        fa-exclamation-circle\n                                                                        ms-2\n                                                                        fs-7\n                                                                    ",
+          attrs: {
+            "data-bs-toggle": "tooltip",
+            title: "Especifica el tipo de Documento",
+          },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                                    d-flex\n                                                                    align-items-center\n                                                                    fs-6\n                                                                    fw-bold\n                                                                    mt-4\n                                                                    mb-2\n                                                                ",
+      },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "\n                                                                        required\n                                                                    ",
+          },
+          [
+            _vm._v(
+              "Numero\n                                                                    Documento"
+            ),
+          ]
+        ),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                                        fas\n                                                                        fa-exclamation-circle\n                                                                        ms-2\n                                                                        fs-7\n                                                                    ",
+          attrs: {
+            "data-bs-toggle": "tooltip",
+            title: "Especifica el Numero de Documento",
+          },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                                    d-flex\n                                                                    align-items-center\n                                                                    fs-6\n                                                                    fw-bold\n                                                                    mt-4\n                                                                    mb-2\n                                                                ",
+      },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "\n                                                                        required\n                                                                    ",
+          },
+          [_vm._v("Nombres")]
+        ),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                                        fas\n                                                                        fa-exclamation-circle\n                                                                        ms-2\n                                                                        fs-7\n                                                                    ",
+          attrs: { "data-bs-toggle": "tooltip", title: "Especifica el Nombre" },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                                    d-flex\n                                                                    align-items-center\n                                                                    fs-6\n                                                                    fw-bold\n                                                                    mt-4\n                                                                    mb-2\n                                                                ",
+      },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "\n                                                                        required\n                                                                    ",
+          },
+          [_vm._v("Apellidos")]
+        ),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                                        fas\n                                                                        fa-exclamation-circle\n                                                                        ms-2\n                                                                        fs-7\n                                                                    ",
+          attrs: {
+            "data-bs-toggle": "tooltip",
+            title: "Especifica los apellidos",
+          },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                                    d-flex\n                                                                    align-items-center\n                                                                    fs-6\n                                                                    fw-bold\n                                                                    mt-4\n                                                                    mb-2\n                                                                ",
+      },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "\n                                                                        required\n                                                                    ",
+          },
+          [_vm._v("Departamento")]
+        ),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                                        fas\n                                                                        fa-exclamation-circle\n                                                                        ms-2\n                                                                        fs-7\n                                                                    ",
+          attrs: {
+            "data-bs-toggle": "tooltip",
+            title: "Especifica el departamento",
+          },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-6" }, [
+      _c(
+        "label",
+        {
+          staticClass:
+            "\n                                                                    d-flex\n                                                                    align-items-center\n                                                                    fs-6\n                                                                    fw-bold\n                                                                    mt-4\n                                                                    mb-2\n                                                                ",
+        },
+        [
+          _c(
+            "span",
+            {
+              staticClass:
+                "\n                                                                        required\n                                                                    ",
+            },
+            [_vm._v("Provincia")]
+          ),
+          _vm._v(" "),
+          _c("i", {
+            staticClass:
+              "\n                                                                        fas\n                                                                        fa-exclamation-circle\n                                                                        ms-2\n                                                                        fs-7\n                                                                    ",
+            attrs: {
+              "data-bs-toggle": "tooltip",
+              title: "Especifica La Provincia",
+            },
+          }),
+        ]
+      ),
+      _vm._v(" "),
+      _c("select", {
+        staticClass:
+          "\n                                                                    form-select\n                                                                    form-select-white\n                                                                ",
+        attrs: {
+          id: "provincia_id",
+          "data-control": "select2",
+          "data-placeholder": "Seleciona una opcion",
+        },
+      }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                                    d-flex\n                                                                    align-items-center\n                                                                    fs-6\n                                                                    fw-bold\n                                                                    mt-4\n                                                                    mb-2\n                                                                ",
+      },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "\n                                                                        required\n                                                                    ",
+          },
+          [_vm._v("Distrito")]
+        ),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                                        fas\n                                                                        fa-exclamation-circle\n                                                                        ms-2\n                                                                        fs-7\n                                                                    ",
+          attrs: {
+            "data-bs-toggle": "tooltip",
+            title: "Especifica el Nombre Comercial",
+          },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                                    d-flex\n                                                                    align-items-center\n                                                                    fs-6\n                                                                    fw-bold\n                                                                    mt-4\n                                                                    mb-2\n                                                                ",
+      },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "\n                                                                        required\n                                                                    ",
+          },
+          [_vm._v("Direccion")]
+        ),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                                        fas\n                                                                        fa-exclamation-circle\n                                                                        ms-2\n                                                                        fs-7\n                                                                    ",
+          attrs: {
+            "data-bs-toggle": "tooltip",
+            title: "Especifica la direccion",
+          },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                                    d-flex\n                                                                    align-items-center\n                                                                    fs-6\n                                                                    fw-bold\n                                                                    mt-4\n                                                                    mb-2\n                                                                ",
+      },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "\n                                                                        required\n                                                                    ",
+          },
+          [_vm._v("Telefono")]
+        ),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                                        fas\n                                                                        fa-exclamation-circle\n                                                                        ms-2\n                                                                        fs-7\n                                                                    ",
+          attrs: {
+            "data-bs-toggle": "tooltip",
+            title: "Especifica el Telefono",
+          },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                                    d-flex\n                                                                    align-items-center\n                                                                    fs-6\n                                                                    fw-bold\n                                                                    mt-4\n                                                                    mb-2\n                                                                ",
+      },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "\n                                                                        required\n                                                                    ",
+          },
+          [
+            _vm._v(
+              "Fecha\n                                                                    Nacimiento"
+            ),
+          ]
+        ),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                                        fas\n                                                                        fa-exclamation-circle\n                                                                        ms-2\n                                                                        fs-7\n                                                                    ",
+          attrs: {
+            "data-bs-toggle": "tooltip",
+            title: "Especifica la Fecha Nacimiento",
+          },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                                    d-flex\n                                                                    align-items-center\n                                                                    fs-6\n                                                                    fw-bold\n                                                                    mt-4\n                                                                    mb-2\n                                                                ",
+      },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "\n                                                                        required\n                                                                    ",
+          },
+          [_vm._v("Genero")]
+        ),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                                        fas\n                                                                        fa-exclamation-circle\n                                                                        ms-2\n                                                                        fs-7\n                                                                    ",
+          attrs: { "data-bs-toggle": "tooltip", title: "Especifica el Genero" },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                                    d-flex\n                                                                    align-items-center\n                                                                    fs-6\n                                                                    fw-bold\n                                                                    mt-4\n                                                                    mb-2\n                                                                ",
+      },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "\n                                                                        required\n                                                                    ",
+          },
+          [_vm._v("Email")]
+        ),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                                        fas\n                                                                        fa-exclamation-circle\n                                                                        ms-2\n                                                                        fs-7\n                                                                    ",
+          attrs: { "data-bs-toggle": "tooltip", title: "Especifica El email" },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                                    d-flex\n                                                                    align-items-center\n                                                                    fs-6\n                                                                    fw-bold\n                                                                    mt-4\n                                                                    mb-2\n                                                                ",
+      },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "\n                                                                        required\n                                                                    ",
+          },
+          [_vm._v("Password")]
+        ),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                                        fas\n                                                                        fa-exclamation-circle\n                                                                        ms-2\n                                                                        fs-7\n                                                                    ",
+          attrs: {
+            "data-bs-toggle": "tooltip",
+            title: "Especifica El password",
+          },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                                    d-flex\n                                                                    align-items-center\n                                                                    fs-6\n                                                                    fw-bold\n                                                                    mt-4\n                                                                    mb-2\n                                                                ",
+      },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "\n                                                                        required\n                                                                    ",
+          },
+          [
+            _vm._v(
+              "Confirm\n                                                                    Password"
+            ),
+          ]
+        ),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                                        fas\n                                                                        fa-exclamation-circle\n                                                                        ms-2\n                                                                        fs-7\n                                                                    ",
+          attrs: {
+            "data-bs-toggle": "tooltip",
+            title: "Ecribe el mismo password",
+          },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "\n                                                        col-md-6\n                                                        text-center\n                                                    ",
+      },
+      [
+        _c(
+          "div",
+          {
+            staticClass:
+              "\n                                                            image-input\n                                                            image-input-empty\n                                                        ",
+            attrs: { id: "img_avatar_profile", "data-kt-image-input": "true" },
+          },
+          [
+            _c("div", {
+              staticClass:
+                "\n                                                                image-input-wrapper\n                                                                w-300px\n                                                                h-300px\n                                                            ",
+            }),
+            _vm._v(" "),
+            _c(
+              "label",
+              {
+                staticClass:
+                  "\n                                                                btn\n                                                                btn-icon\n                                                                btn-circle\n                                                                btn-active-color-primary\n                                                                w-25px\n                                                                h-25px\n                                                                bg-white\n                                                                shadow\n                                                            ",
+                attrs: {
+                  "data-kt-image-input-action": "change",
+                  "data-bs-toggle": "tooltip",
+                  "data-bs-dismiss": "click",
+                  title: "Change avatar",
+                },
+              },
+              [
+                _c("i", {
+                  staticClass:
+                    "\n                                                                    bi\n                                                                    bi-pencil-fill\n                                                                    fs-7\n                                                                ",
+                }),
+                _vm._v(" "),
+                _c("input", {
+                  attrs: {
+                    type: "file",
+                    name: "avatar",
+                    accept: ".png, .jpg, .jpeg",
+                  },
+                }),
+                _vm._v(" "),
+                _c("input", {
+                  attrs: { type: "hidden", name: "avatar_remove" },
+                }),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "span",
+              {
+                staticClass:
+                  "\n                                                                btn\n                                                                btn-icon\n                                                                btn-circle\n                                                                btn-active-color-primary\n                                                                w-25px\n                                                                h-25px\n                                                                bg-white\n                                                                shadow\n                                                            ",
+                attrs: {
+                  "data-kt-image-input-action": "cancel",
+                  "data-bs-toggle": "tooltip",
+                  "data-bs-dismiss": "click",
+                  title: "Cancel avatar",
+                },
+              },
+              [
+                _c("i", {
+                  staticClass:
+                    "\n                                                                    bi bi-x\n                                                                    fs-2\n                                                                ",
+                }),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "span",
+              {
+                staticClass:
+                  "\n                                                                btn\n                                                                btn-icon\n                                                                btn-circle\n                                                                btn-active-color-primary\n                                                                w-25px\n                                                                h-25px\n                                                                bg-white\n                                                                shadow\n                                                            ",
+                attrs: {
+                  "data-kt-image-input-action": "remove",
+                  "data-bs-toggle": "tooltip",
+                  "data-bs-dismiss": "click",
+                  title: "Remove avatar",
+                },
+              },
+              [
+                _c("i", {
+                  staticClass:
+                    "\n                                                                    bi bi-x\n                                                                    fs-2\n                                                                ",
+                }),
+              ]
+            ),
+          ]
+        ),
+      ]
+    )
+  },
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Alumno/AlumnoEditComponent.vue?vue&type=template&id=91386bae&":
+/*!*****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Alumno/AlumnoEditComponent.vue?vue&type=template&id=91386bae& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "post d-flex flex-column-fluid",
+        attrs: { id: "kt_post" },
+      },
+      [
+        _c(
+          "div",
+          {
+            staticClass: "container-xxl",
+            attrs: { id: "kt_content_container" },
+          },
+          [
+            _c("div", { staticClass: "card" }, [
+              _c("div", { staticClass: "container" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-md-12 p-1" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "\n                                    stepper stepper-links\n                                    d-flex\n                                    flex-column\n                                    pt-15\n                                ",
+                        attrs: { id: "kt_create_account_stepper" },
+                      },
+                      [
+                        _vm._m(1),
+                        _vm._v(" "),
+                        _c(
+                          "form",
+                          {
+                            attrs: {
+                              action: _vm.ruta,
+                              method: "POST",
+                              enctype: "multipart/form-data",
+                            },
+                          },
+                          [
+                            _c(
+                              "div",
+                              {
+                                staticClass: "current",
+                                attrs: { "data-kt-stepper-element": "content" },
+                              },
+                              [
+                                _c(
+                                  "div",
+                                  { staticClass: "container-fluid p-0" },
+                                  [
+                                    _c("div", { staticClass: "row" }, [
+                                      _c("div", { staticClass: "col-md-6" }, [
+                                        _c("div", { staticClass: "row" }, [
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-6" },
+                                            [
+                                              _c("input", {
+                                                attrs: {
+                                                  type: "hidden",
+                                                  name: "_token",
+                                                },
+                                                domProps: { value: _vm.csrf },
+                                              }),
+                                              _vm._v(" "),
+                                              _vm._m(2),
+                                              _vm._v(" "),
+                                              _c(
+                                                "select",
+                                                {
+                                                  directives: [
+                                                    {
+                                                      name: "model",
+                                                      rawName: "v-model",
+                                                      value:
+                                                        _vm.modelo
+                                                          .tipo_documento,
+                                                      expression:
+                                                        "\n                                                                    modelo.tipo_documento\n                                                                ",
+                                                    },
+                                                  ],
+                                                  staticClass:
+                                                    "\n                                                                    form-select\n                                                                    form-select-white\n                                                                ",
+                                                  class: _vm.errores
+                                                    .tipo_documento.error
+                                                    ? "is-invalid"
+                                                    : "",
+                                                  attrs: {
+                                                    name: "tipo_documento",
+                                                    id: "tipo_documento",
+                                                    "data-control": "select2",
+                                                    "data-placeholder":
+                                                      "Select an option",
+                                                  },
+                                                  on: {
+                                                    change: function ($event) {
+                                                      var $$selectedVal =
+                                                        Array.prototype.filter
+                                                          .call(
+                                                            $event.target
+                                                              .options,
+                                                            function (o) {
+                                                              return o.selected
+                                                            }
+                                                          )
+                                                          .map(function (o) {
+                                                            var val =
+                                                              "_value" in o
+                                                                ? o._value
+                                                                : o.value
+                                                            return val
+                                                          })
+                                                      _vm.$set(
+                                                        _vm.modelo,
+                                                        "tipo_documento",
+                                                        $event.target.multiple
+                                                          ? $$selectedVal
+                                                          : $$selectedVal[0]
+                                                      )
+                                                    },
+                                                  },
+                                                },
+                                                [
+                                                  _c("option"),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "option",
+                                                    { attrs: { value: "DNI" } },
+                                                    [
+                                                      _vm._v(
+                                                        "\n                                                                    DNI\n                                                                "
+                                                      ),
+                                                    ]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "option",
+                                                    { attrs: { value: "RUC" } },
+                                                    [
+                                                      _vm._v(
+                                                        "\n                                                                    RUC\n                                                                "
+                                                      ),
+                                                    ]
+                                                  ),
+                                                ]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "div",
+                                                {
+                                                  staticClass:
+                                                    "\n                                                                    invalid-feedback\n                                                                ",
+                                                },
+                                                [
+                                                  _vm._v(
+                                                    "\n                                                                " +
+                                                      _vm._s(
+                                                        _vm.errores
+                                                          .tipo_documento
+                                                          .mensaje
+                                                      ) +
+                                                      "\n                                                            "
+                                                  ),
+                                                ]
+                                              ),
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-6" },
+                                            [
+                                              _vm._m(3),
+                                              _vm._v(" "),
+                                              _vm.modelo.tipo_documento == "DNI"
+                                                ? _c("input", {
+                                                    directives: [
+                                                      {
+                                                        name: "model",
+                                                        rawName: "v-model",
+                                                        value: _vm.modelo.dni,
+                                                        expression:
+                                                          "\n                                                                    modelo.dni\n                                                                ",
+                                                      },
+                                                    ],
+                                                    staticClass:
+                                                      "\n                                                                    form-control\n                                                                    form-control-sm\n                                                                    form-control-solid\n                                                                ",
+                                                    attrs: {
+                                                      type: "text",
+                                                      name: "dni",
+                                                    },
+                                                    domProps: {
+                                                      value: _vm.modelo.dni,
+                                                    },
+                                                    on: {
+                                                      input: function ($event) {
+                                                        if (
+                                                          $event.target
+                                                            .composing
+                                                        ) {
+                                                          return
+                                                        }
+                                                        _vm.$set(
+                                                          _vm.modelo,
+                                                          "dni",
+                                                          $event.target.value
+                                                        )
+                                                      },
+                                                    },
+                                                  })
+                                                : _vm.modelo.tipo_documento ==
+                                                  "RUC"
+                                                ? _c("input", {
+                                                    directives: [
+                                                      {
+                                                        name: "model",
+                                                        rawName: "v-model",
+                                                        value: _vm.modelo.ruc,
+                                                        expression:
+                                                          "\n                                                                    modelo.ruc\n                                                                ",
+                                                      },
+                                                    ],
+                                                    staticClass:
+                                                      "\n                                                                    form-control\n                                                                    form-control-sm\n                                                                    form-control-solid\n                                                                ",
+                                                    attrs: {
+                                                      type: "text",
+                                                      name: "ruc",
+                                                    },
+                                                    domProps: {
+                                                      value: _vm.modelo.ruc,
+                                                    },
+                                                    on: {
+                                                      input: function ($event) {
+                                                        if (
+                                                          $event.target
+                                                            .composing
+                                                        ) {
+                                                          return
+                                                        }
+                                                        _vm.$set(
+                                                          _vm.modelo,
+                                                          "ruc",
+                                                          $event.target.value
+                                                        )
+                                                      },
+                                                    },
+                                                  })
+                                                : _vm._e(),
+                                              _vm._v(" "),
+                                              _vm.errores.dni.error ||
+                                              _vm.errores.ruc.error
+                                                ? _c(
+                                                    "div",
+                                                    {
+                                                      staticClass:
+                                                        "\n                                                                    fv-plugins-message-container\n                                                                    invalid-feedback\n                                                                ",
+                                                    },
+                                                    [
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          attrs: {
+                                                            "data-field":
+                                                              "text_input",
+                                                            "data-validator":
+                                                              "notEmpty",
+                                                          },
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            "\n                                                                    " +
+                                                              _vm._s(
+                                                                _vm.errores
+                                                                  .tipo_documento
+                                                                  .error ==
+                                                                  false
+                                                                  ? _vm.errores
+                                                                      .dni
+                                                                      .mensaje ==
+                                                                    ""
+                                                                    ? _vm
+                                                                        .errores
+                                                                        .ruc
+                                                                        .mensaje
+                                                                    : _vm
+                                                                        .errores
+                                                                        .dni
+                                                                        .mensaje
+                                                                  : ""
+                                                              ) +
+                                                              "\n                                                                "
+                                                          ),
+                                                        ]
+                                                      ),
+                                                    ]
+                                                  )
+                                                : _vm._e(),
+                                            ]
+                                          ),
+                                        ]),
+                                        _vm._v(" "),
+                                        _vm.modelo.tipo_documento == "RUC"
+                                          ? _c("div", { staticClass: "row" }, [
+                                              _c(
+                                                "div",
+                                                {
+                                                  staticClass:
+                                                    "\n                                                                col-md-12\n                                                            ",
+                                                },
+                                                [
+                                                  _vm._m(4),
+                                                  _vm._v(" "),
+                                                  _c("input", {
+                                                    directives: [
+                                                      {
+                                                        name: "model",
+                                                        rawName: "v-model",
+                                                        value:
+                                                          _vm.modelo
+                                                            .nombre_comercial,
+                                                        expression:
+                                                          "modelo.nombre_comercial",
+                                                      },
+                                                    ],
+                                                    staticClass:
+                                                      "\n                                                                    form-control\n                                                                    form-control-sm\n                                                                    form-control-solid\n                                                                ",
+                                                    attrs: {
+                                                      type: "text",
+                                                      name: "nombre_comercial",
+                                                    },
+                                                    domProps: {
+                                                      value:
+                                                        _vm.modelo
+                                                          .nombre_comercial,
+                                                    },
+                                                    on: {
+                                                      input: function ($event) {
+                                                        if (
+                                                          $event.target
+                                                            .composing
+                                                        ) {
+                                                          return
+                                                        }
+                                                        _vm.$set(
+                                                          _vm.modelo,
+                                                          "nombre_comercial",
+                                                          $event.target.value
+                                                        )
+                                                      },
+                                                    },
+                                                  }),
+                                                  _vm._v(" "),
+                                                  _vm.errores.nombre_comercial
+                                                    .error
+                                                    ? _c(
+                                                        "div",
+                                                        {
+                                                          staticClass:
+                                                            "\n                                                                    fv-plugins-message-container\n                                                                    invalid-feedback\n                                                                ",
+                                                        },
+                                                        [
+                                                          _c(
+                                                            "div",
+                                                            {
+                                                              attrs: {
+                                                                "data-field":
+                                                                  "text_input",
+                                                                "data-validator":
+                                                                  "notEmpty",
+                                                              },
+                                                            },
+                                                            [
+                                                              _vm._v(
+                                                                "\n                                                                    " +
+                                                                  _vm._s(
+                                                                    _vm.errores
+                                                                      .nombre_comercial
+                                                                      .mensaje
+                                                                  ) +
+                                                                  "\n                                                                "
+                                                              ),
+                                                            ]
+                                                          ),
+                                                        ]
+                                                      )
+                                                    : _vm._e(),
+                                                ]
+                                              ),
+                                            ])
+                                          : _vm.modelo.tipo_documento == "DNI"
+                                          ? _c("div", { staticClass: "row" }, [
+                                              _c(
+                                                "div",
+                                                { staticClass: "col-md-6" },
+                                                [
+                                                  _vm._m(5),
+                                                  _vm._v(" "),
+                                                  _c("input", {
+                                                    directives: [
+                                                      {
+                                                        name: "model",
+                                                        rawName: "v-model",
+                                                        value:
+                                                          _vm.modelo.nombres,
+                                                        expression:
+                                                          "\n                                                                    modelo.nombres\n                                                                ",
+                                                      },
+                                                    ],
+                                                    staticClass:
+                                                      "\n                                                                    form-control\n                                                                    form-control-sm\n                                                                    form-control-solid\n                                                                ",
+                                                    attrs: {
+                                                      type: "text",
+                                                      name: "nombres",
+                                                    },
+                                                    domProps: {
+                                                      value: _vm.modelo.nombres,
+                                                    },
+                                                    on: {
+                                                      input: function ($event) {
+                                                        if (
+                                                          $event.target
+                                                            .composing
+                                                        ) {
+                                                          return
+                                                        }
+                                                        _vm.$set(
+                                                          _vm.modelo,
+                                                          "nombres",
+                                                          $event.target.value
+                                                        )
+                                                      },
+                                                    },
+                                                  }),
+                                                  _vm._v(" "),
+                                                  _vm.errores.nombres.error
+                                                    ? _c(
+                                                        "div",
+                                                        {
+                                                          staticClass:
+                                                            "\n                                                                    fv-plugins-message-container\n                                                                    invalid-feedback\n                                                                ",
+                                                        },
+                                                        [
+                                                          _c(
+                                                            "div",
+                                                            {
+                                                              attrs: {
+                                                                "data-field":
+                                                                  "text_input",
+                                                                "data-validator":
+                                                                  "notEmpty",
+                                                              },
+                                                            },
+                                                            [
+                                                              _vm._v(
+                                                                "\n                                                                    " +
+                                                                  _vm._s(
+                                                                    _vm.errores
+                                                                      .nombres
+                                                                      .mensaje
+                                                                  ) +
+                                                                  "\n                                                                "
+                                                              ),
+                                                            ]
+                                                          ),
+                                                        ]
+                                                      )
+                                                    : _vm._e(),
+                                                ]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "div",
+                                                { staticClass: "col-md-6" },
+                                                [
+                                                  _vm._m(6),
+                                                  _vm._v(" "),
+                                                  _c("input", {
+                                                    directives: [
+                                                      {
+                                                        name: "model",
+                                                        rawName: "v-model",
+                                                        value:
+                                                          _vm.modelo.apellidos,
+                                                        expression:
+                                                          "\n                                                                    modelo.apellidos\n                                                                ",
+                                                      },
+                                                    ],
+                                                    staticClass:
+                                                      "\n                                                                    form-control\n                                                                    form-control-sm\n                                                                    form-control-solid\n                                                                ",
+                                                    attrs: {
+                                                      type: "text",
+                                                      name: "apellidos",
+                                                    },
+                                                    domProps: {
+                                                      value:
+                                                        _vm.modelo.apellidos,
+                                                    },
+                                                    on: {
+                                                      input: function ($event) {
+                                                        if (
+                                                          $event.target
+                                                            .composing
+                                                        ) {
+                                                          return
+                                                        }
+                                                        _vm.$set(
+                                                          _vm.modelo,
+                                                          "apellidos",
+                                                          $event.target.value
+                                                        )
+                                                      },
+                                                    },
+                                                  }),
+                                                  _vm._v(" "),
+                                                  _vm.errores.apellidos.error
+                                                    ? _c(
+                                                        "div",
+                                                        {
+                                                          staticClass:
+                                                            "\n                                                                    fv-plugins-message-container\n                                                                    invalid-feedback\n                                                                ",
+                                                        },
+                                                        [
+                                                          _c(
+                                                            "div",
+                                                            {
+                                                              attrs: {
+                                                                "data-field":
+                                                                  "text_input",
+                                                                "data-validator":
+                                                                  "notEmpty",
+                                                              },
+                                                            },
+                                                            [
+                                                              _vm._v(
+                                                                "\n                                                                    " +
+                                                                  _vm._s(
+                                                                    _vm.errores
+                                                                      .apellidos
+                                                                      .mensaje
+                                                                  ) +
+                                                                  "\n                                                                "
+                                                              ),
+                                                            ]
+                                                          ),
+                                                        ]
+                                                      )
+                                                    : _vm._e(),
+                                                ]
+                                              ),
+                                            ])
+                                          : _vm._e(),
+                                        _vm._v(" "),
+                                        _c("div", { staticClass: "row" }, [
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-6" },
+                                            [
+                                              _vm._m(7),
+                                              _vm._v(" "),
+                                              _c(
+                                                "select",
+                                                {
+                                                  staticClass:
+                                                    "\n                                                                    form-select\n                                                                    form-select-white\n                                                                ",
+                                                  attrs: {
+                                                    id: "departamento_id",
+                                                    "data-control": "select2",
+                                                    "data-placeholder":
+                                                      "Seleciona una opcion",
+                                                  },
+                                                },
+                                                [
+                                                  _c("option", {
+                                                    attrs: { value: "" },
+                                                  }),
+                                                  _vm._v(" "),
+                                                  _vm._l(
+                                                    _vm.departamentos,
+                                                    function (item) {
+                                                      return _c(
+                                                        "option",
+                                                        {
+                                                          key: item.id,
+                                                          domProps: {
+                                                            value: item.id,
+                                                          },
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            "\n                                                                    " +
+                                                              _vm._s(
+                                                                item.nombre
+                                                              ) +
+                                                              "\n                                                                "
+                                                          ),
+                                                        ]
+                                                      )
+                                                    }
+                                                  ),
+                                                ],
+                                                2
+                                              ),
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _vm._m(8),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-6" },
+                                            [
+                                              _vm._m(9),
+                                              _vm._v(" "),
+                                              _c("select", {
+                                                staticClass:
+                                                  "\n                                                                    form-select\n                                                                    form-select-white\n                                                                ",
+                                                class: _vm.errores.distrito_id
+                                                  .error
+                                                  ? "is-invalid"
+                                                  : "",
+                                                attrs: {
+                                                  name: "distrito_id",
+                                                  id: "distrito_id",
+                                                  "data-control": "select2",
+                                                  "data-placeholder":
+                                                    "Seleciona una opcion",
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _c(
+                                                "div",
+                                                {
+                                                  staticClass:
+                                                    "\n                                                                    invalid-feedback\n                                                                ",
+                                                },
+                                                [
+                                                  _vm._v(
+                                                    "\n                                                                " +
+                                                      _vm._s(
+                                                        _vm.errores.distrito_id
+                                                          .mensaje
+                                                      ) +
+                                                      "\n                                                            "
+                                                  ),
+                                                ]
+                                              ),
+                                            ]
+                                          ),
+                                        ]),
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("div", { staticClass: "col-md-6" }, [
+                                        _c("div", { staticClass: "row" }, [
+                                          _c(
+                                            "div",
+                                            {
+                                              staticClass:
+                                                "\n                                                                col-md-12\n                                                            ",
+                                            },
+                                            [
+                                              _vm._m(10),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                directives: [
+                                                  {
+                                                    name: "model",
+                                                    rawName: "v-model",
+                                                    value: _vm.modelo.direccion,
+                                                    expression:
+                                                      "\n                                                                    modelo.direccion\n                                                                ",
+                                                  },
+                                                ],
+                                                staticClass:
+                                                  "\n                                                                    form-control\n                                                                    form-control-sm\n                                                                    form-control-solid\n                                                                ",
+                                                attrs: {
+                                                  type: "text",
+                                                  name: "direccion",
+                                                },
+                                                domProps: {
+                                                  value: _vm.modelo.direccion,
+                                                },
+                                                on: {
+                                                  input: function ($event) {
+                                                    if (
+                                                      $event.target.composing
+                                                    ) {
+                                                      return
+                                                    }
+                                                    _vm.$set(
+                                                      _vm.modelo,
+                                                      "direccion",
+                                                      $event.target.value
+                                                    )
+                                                  },
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _vm.errores.direccion.error
+                                                ? _c(
+                                                    "div",
+                                                    {
+                                                      staticClass:
+                                                        "\n                                                                    fv-plugins-message-container\n                                                                    invalid-feedback\n                                                                ",
+                                                    },
+                                                    [
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          attrs: {
+                                                            "data-field":
+                                                              "text_input",
+                                                            "data-validator":
+                                                              "notEmpty",
+                                                          },
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            "\n                                                                    " +
+                                                              _vm._s(
+                                                                _vm.errores
+                                                                  .direccion
+                                                                  .mensaje
+                                                              ) +
+                                                              "\n                                                                "
+                                                          ),
+                                                        ]
+                                                      ),
+                                                    ]
+                                                  )
+                                                : _vm._e(),
+                                            ]
+                                          ),
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("div", { staticClass: "row" }, [
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-6" },
+                                            [
+                                              _vm._m(11),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                directives: [
+                                                  {
+                                                    name: "model",
+                                                    rawName: "v-model",
+                                                    value: _vm.modelo.telefono,
+                                                    expression:
+                                                      "\n                                                                    modelo.telefono\n                                                                ",
+                                                  },
+                                                ],
+                                                staticClass:
+                                                  "\n                                                                    form-control\n                                                                    form-control-sm\n                                                                    form-control-solid\n                                                                ",
+                                                attrs: {
+                                                  type: "number",
+                                                  name: "telefono",
+                                                },
+                                                domProps: {
+                                                  value: _vm.modelo.telefono,
+                                                },
+                                                on: {
+                                                  input: function ($event) {
+                                                    if (
+                                                      $event.target.composing
+                                                    ) {
+                                                      return
+                                                    }
+                                                    _vm.$set(
+                                                      _vm.modelo,
+                                                      "telefono",
+                                                      $event.target.value
+                                                    )
+                                                  },
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _vm.errores.telefono.error
+                                                ? _c(
+                                                    "div",
+                                                    {
+                                                      staticClass:
+                                                        "\n                                                                    fv-plugins-message-container\n                                                                    invalid-feedback\n                                                                ",
+                                                    },
+                                                    [
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          attrs: {
+                                                            "data-field":
+                                                              "text_input",
+                                                            "data-validator":
+                                                              "notEmpty",
+                                                          },
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            "\n                                                                    " +
+                                                              _vm._s(
+                                                                _vm.errores
+                                                                  .telefono
+                                                                  .mensaje
+                                                              ) +
+                                                              "\n                                                                "
+                                                          ),
+                                                        ]
+                                                      ),
+                                                    ]
+                                                  )
+                                                : _vm._e(),
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-6" },
+                                            [
+                                              _vm._m(12),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                directives: [
+                                                  {
+                                                    name: "model",
+                                                    rawName: "v-model",
+                                                    value:
+                                                      _vm.modelo
+                                                        .fecha_nacimiento,
+                                                    expression:
+                                                      "\n                                                                    modelo.fecha_nacimiento\n                                                                ",
+                                                  },
+                                                ],
+                                                staticClass:
+                                                  "\n                                                                    form-control\n                                                                    form-control-sm\n                                                                    form-control-solid\n                                                                ",
+                                                attrs: {
+                                                  type: "date",
+                                                  name: "fecha_nacimiento",
+                                                  id: "fecha_nacimiento",
+                                                },
+                                                domProps: {
+                                                  value:
+                                                    _vm.modelo.fecha_nacimiento,
+                                                },
+                                                on: {
+                                                  input: function ($event) {
+                                                    if (
+                                                      $event.target.composing
+                                                    ) {
+                                                      return
+                                                    }
+                                                    _vm.$set(
+                                                      _vm.modelo,
+                                                      "fecha_nacimiento",
+                                                      $event.target.value
+                                                    )
+                                                  },
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _vm.errores.fecha_nacimiento.error
+                                                ? _c(
+                                                    "div",
+                                                    {
+                                                      staticClass:
+                                                        "\n                                                                    fv-plugins-message-container\n                                                                    invalid-feedback\n                                                                ",
+                                                    },
+                                                    [
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          attrs: {
+                                                            "data-field":
+                                                              "text_input",
+                                                            "data-validator":
+                                                              "notEmpty",
+                                                          },
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            "\n                                                                    " +
+                                                              _vm._s(
+                                                                _vm.errores
+                                                                  .fecha_nacimiento
+                                                                  .mensaje
+                                                              ) +
+                                                              "\n                                                                "
+                                                          ),
+                                                        ]
+                                                      ),
+                                                    ]
+                                                  )
+                                                : _vm._e(),
+                                            ]
+                                          ),
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("div", { staticClass: "row" }, [
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-6" },
+                                            [
+                                              _vm._m(13),
+                                              _vm._v(" "),
+                                              _c(
+                                                "select",
+                                                {
+                                                  directives: [
+                                                    {
+                                                      name: "model",
+                                                      rawName: "v-model",
+                                                      value: _vm.modelo.genero,
+                                                      expression:
+                                                        "\n                                                                    modelo.genero\n                                                                ",
+                                                    },
+                                                  ],
+                                                  staticClass:
+                                                    "\n                                                                    form-select\n                                                                    form-select-white\n                                                                ",
+                                                  class: _vm.errores.genero
+                                                    .error
+                                                    ? "is-invalid"
+                                                    : "",
+                                                  attrs: {
+                                                    name: "genero",
+                                                    id: "genero",
+                                                    "data-control": "select2",
+                                                    "data-placeholder":
+                                                      "Seleciona una opcion",
+                                                  },
+                                                  on: {
+                                                    change: function ($event) {
+                                                      var $$selectedVal =
+                                                        Array.prototype.filter
+                                                          .call(
+                                                            $event.target
+                                                              .options,
+                                                            function (o) {
+                                                              return o.selected
+                                                            }
+                                                          )
+                                                          .map(function (o) {
+                                                            var val =
+                                                              "_value" in o
+                                                                ? o._value
+                                                                : o.value
+                                                            return val
+                                                          })
+                                                      _vm.$set(
+                                                        _vm.modelo,
+                                                        "genero",
+                                                        $event.target.multiple
+                                                          ? $$selectedVal
+                                                          : $$selectedVal[0]
+                                                      )
+                                                    },
+                                                  },
+                                                },
+                                                [
+                                                  _c("option", {
+                                                    attrs: { value: "" },
+                                                  }),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "option",
+                                                    { attrs: { value: "M" } },
+                                                    [
+                                                      _vm._v(
+                                                        "\n                                                                    MASCULINO\n                                                                "
+                                                      ),
+                                                    ]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "option",
+                                                    { attrs: { value: "F" } },
+                                                    [
+                                                      _vm._v(
+                                                        "\n                                                                    FEMENINO\n                                                                "
+                                                      ),
+                                                    ]
+                                                  ),
+                                                ]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "div",
+                                                {
+                                                  staticClass:
+                                                    "\n                                                                    invalid-feedback\n                                                                ",
+                                                },
+                                                [
+                                                  _vm._v(
+                                                    "\n                                                                " +
+                                                      _vm._s(
+                                                        _vm.errores.genero
+                                                          .mensaje
+                                                      ) +
+                                                      "\n                                                            "
+                                                  ),
+                                                ]
+                                              ),
+                                            ]
+                                          ),
+                                        ]),
+                                      ]),
+                                    ]),
+                                  ]
+                                ),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                attrs: { "data-kt-stepper-element": "content" },
+                              },
+                              [
+                                _c(
+                                  "div",
+                                  { staticClass: "container-fluid p-0" },
+                                  [
+                                    _c("div", { staticClass: "row" }, [
+                                      _c("div", { staticClass: "col-md-6" }, [
+                                        _c("div", { staticClass: "row" }, [
+                                          _c(
+                                            "div",
+                                            {
+                                              staticClass:
+                                                "\n                                                                col-md-12\n                                                            ",
+                                            },
+                                            [
+                                              _vm._m(14),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                directives: [
+                                                  {
+                                                    name: "model",
+                                                    rawName: "v-model",
+                                                    value: _vm.modelo.email,
+                                                    expression:
+                                                      "\n                                                                    modelo.email\n                                                                ",
+                                                  },
+                                                ],
+                                                staticClass:
+                                                  "\n                                                                    form-control\n                                                                    form-control-solid\n                                                                ",
+                                                attrs: {
+                                                  type: "email",
+                                                  autocomplete: "username",
+                                                  name: "email",
+                                                },
+                                                domProps: {
+                                                  value: _vm.modelo.email,
+                                                },
+                                                on: {
+                                                  input: function ($event) {
+                                                    if (
+                                                      $event.target.composing
+                                                    ) {
+                                                      return
+                                                    }
+                                                    _vm.$set(
+                                                      _vm.modelo,
+                                                      "email",
+                                                      $event.target.value
+                                                    )
+                                                  },
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _vm.errores.email.error
+                                                ? _c(
+                                                    "div",
+                                                    {
+                                                      staticClass:
+                                                        "\n                                                                    fv-plugins-message-container\n                                                                    invalid-feedback\n                                                                ",
+                                                    },
+                                                    [
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          attrs: {
+                                                            "data-field":
+                                                              "text_input",
+                                                            "data-validator":
+                                                              "notEmpty",
+                                                          },
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            "\n                                                                    " +
+                                                              _vm._s(
+                                                                _vm.errores
+                                                                  .email.mensaje
+                                                              ) +
+                                                              "\n                                                                "
+                                                          ),
+                                                        ]
+                                                      ),
+                                                    ]
+                                                  )
+                                                : _vm._e(),
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-6" },
+                                            [
+                                              _vm._m(15),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass:
+                                                  "\n                                                                    form-control\n                                                                    form-control-solid\n                                                                ",
+                                                attrs: {
+                                                  type: "password",
+                                                  autocomplete:
+                                                    "current-password",
+                                                  name: "password",
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _vm.errores.password.error
+                                                ? _c(
+                                                    "div",
+                                                    {
+                                                      staticClass:
+                                                        "\n                                                                    fv-plugins-message-container\n                                                                    invalid-feedback\n                                                                ",
+                                                    },
+                                                    [
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          attrs: {
+                                                            "data-field":
+                                                              "text_input",
+                                                            "data-validator":
+                                                              "notEmpty",
+                                                          },
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            "\n                                                                    " +
+                                                              _vm._s(
+                                                                _vm.errores
+                                                                  .password
+                                                                  .mensaje
+                                                              ) +
+                                                              "\n                                                                "
+                                                          ),
+                                                        ]
+                                                      ),
+                                                    ]
+                                                  )
+                                                : _vm._e(),
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "col-md-6" },
+                                            [
+                                              _vm._m(16),
+                                              _vm._v(" "),
+                                              _c("input", {
+                                                staticClass:
+                                                  "\n                                                                    form-control\n                                                                    form-control-solid\n                                                                ",
+                                                attrs: {
+                                                  type: "password",
+                                                  autocomplete:
+                                                    "current-password",
+                                                  name: "confirm_password",
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _vm.errores.confirm_password.error
+                                                ? _c(
+                                                    "div",
+                                                    {
+                                                      staticClass:
+                                                        "\n                                                                    fv-plugins-message-container\n                                                                    invalid-feedback\n                                                                ",
+                                                    },
+                                                    [
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          attrs: {
+                                                            "data-field":
+                                                              "text_input",
+                                                            "data-validator":
+                                                              "notEmpty",
+                                                          },
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            "\n                                                                    " +
+                                                              _vm._s(
+                                                                _vm.errores
+                                                                  .confirm_password
+                                                                  .mensaje
+                                                              ) +
+                                                              "\n                                                                "
+                                                          ),
+                                                        ]
+                                                      ),
+                                                    ]
+                                                  )
+                                                : _vm._e(),
+                                            ]
+                                          ),
+                                        ]),
+                                      ]),
+                                      _vm._v(" "),
+                                      _vm._m(17),
+                                    ]),
+                                  ]
+                                ),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              { staticClass: "d-flex flex-stack pt-15" },
+                              [
+                                _c("div", { staticClass: "mr-2" }),
+                                _vm._v(" "),
+                                _c("div", [
+                                  _c(
+                                    "button",
+                                    {
+                                      staticClass:
+                                        "\n                                                    btn\n                                                    btn-sm\n                                                    btn-light-primary\n                                                    me-3\n                                                ",
+                                      attrs: {
+                                        type: "button",
+                                        "data-kt-stepper-action": "previous",
+                                      },
+                                    },
+                                    [
+                                      _c(
+                                        "span",
+                                        {
+                                          staticClass:
+                                            "\n                                                        svg-icon svg-icon-4\n                                                        me-1\n                                                    ",
+                                        },
+                                        [
+                                          _c(
+                                            "svg",
+                                            {
+                                              attrs: {
+                                                xmlns:
+                                                  "http://www.w3.org/2000/svg",
+                                                width: "24",
+                                                height: "24",
+                                                viewBox: "0 0 24 24",
+                                                fill: "none",
+                                              },
+                                            },
+                                            [
+                                              _c("rect", {
+                                                attrs: {
+                                                  opacity: "0.5",
+                                                  x: "6",
+                                                  y: "11",
+                                                  width: "13",
+                                                  height: "2",
+                                                  rx: "1",
+                                                  fill: "black",
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _c("path", {
+                                                attrs: {
+                                                  d: "M8.56569 11.4343L12.75 7.25C13.1642 6.83579 13.1642 6.16421 12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75L5.70711 11.2929C5.31658 11.6834 5.31658 12.3166 5.70711 12.7071L11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25C13.1642 17.8358 13.1642 17.1642 12.75 16.75L8.56569 12.5657C8.25327 12.2533 8.25327 11.7467 8.56569 11.4343Z",
+                                                  fill: "black",
+                                                },
+                                              }),
+                                            ]
+                                          ),
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _vm._v(
+                                        "Atras\n                                            "
+                                      ),
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "button",
+                                    {
+                                      staticClass:
+                                        "\n                                                    btn btn-sm btn-primary\n                                                    me-3\n                                                ",
+                                      attrs: {
+                                        type: "submit",
+                                        "data-kt-stepper-action": "submit",
+                                      },
+                                    },
+                                    [
+                                      _c(
+                                        "span",
+                                        { staticClass: "indicator-label" },
+                                        [
+                                          _vm._v(
+                                            "Guardar\n                                                    "
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "span",
+                                            {
+                                              staticClass:
+                                                "\n                                                            svg-icon\n                                                            svg-icon-3\n                                                            ms-2\n                                                            me-0\n                                                        ",
+                                            },
+                                            [
+                                              _c(
+                                                "svg",
+                                                {
+                                                  attrs: {
+                                                    xmlns:
+                                                      "http://www.w3.org/2000/svg",
+                                                    width: "24",
+                                                    height: "24",
+                                                    viewBox: "0 0 24 24",
+                                                    fill: "none",
+                                                  },
+                                                },
+                                                [
+                                                  _c("rect", {
+                                                    attrs: {
+                                                      opacity: "0.5",
+                                                      x: "18",
+                                                      y: "13",
+                                                      width: "13",
+                                                      height: "2",
+                                                      rx: "1",
+                                                      transform:
+                                                        "rotate(-180 18 13)",
+                                                      fill: "black",
+                                                    },
+                                                  }),
+                                                  _vm._v(" "),
+                                                  _c("path", {
+                                                    attrs: {
+                                                      d: "M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z",
+                                                      fill: "black",
+                                                    },
+                                                  }),
+                                                ]
+                                              ),
+                                            ]
+                                          ),
+                                        ]
+                                      ),
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "button",
+                                    {
+                                      staticClass:
+                                        "\n                                                    btn btn-sm btn-primary\n                                                ",
+                                      attrs: {
+                                        type: "button",
+                                        "data-kt-stepper-action": "next",
+                                      },
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n                                                Continuar\n                                                "
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "span",
+                                        {
+                                          staticClass:
+                                            "\n                                                        svg-icon svg-icon-4\n                                                        ms-1\n                                                        me-0\n                                                    ",
+                                        },
+                                        [
+                                          _c(
+                                            "svg",
+                                            {
+                                              attrs: {
+                                                xmlns:
+                                                  "http://www.w3.org/2000/svg",
+                                                width: "24",
+                                                height: "24",
+                                                viewBox: "0 0 24 24",
+                                                fill: "none",
+                                              },
+                                            },
+                                            [
+                                              _c("rect", {
+                                                attrs: {
+                                                  opacity: "0.5",
+                                                  x: "18",
+                                                  y: "13",
+                                                  width: "13",
+                                                  height: "2",
+                                                  rx: "1",
+                                                  transform:
+                                                    "rotate(-180 18 13)",
+                                                  fill: "black",
+                                                },
+                                              }),
+                                              _vm._v(" "),
+                                              _c("path", {
+                                                attrs: {
+                                                  d: "M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z",
+                                                  fill: "black",
+                                                },
+                                              }),
+                                            ]
+                                          ),
+                                        ]
+                                      ),
+                                    ]
+                                  ),
+                                ]),
+                              ]
+                            ),
+                          ]
+                        ),
+                      ]
+                    ),
+                  ]),
+                ]),
+              ]),
+            ]),
+          ]
+        ),
+      ]
+    ),
+  ])
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "toolbar", attrs: { id: "kt_toolbar" } }, [
+      _c(
+        "div",
+        {
+          staticClass: "container-fluid d-flex flex-stack",
+          attrs: { id: "kt_toolbar_container" },
+        },
+        [
+          _c(
+            "div",
+            {
+              staticClass:
+                "\n                    page-title\n                    d-flex\n                    align-items-center\n                    flex-wrap\n                    me-3\n                    mb-5 mb-lg-0\n                ",
+              attrs: {
+                "data-kt-swapper": "true",
+                "data-kt-swapper-mode": "prepend",
+                "data-kt-swapper-parent":
+                  "{default: '#kt_content_container', 'lg': '#kt_toolbar_container'}",
+              },
+            },
+            [
+              _c(
+                "h1",
+                {
+                  staticClass:
+                    "\n                        d-flex\n                        align-items-center\n                        text-dark\n                        fw-bolder\n                        fs-3\n                        my-1\n                    ",
+                },
+                [_vm._v("\n                    Alumno\n                ")]
+              ),
+              _vm._v(" "),
+              _c("span", {
+                staticClass: "h-20px border-gray-200 border-start mx-4",
+              }),
+              _vm._v(" "),
+              _c(
+                "ul",
+                {
+                  staticClass:
+                    "\n                        breadcrumb breadcrumb-separatorless\n                        fw-bold\n                        fs-7\n                        my-1\n                    ",
+                },
+                [
+                  _c("li", { staticClass: "breadcrumb-item text-dark" }, [
+                    _vm._v(
+                      "\n                        Alumno Editar\n                    "
+                    ),
+                  ]),
+                ]
+              ),
+            ]
+          ),
+        ]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "stepper-nav mb-5" }, [
+      _c(
+        "div",
+        {
+          staticClass: "stepper-item current",
+          attrs: { "data-kt-stepper-element": "nav" },
+        },
+        [
+          _c("h3", { staticClass: "stepper-title" }, [
+            _vm._v(
+              "\n                                            Datos Personales\n                                        "
+            ),
+          ]),
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "stepper-item",
+          attrs: { "data-kt-stepper-element": "nav" },
+        },
+        [
+          _c("h3", { staticClass: "stepper-title" }, [
+            _vm._v(
+              "\n                                            Datos Usuario\n                                        "
+            ),
+          ]),
+        ]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                                    d-flex\n                                                                    align-items-center\n                                                                    fs-6\n                                                                    fw-bold\n                                                                    mt-4\n                                                                    mb-2\n                                                                ",
+      },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "\n                                                                        required\n                                                                    ",
+          },
+          [
+            _vm._v(
+              "Tipo\n                                                                    Documento"
+            ),
+          ]
+        ),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                                        fas\n                                                                        fa-exclamation-circle\n                                                                        ms-2\n                                                                        fs-7\n                                                                    ",
+          attrs: {
+            "data-bs-toggle": "tooltip",
+            title: "Especifica el tipo de Documento",
+          },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                                    d-flex\n                                                                    align-items-center\n                                                                    fs-6\n                                                                    fw-bold\n                                                                    mt-4\n                                                                    mb-2\n                                                                ",
+      },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "\n                                                                        required\n                                                                    ",
+          },
+          [
+            _vm._v(
+              "Numero\n                                                                    Documento"
+            ),
+          ]
+        ),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                                        fas\n                                                                        fa-exclamation-circle\n                                                                        ms-2\n                                                                        fs-7\n                                                                    ",
+          attrs: {
+            "data-bs-toggle": "tooltip",
+            title: "Especifica el Numero de Documento",
+          },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                                    d-flex\n                                                                    align-items-center\n                                                                    fs-6\n                                                                    fw-bold\n                                                                    mt-4\n                                                                    mb-2\n                                                                ",
+      },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "\n                                                                        required\n                                                                    ",
+          },
+          [
+            _vm._v(
+              "Nombre\n                                                                    Comercial"
+            ),
+          ]
+        ),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                                        fas\n                                                                        fa-exclamation-circle\n                                                                        ms-2\n                                                                        fs-7\n                                                                    ",
+          attrs: {
+            "data-bs-toggle": "tooltip",
+            title: "Especifica el Nombre Comercial",
+          },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                                    d-flex\n                                                                    align-items-center\n                                                                    fs-6\n                                                                    fw-bold\n                                                                    mt-4\n                                                                    mb-2\n                                                                ",
+      },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "\n                                                                        required\n                                                                    ",
+          },
+          [_vm._v("Nombres")]
+        ),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                                        fas\n                                                                        fa-exclamation-circle\n                                                                        ms-2\n                                                                        fs-7\n                                                                    ",
+          attrs: { "data-bs-toggle": "tooltip", title: "Especifica el Nombre" },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                                    d-flex\n                                                                    align-items-center\n                                                                    fs-6\n                                                                    fw-bold\n                                                                    mt-4\n                                                                    mb-2\n                                                                ",
+      },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "\n                                                                        required\n                                                                    ",
+          },
+          [_vm._v("Apellidos")]
+        ),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                                        fas\n                                                                        fa-exclamation-circle\n                                                                        ms-2\n                                                                        fs-7\n                                                                    ",
+          attrs: {
+            "data-bs-toggle": "tooltip",
+            title: "Especifica los apellidos",
+          },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                                    d-flex\n                                                                    align-items-center\n                                                                    fs-6\n                                                                    fw-bold\n                                                                    mt-4\n                                                                    mb-2\n                                                                ",
+      },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "\n                                                                        required\n                                                                    ",
+          },
+          [_vm._v("Departamento")]
+        ),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                                        fas\n                                                                        fa-exclamation-circle\n                                                                        ms-2\n                                                                        fs-7\n                                                                    ",
+          attrs: {
+            "data-bs-toggle": "tooltip",
+            title: "Especifica el departamento",
+          },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-6" }, [
+      _c(
+        "label",
+        {
+          staticClass:
+            "\n                                                                    d-flex\n                                                                    align-items-center\n                                                                    fs-6\n                                                                    fw-bold\n                                                                    mt-4\n                                                                    mb-2\n                                                                ",
+        },
+        [
+          _c(
+            "span",
+            {
+              staticClass:
+                "\n                                                                        required\n                                                                    ",
+            },
+            [_vm._v("Provincia")]
+          ),
+          _vm._v(" "),
+          _c("i", {
+            staticClass:
+              "\n                                                                        fas\n                                                                        fa-exclamation-circle\n                                                                        ms-2\n                                                                        fs-7\n                                                                    ",
+            attrs: {
+              "data-bs-toggle": "tooltip",
+              title: "Especifica La Provincia",
+            },
+          }),
+        ]
+      ),
+      _vm._v(" "),
+      _c("select", {
+        staticClass:
+          "\n                                                                    form-select\n                                                                    form-select-white\n                                                                ",
+        attrs: {
+          id: "provincia_id",
+          "data-control": "select2",
+          "data-placeholder": "Seleciona una opcion",
+        },
+      }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                                    d-flex\n                                                                    align-items-center\n                                                                    fs-6\n                                                                    fw-bold\n                                                                    mt-4\n                                                                    mb-2\n                                                                ",
+      },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "\n                                                                        required\n                                                                    ",
+          },
+          [_vm._v("Distrito")]
+        ),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                                        fas\n                                                                        fa-exclamation-circle\n                                                                        ms-2\n                                                                        fs-7\n                                                                    ",
+          attrs: {
+            "data-bs-toggle": "tooltip",
+            title: "Especifica el Nombre Comercial",
+          },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                                    d-flex\n                                                                    align-items-center\n                                                                    fs-6\n                                                                    fw-bold\n                                                                    mt-4\n                                                                    mb-2\n                                                                ",
+      },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "\n                                                                        required\n                                                                    ",
+          },
+          [_vm._v("Direccion")]
+        ),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                                        fas\n                                                                        fa-exclamation-circle\n                                                                        ms-2\n                                                                        fs-7\n                                                                    ",
+          attrs: {
+            "data-bs-toggle": "tooltip",
+            title: "Especifica la direccion",
+          },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                                    d-flex\n                                                                    align-items-center\n                                                                    fs-6\n                                                                    fw-bold\n                                                                    mt-4\n                                                                    mb-2\n                                                                ",
+      },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "\n                                                                        required\n                                                                    ",
+          },
+          [_vm._v("Telefono")]
+        ),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                                        fas\n                                                                        fa-exclamation-circle\n                                                                        ms-2\n                                                                        fs-7\n                                                                    ",
+          attrs: {
+            "data-bs-toggle": "tooltip",
+            title: "Especifica el Telefono",
+          },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                                    d-flex\n                                                                    align-items-center\n                                                                    fs-6\n                                                                    fw-bold\n                                                                    mt-4\n                                                                    mb-2\n                                                                ",
+      },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "\n                                                                        required\n                                                                    ",
+          },
+          [
+            _vm._v(
+              "Fecha\n                                                                    Nacimiento"
+            ),
+          ]
+        ),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                                        fas\n                                                                        fa-exclamation-circle\n                                                                        ms-2\n                                                                        fs-7\n                                                                    ",
+          attrs: {
+            "data-bs-toggle": "tooltip",
+            title: "Especifica la Fecha Nacimiento",
+          },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                                    d-flex\n                                                                    align-items-center\n                                                                    fs-6\n                                                                    fw-bold\n                                                                    mt-4\n                                                                    mb-2\n                                                                ",
+      },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "\n                                                                        required\n                                                                    ",
+          },
+          [_vm._v("Genero")]
+        ),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                                        fas\n                                                                        fa-exclamation-circle\n                                                                        ms-2\n                                                                        fs-7\n                                                                    ",
+          attrs: { "data-bs-toggle": "tooltip", title: "Especifica el Genero" },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                                    d-flex\n                                                                    align-items-center\n                                                                    fs-6\n                                                                    fw-bold\n                                                                    mt-4\n                                                                    mb-2\n                                                                ",
+      },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "\n                                                                        required\n                                                                    ",
+          },
+          [_vm._v("Email")]
+        ),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                                        fas\n                                                                        fa-exclamation-circle\n                                                                        ms-2\n                                                                        fs-7\n                                                                    ",
+          attrs: { "data-bs-toggle": "tooltip", title: "Especifica El email" },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                                    d-flex\n                                                                    align-items-center\n                                                                    fs-6\n                                                                    fw-bold\n                                                                    mt-4\n                                                                    mb-2\n                                                                ",
+      },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "\n                                                                        required\n                                                                    ",
+          },
+          [_vm._v("Password")]
+        ),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                                        fas\n                                                                        fa-exclamation-circle\n                                                                        ms-2\n                                                                        fs-7\n                                                                    ",
+          attrs: {
+            "data-bs-toggle": "tooltip",
+            title: "Especifica El password",
+          },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                                    d-flex\n                                                                    align-items-center\n                                                                    fs-6\n                                                                    fw-bold\n                                                                    mt-4\n                                                                    mb-2\n                                                                ",
+      },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "\n                                                                        required\n                                                                    ",
+          },
+          [
+            _vm._v(
+              "Confirm\n                                                                    Password"
+            ),
+          ]
+        ),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                                        fas\n                                                                        fa-exclamation-circle\n                                                                        ms-2\n                                                                        fs-7\n                                                                    ",
+          attrs: {
+            "data-bs-toggle": "tooltip",
+            title: "Ecribe el mismo password",
+          },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "\n                                                        col-md-6\n                                                        text-center\n                                                    ",
+      },
+      [
+        _c(
+          "div",
+          {
+            staticClass:
+              "\n                                                            image-input\n                                                            image-input-empty\n                                                        ",
+            attrs: { id: "img_avatar_profile", "data-kt-image-input": "true" },
+          },
+          [
+            _c("div", {
+              staticClass:
+                "\n                                                                image-input-wrapper\n                                                                w-300px\n                                                                h-300px\n                                                            ",
+            }),
+            _vm._v(" "),
+            _c(
+              "label",
+              {
+                staticClass:
+                  "\n                                                                btn\n                                                                btn-icon\n                                                                btn-circle\n                                                                btn-active-color-primary\n                                                                w-25px\n                                                                h-25px\n                                                                bg-white\n                                                                shadow\n                                                            ",
+                attrs: {
+                  "data-kt-image-input-action": "change",
+                  "data-bs-toggle": "tooltip",
+                  "data-bs-dismiss": "click",
+                  title: "Change avatar",
+                },
+              },
+              [
+                _c("i", {
+                  staticClass:
+                    "\n                                                                    bi\n                                                                    bi-pencil-fill\n                                                                    fs-7\n                                                                ",
+                }),
+                _vm._v(" "),
+                _c("input", {
+                  attrs: {
+                    type: "file",
+                    name: "avatar",
+                    accept: ".png, .jpg, .jpeg",
+                  },
+                }),
+                _vm._v(" "),
+                _c("input", {
+                  attrs: { type: "hidden", name: "avatar_remove" },
+                }),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "span",
+              {
+                staticClass:
+                  "\n                                                                btn\n                                                                btn-icon\n                                                                btn-circle\n                                                                btn-active-color-primary\n                                                                w-25px\n                                                                h-25px\n                                                                bg-white\n                                                                shadow\n                                                            ",
+                attrs: {
+                  "data-kt-image-input-action": "cancel",
+                  "data-bs-toggle": "tooltip",
+                  "data-bs-dismiss": "click",
+                  title: "Cancel avatar",
+                },
+              },
+              [
+                _c("i", {
+                  staticClass:
+                    "\n                                                                    bi bi-x\n                                                                    fs-2\n                                                                ",
+                }),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "span",
+              {
+                staticClass:
+                  "\n                                                                btn\n                                                                btn-icon\n                                                                btn-circle\n                                                                btn-active-color-primary\n                                                                w-25px\n                                                                h-25px\n                                                                bg-white\n                                                                shadow\n                                                            ",
+                attrs: {
+                  "data-kt-image-input-action": "remove",
+                  "data-bs-toggle": "tooltip",
+                  "data-bs-dismiss": "click",
+                  title: "Remove avatar",
+                },
+              },
+              [
+                _c("i", {
+                  staticClass:
+                    "\n                                                                    bi bi-x\n                                                                    fs-2\n                                                                ",
+                }),
+              ]
+            ),
+          ]
+        ),
+      ]
+    )
+  },
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Alumno/AlumnoIndexComponent.vue?vue&type=template&id=2442f625&":
+/*!******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Alumno/AlumnoIndexComponent.vue?vue&type=template&id=2442f625& ***!
+  \******************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c("div", { staticClass: "toolbar", attrs: { id: "kt_toolbar" } }, [
+      _c(
+        "div",
+        {
+          staticClass: "container-fluid d-flex flex-stack",
+          attrs: { id: "kt_toolbar_container" },
+        },
+        [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("div", { staticClass: "d-flex align-items-center py-1" }, [
+            _c(
+              "a",
+              {
+                staticClass: "btn btn-sm btn-primary",
+                attrs: { href: "#" },
+                on: {
+                  click: function ($event) {
+                    return _vm.createAlumno()
+                  },
+                },
+              },
+              [_c("i", { staticClass: "fa fa-plus" }), _vm._v(" Create")]
+            ),
+          ]),
+        ]
+      ),
+    ]),
+    _vm._v(" "),
+    _vm._m(1),
+  ])
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "\n                    page-title\n                    d-flex\n                    align-items-center\n                    flex-wrap\n                    me-3\n                    mb-5 mb-lg-0\n                ",
+        attrs: {
+          "data-kt-swapper": "true",
+          "data-kt-swapper-mode": "prepend",
+          "data-kt-swapper-parent":
+            "{default: '#kt_content_container', 'lg': '#kt_toolbar_container'}",
+        },
+      },
+      [
+        _c(
+          "h1",
+          {
+            staticClass:
+              "\n                        d-flex\n                        align-items-center\n                        text-dark\n                        fw-bolder\n                        fs-3\n                        my-1\n                    ",
+          },
+          [_vm._v("\n                    Alumno\n                ")]
+        ),
+        _vm._v(" "),
+        _c("span", { staticClass: "h-20px border-gray-200 border-start mx-4" }),
+        _vm._v(" "),
+        _c(
+          "ul",
+          {
+            staticClass:
+              "\n                        breadcrumb breadcrumb-separatorless\n                        fw-bold\n                        fs-7\n                        my-1\n                    ",
+          },
+          [
+            _c("li", { staticClass: "breadcrumb-item text-dark" }, [
+              _vm._v(
+                "\n                        Lista de Alumnos\n                    "
+              ),
+            ]),
+          ]
+        ),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "post d-flex flex-column-fluid",
+        attrs: { id: "kt_post" },
+      },
+      [
+        _c(
+          "div",
+          {
+            staticClass: "container-xxl",
+            attrs: { id: "kt_content_container" },
+          },
+          [
+            _c("div", { staticClass: "card" }, [
+              _c("div", { staticClass: "container" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-md-12" }, [
+                    _c(
+                      "table",
+                      {
+                        staticClass:
+                          "\n                                    table\n                                    table-striped\n                                    table-bordered\n                                    table-hover\n                                ",
+                        staticStyle: { width: "100%" },
+                        attrs: { id: "tableAlumnos" },
+                      },
+                      [
+                        _c("thead", [
+                          _c("tr", [
+                            _c("th", [_vm._v("#")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("Nombres")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("Numero Documento")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("Acciones")]),
+                          ]),
+                        ]),
+                      ]
+                    ),
+                  ]),
+                ]),
+              ]),
+            ]),
+          ]
+        ),
+      ]
+    )
+  },
+]
+render._withStripped = true
+
 
 
 /***/ }),
@@ -72773,7 +80917,7 @@ var render = function () {
                                                           _vm.modelo
                                                             .nombre_comercial,
                                                         expression:
-                                                          "modelo.nombre_comercial",
+                                                          "\n                                                                    modelo.nombre_comercial\n                                                                ",
                                                       },
                                                     ],
                                                     staticClass:

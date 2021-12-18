@@ -210,11 +210,6 @@
                                                                     >
                                                                         DNI
                                                                     </option>
-                                                                    <option
-                                                                        value="RUC"
-                                                                    >
-                                                                        RUC
-                                                                    </option>
                                                                 </select>
                                                                 <div
                                                                     class="
@@ -261,10 +256,6 @@
                                                                 </label>
                                                                 <!--end::Label-->
                                                                 <input
-                                                                    v-if="
-                                                                        modelo.tipo_documento ==
-                                                                        'DNI'
-                                                                    "
                                                                     type="text"
                                                                     class="
                                                                         form-control
@@ -275,22 +266,6 @@
                                                                         modelo.dni
                                                                     "
                                                                     name="dni"
-                                                                />
-                                                                <input
-                                                                    v-else-if="
-                                                                        modelo.tipo_documento ==
-                                                                        'RUC'
-                                                                    "
-                                                                    type="text"
-                                                                    class="
-                                                                        form-control
-                                                                        form-control-sm
-                                                                        form-control-solid
-                                                                    "
-                                                                    v-model="
-                                                                        modelo.ruc
-                                                                    "
-                                                                    name="ruc"
                                                                 />
                                                                 <div
                                                                     v-if="
@@ -333,87 +308,6 @@
                                                         </div>
                                                         <div
                                                             class="row"
-                                                            v-if="
-                                                                modelo.tipo_documento ==
-                                                                'RUC'
-                                                            "
-                                                        >
-                                                            <div
-                                                                class="
-                                                                    col-md-12
-                                                                "
-                                                            >
-                                                                <label
-                                                                    class="
-                                                                        d-flex
-                                                                        align-items-center
-                                                                        fs-6
-                                                                        fw-bold
-                                                                        mt-4
-                                                                        mb-2
-                                                                    "
-                                                                >
-                                                                    <span
-                                                                        class="
-                                                                            required
-                                                                        "
-                                                                        >Nombre
-                                                                        Comercial</span
-                                                                    >
-                                                                    <i
-                                                                        class="
-                                                                            fas
-                                                                            fa-exclamation-circle
-                                                                            ms-2
-                                                                            fs-7
-                                                                        "
-                                                                        data-bs-toggle="tooltip"
-                                                                        title="Especifica el Nombre Comercial"
-                                                                    ></i>
-                                                                </label>
-                                                                <!--end::Label-->
-                                                                <input
-                                                                    type="text"
-                                                                    class="
-                                                                        form-control
-                                                                        form-control-sm
-                                                                        form-control-solid
-                                                                    "
-                                                                    v-model="
-                                                                        modelo.nombre_comercial
-                                                                    "
-                                                                    name="nombre_comercial"
-                                                                />
-                                                                <div
-                                                                    v-if="
-                                                                        errores
-                                                                            .nombre_comercial
-                                                                            .error
-                                                                    "
-                                                                    class="
-                                                                        fv-plugins-message-container
-                                                                        invalid-feedback
-                                                                    "
-                                                                >
-                                                                    <div
-                                                                        data-field="text_input"
-                                                                        data-validator="notEmpty"
-                                                                    >
-                                                                        {{
-                                                                            errores
-                                                                                .nombre_comercial
-                                                                                .mensaje
-                                                                        }}
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="row"
-                                                            v-else-if="
-                                                                modelo.tipo_documento ==
-                                                                'DNI'
-                                                            "
                                                         >
                                                             <div
                                                                 class="col-md-6"
@@ -991,88 +885,6 @@
                                                                     }}
                                                                 </div>
                                                             </div>
-                                                            <div
-                                                                class="col-md-6"
-                                                            >
-                                                                <label
-                                                                    class="
-                                                                        d-flex
-                                                                        align-items-center
-                                                                        fs-6
-                                                                        fw-bold
-                                                                        mt-4
-                                                                        mb-2
-                                                                    "
-                                                                >
-                                                                    <span
-                                                                        class="
-                                                                            required
-                                                                        "
-                                                                        >Estado
-                                                                        Civil</span
-                                                                    >
-                                                                    <i
-                                                                        class="
-                                                                            fas
-                                                                            fa-exclamation-circle
-                                                                            ms-2
-                                                                            fs-7
-                                                                        "
-                                                                        data-bs-toggle="tooltip"
-                                                                        title="Especifica El estado Civil"
-                                                                    ></i>
-                                                                </label>
-                                                                <select
-                                                                    class="
-                                                                        form-select
-                                                                        form-select-white
-                                                                    "
-                                                                    name="estado_civil"
-                                                                    v-model="
-                                                                        modelo.estado_civil
-                                                                    "
-                                                                    id="estado_civil"
-                                                                    :class="
-                                                                        errores
-                                                                            .estado_civil
-                                                                            .error
-                                                                            ? 'is-invalid'
-                                                                            : ''
-                                                                    "
-                                                                    data-control="select2"
-                                                                    data-placeholder="Seleciona una opcion"
-                                                                >
-                                                                    <option
-                                                                        value=""
-                                                                    ></option>
-                                                                    <option
-                                                                        value="Casado"
-                                                                    >
-                                                                        Casado(a)
-                                                                    </option>
-                                                                    <option
-                                                                        value="Viudo"
-                                                                    >
-                                                                        Viudo(a)
-                                                                    </option>
-                                                                    <option
-                                                                        value="Soltero"
-                                                                    >
-                                                                        Soltero(a)
-                                                                    </option>
-                                                                </select>
-                                                                <div
-                                                                    class="
-                                                                        invalid-feedback
-                                                                    "
-                                                                >
-                                                                    {{
-                                                                        errores
-                                                                            .estado_civil
-                                                                            .mensaje
-                                                                    }}
-                                                                </div>
-                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1125,9 +937,6 @@
                                                                         form-control-solid
                                                                     "
                                                                     name="email"
-                                                                    v-model="
-                                                                        modelo.email
-                                                                    "
                                                                 />
                                                                 <div
                                                                     v-if="
@@ -1275,86 +1084,6 @@
                                                                                 .mensaje
                                                                         }}
                                                                     </div>
-                                                                </div>
-                                                            </div>
-                                                            <div
-                                                                class="col-md-6"
-                                                            >
-                                                                <label
-                                                                    class="
-                                                                        d-flex
-                                                                        align-items-center
-                                                                        fs-6
-                                                                        fw-bold
-                                                                        mt-4
-                                                                        mb-2
-                                                                    "
-                                                                >
-                                                                    <span
-                                                                        class="
-                                                                            required
-                                                                        "
-                                                                        >Tipo
-                                                                        Empleado</span
-                                                                    >
-                                                                    <i
-                                                                        class="
-                                                                            fas
-                                                                            fa-exclamation-circle
-                                                                            ms-2
-                                                                            fs-7
-                                                                        "
-                                                                        data-bs-toggle="tooltip"
-                                                                        title="Selecciona el Tipo de Empleado"
-                                                                    ></i>
-                                                                </label>
-                                                                <select
-                                                                    class="
-                                                                        form-select
-                                                                        form-select-white
-                                                                    "
-                                                                    name="tipo_id"
-                                                                    id="tipo_id"
-                                                                    v-model="
-                                                                        modelo.tipo_id
-                                                                    "
-                                                                    data-control="select2"
-                                                                    :class="
-                                                                        errores
-                                                                            .tipo_id
-                                                                            .error
-                                                                            ? 'is-invalid'
-                                                                            : ''
-                                                                    "
-                                                                    data-placeholder="Seleciona una opcion"
-                                                                >
-                                                                    <option
-                                                                        value=""
-                                                                    ></option>
-                                                                    <option
-                                                                        v-for="item in tipo_empleados"
-                                                                        :key="
-                                                                            item.id
-                                                                        "
-                                                                        :value="
-                                                                            item.id
-                                                                        "
-                                                                    >
-                                                                        {{
-                                                                            item.tipo
-                                                                        }}
-                                                                    </option>
-                                                                </select>
-                                                                <div
-                                                                    class="
-                                                                        invalid-feedback
-                                                                    "
-                                                                >
-                                                                    {{
-                                                                        errores
-                                                                            .tipo_id
-                                                                            .mensaje
-                                                                    }}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1653,20 +1382,16 @@ export default {
         "errores_laravel",
         "csrf",
         "error",
-        "tipo_empleados",
-        "empleado",
     ],
     data() {
         return {
             modelo: {
-                id: null,
                 tipo_documento: null,
                 direccion: null,
                 telefono: null,
                 fecha_nacimiento: null,
                 genero: null,
                 distrito_id: null,
-                estado_civil: null,
                 nombres: null,
                 apellidos: null,
                 dni: null,
@@ -1676,7 +1401,7 @@ export default {
                 email: null,
                 confirm_password: null,
                 password: null,
-                tipo_id: null,
+                tipo_id:null,
             },
             errores: {
                 tipo_documento: {
@@ -1700,10 +1425,6 @@ export default {
                     mensaje: "",
                 },
                 distrito_id: {
-                    error: false,
-                    mensaje: "",
-                },
-                estado_civil: {
                     error: false,
                     mensaje: "",
                 },
@@ -1742,23 +1463,17 @@ export default {
                 password: {
                     error: false,
                     mensaje: "",
-                },
-                tipo_id: {
-                    error: false,
-                    mensaje: "",
-                },
+                }
             },
             ruta: "",
         };
     },
     created() {
-        this.modelo = this.empleado[0];
+        // this.modelo.
     },
     mounted() {
         let $this = this;
-        // console.log(this.errores_laravel)
-        // console.log(this.error)
-        $this.ruta = route("empleado.update", this.modelo.id);
+        $this.ruta = route("alumno.store");
         let old_values = Object.entries(this.old);
         old_values.forEach((value, index, array) => {
             if (value[0] != "_token") {
@@ -1776,14 +1491,11 @@ export default {
                 $this.errores[value[0]].mensaje = value[1][0];
             });
         }
-
         if (this.error != null) {
-            // let error_value = Object.entries(this.error);
+            let error_value = Object.entries(this.error);
         }
         window.addEventListener("load", () => {
-            // $("#tipo_documento").select2("readonly", true);
             $this.iniciarFormulario();
-            $this.getUbigeoOld($this.modelo.distrito_id);
             $("#departamento_id").on("change", function (e) {
                 $this.cargarProvincia(null);
             });
@@ -1795,9 +1507,6 @@ export default {
             });
             $("#genero").on("change", function (e) {
                 $this.modelo.genero = $("#genero").val();
-            });
-            $("#estado_civil").on("change", function (e) {
-                $this.modelo.estado_civil = $("#estado_civil").val();
             });
             $("#distrito_id").on("change", function (e) {
                 $this.modelo.distrito_id = $("#distrito_id").val();
@@ -1934,47 +1643,14 @@ export default {
                 stepper.goPrevious();
                 KTUtil.scrollTop();
             });
-            if (this.empleado[0].url_imagen == null) {
-                $("#img_avatar_profile").css(
-                    "background-image",
-                    "url(" +
-                        window.location.origin +
-                        "/metronic/media/avatars/blank.png" +
-                        ")"
-                );
-            } else {
-                $("#img_avatar_profile").css(
-                    "background-image",
-                    "url(" +
-                        window.location.origin +
-                        "/" +
-                        this.empleado[0].url_imagen.replace("public", "storage") +
-                        ")"
-                );
-            }
+            $("#img_avatar_profile").css(
+                "background-image",
+                "url(" +
+                    window.location.origin +
+                    "/metronic/media/avatars/blank.png" +
+                    ")"
+            );
         },
     },
 };
 </script>
-<style>
-select[readonly].select2-hidden-accessible + .select2-container {
-    pointer-events: none;
-    touch-action: none;
-}
-
-select[readonly].select2-hidden-accessible
-    + .select2-container
-    .select2-selection {
-    background: #eee;
-    box-shadow: none;
-}
-
-select[readonly].select2-hidden-accessible
-    + .select2-container
-    .select2-selection__arrow,
-select[readonly].select2-hidden-accessible
-    + .select2-container
-    .select2-selection__clear {
-    display: none;
-}
-</style>

@@ -32,7 +32,7 @@
                             my-1
                         "
                     >
-                        Empleado
+                        Alumno
                     </h1>
                     <!--end::Title-->
                     <!--begin::Separator-->
@@ -73,7 +73,7 @@
                         <!--end::Item-->
                         <!--begin::Item-->
                         <li class="breadcrumb-item text-dark">
-                            Lista de Empleados
+                            Alumno Editar
                         </li>
                         <!--end::Item-->
                     </ul>
@@ -189,6 +189,7 @@
                                                                         form-select
                                                                         form-select-white
                                                                     "
+
                                                                     name="tipo_documento"
                                                                     id="tipo_documento"
                                                                     v-model="
@@ -379,9 +380,7 @@
                                                                         form-control-sm
                                                                         form-control-solid
                                                                     "
-                                                                    v-model="
-                                                                        modelo.nombre_comercial
-                                                                    "
+                                                                    v-model="modelo.nombre_comercial"
                                                                     name="nombre_comercial"
                                                                 />
                                                                 <div
@@ -991,88 +990,6 @@
                                                                     }}
                                                                 </div>
                                                             </div>
-                                                            <div
-                                                                class="col-md-6"
-                                                            >
-                                                                <label
-                                                                    class="
-                                                                        d-flex
-                                                                        align-items-center
-                                                                        fs-6
-                                                                        fw-bold
-                                                                        mt-4
-                                                                        mb-2
-                                                                    "
-                                                                >
-                                                                    <span
-                                                                        class="
-                                                                            required
-                                                                        "
-                                                                        >Estado
-                                                                        Civil</span
-                                                                    >
-                                                                    <i
-                                                                        class="
-                                                                            fas
-                                                                            fa-exclamation-circle
-                                                                            ms-2
-                                                                            fs-7
-                                                                        "
-                                                                        data-bs-toggle="tooltip"
-                                                                        title="Especifica El estado Civil"
-                                                                    ></i>
-                                                                </label>
-                                                                <select
-                                                                    class="
-                                                                        form-select
-                                                                        form-select-white
-                                                                    "
-                                                                    name="estado_civil"
-                                                                    v-model="
-                                                                        modelo.estado_civil
-                                                                    "
-                                                                    id="estado_civil"
-                                                                    :class="
-                                                                        errores
-                                                                            .estado_civil
-                                                                            .error
-                                                                            ? 'is-invalid'
-                                                                            : ''
-                                                                    "
-                                                                    data-control="select2"
-                                                                    data-placeholder="Seleciona una opcion"
-                                                                >
-                                                                    <option
-                                                                        value=""
-                                                                    ></option>
-                                                                    <option
-                                                                        value="Casado"
-                                                                    >
-                                                                        Casado(a)
-                                                                    </option>
-                                                                    <option
-                                                                        value="Viudo"
-                                                                    >
-                                                                        Viudo(a)
-                                                                    </option>
-                                                                    <option
-                                                                        value="Soltero"
-                                                                    >
-                                                                        Soltero(a)
-                                                                    </option>
-                                                                </select>
-                                                                <div
-                                                                    class="
-                                                                        invalid-feedback
-                                                                    "
-                                                                >
-                                                                    {{
-                                                                        errores
-                                                                            .estado_civil
-                                                                            .mensaje
-                                                                    }}
-                                                                </div>
-                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1275,86 +1192,6 @@
                                                                                 .mensaje
                                                                         }}
                                                                     </div>
-                                                                </div>
-                                                            </div>
-                                                            <div
-                                                                class="col-md-6"
-                                                            >
-                                                                <label
-                                                                    class="
-                                                                        d-flex
-                                                                        align-items-center
-                                                                        fs-6
-                                                                        fw-bold
-                                                                        mt-4
-                                                                        mb-2
-                                                                    "
-                                                                >
-                                                                    <span
-                                                                        class="
-                                                                            required
-                                                                        "
-                                                                        >Tipo
-                                                                        Empleado</span
-                                                                    >
-                                                                    <i
-                                                                        class="
-                                                                            fas
-                                                                            fa-exclamation-circle
-                                                                            ms-2
-                                                                            fs-7
-                                                                        "
-                                                                        data-bs-toggle="tooltip"
-                                                                        title="Selecciona el Tipo de Empleado"
-                                                                    ></i>
-                                                                </label>
-                                                                <select
-                                                                    class="
-                                                                        form-select
-                                                                        form-select-white
-                                                                    "
-                                                                    name="tipo_id"
-                                                                    id="tipo_id"
-                                                                    v-model="
-                                                                        modelo.tipo_id
-                                                                    "
-                                                                    data-control="select2"
-                                                                    :class="
-                                                                        errores
-                                                                            .tipo_id
-                                                                            .error
-                                                                            ? 'is-invalid'
-                                                                            : ''
-                                                                    "
-                                                                    data-placeholder="Seleciona una opcion"
-                                                                >
-                                                                    <option
-                                                                        value=""
-                                                                    ></option>
-                                                                    <option
-                                                                        v-for="item in tipo_empleados"
-                                                                        :key="
-                                                                            item.id
-                                                                        "
-                                                                        :value="
-                                                                            item.id
-                                                                        "
-                                                                    >
-                                                                        {{
-                                                                            item.tipo
-                                                                        }}
-                                                                    </option>
-                                                                </select>
-                                                                <div
-                                                                    class="
-                                                                        invalid-feedback
-                                                                    "
-                                                                >
-                                                                    {{
-                                                                        errores
-                                                                            .tipo_id
-                                                                            .mensaje
-                                                                    }}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1653,8 +1490,7 @@ export default {
         "errores_laravel",
         "csrf",
         "error",
-        "tipo_empleados",
-        "empleado",
+        "alumno",
     ],
     data() {
         return {
@@ -1666,7 +1502,6 @@ export default {
                 fecha_nacimiento: null,
                 genero: null,
                 distrito_id: null,
-                estado_civil: null,
                 nombres: null,
                 apellidos: null,
                 dni: null,
@@ -1700,10 +1535,6 @@ export default {
                     mensaje: "",
                 },
                 distrito_id: {
-                    error: false,
-                    mensaje: "",
-                },
-                estado_civil: {
                     error: false,
                     mensaje: "",
                 },
@@ -1752,13 +1583,13 @@ export default {
         };
     },
     created() {
-        this.modelo = this.empleado[0];
+        this.modelo = this.alumno[0];
     },
     mounted() {
         let $this = this;
         // console.log(this.errores_laravel)
         // console.log(this.error)
-        $this.ruta = route("empleado.update", this.modelo.id);
+        $this.ruta = route("alumno.update",this.modelo.id);
         let old_values = Object.entries(this.old);
         old_values.forEach((value, index, array) => {
             if (value[0] != "_token") {
@@ -1795,9 +1626,6 @@ export default {
             });
             $("#genero").on("change", function (e) {
                 $this.modelo.genero = $("#genero").val();
-            });
-            $("#estado_civil").on("change", function (e) {
-                $this.modelo.estado_civil = $("#estado_civil").val();
             });
             $("#distrito_id").on("change", function (e) {
                 $this.modelo.distrito_id = $("#distrito_id").val();
@@ -1934,7 +1762,7 @@ export default {
                 stepper.goPrevious();
                 KTUtil.scrollTop();
             });
-            if (this.empleado[0].url_imagen == null) {
+            if (this.alumno[0].url_imagen == null) {
                 $("#img_avatar_profile").css(
                     "background-image",
                     "url(" +
@@ -1948,7 +1776,7 @@ export default {
                     "url(" +
                         window.location.origin +
                         "/" +
-                        this.empleado[0].url_imagen.replace("public", "storage") +
+                        this.alumno[0].url_imagen.replace("public", "storage") +
                         ")"
                 );
             }

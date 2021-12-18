@@ -36,6 +36,10 @@ Vue.component('empleadoindex-component', require('./Components/Personal/Empleado
 Vue.component('empleadocreate-component', require('./Components/Personal/EmpleadoCreateComponent.vue').default);
 Vue.component('empleadoedit-component', require('./Components/Personal/EmpleadoEditComponent.vue').default);
 
+Vue.component('alumnoindex-component', require('./Components/Administracion/Alumno/AlumnoIndexComponent.vue').default);
+Vue.component('alumnocreate-component', require('./Components/Administracion/Alumno/AlumnoCreateComponent.vue').default);
+Vue.component('alumnoedit-component', require('./Components/Administracion/Alumno/AlumnoEditComponent.vue').default);
+
 Vue.component('rolindex-component', require('./Components/Administracion/RolIndexComponent.vue').default);
 Vue.component('rolcreate-component', require('./Components/Administracion/RolCreateComponent.vue').default);
 Vue.component('roledit-component', require('./Components/Administracion/RolEditComponent.vue').default);

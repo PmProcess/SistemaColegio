@@ -117,6 +117,16 @@
                     </a>
                 </div>
             @endif
+            @if (auth()->user()->can('haveaccess', 'alumno.index'))
+                <div class="menu-item ">
+                    <a class="menu-link @yield('alumno-active')" href="{{ route('alumno.index') }}">
+                        <span class="menu-bullet">
+                            <span class="bullet bullet-dot"></span>
+                        </span>
+                        <span class="menu-title">Alumnos</span>
+                    </a>
+                </div>
+            @endif
 
 
         </div>

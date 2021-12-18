@@ -50,6 +50,13 @@ class RolesSeeder extends Seeder
         ]);
         $permission_all[] = $permission->id;
 
+        $permission = Permission::create([
+            'name' => 'Listar Grado',
+            'slug' => 'grado.index',
+            'description' => 'Un usuario puede ver el modulo de Grado'
+        ]);
+        $permission_all[] = $permission->id;
+
         $roladmin->permissions()->sync($permission_all);
     }
 }
