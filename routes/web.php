@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Administracion\AlumnoController;
+use App\Http\Controllers\Administracion\ColegioControler;
 use App\Http\Controllers\Administracion\GradoController;
 use App\Http\Controllers\Administracion\RolController;
 use App\Http\Controllers\GradoCursoController;
@@ -73,7 +74,10 @@ Route::prefix('rol')->middleware('auth')->group(function () {
     Route::post('/destroy/{id}', [RolController::class, 'destroy'])->name('rol.destroy');
     Route::get('/getList', [RolController::class, 'getList'])->name('rol.getList');
 });
-
+Route::prefix('colegio')->middleware('auth')->group(function(){
+    Route::get('/',[ColegioControler::class,'index'])->name('colegio.index');
+    Route::post('/store',[ColegioControler::class,'store'])->name('colegio.store');
+});
 Route::prefix('grado')->middleware('auth')->group(function () {
     Route::get('/', [GradoController::class, 'index'])->name('grado.index');
     Route::post('/store', [GradoController::class, 'store'])->name('grado.store');

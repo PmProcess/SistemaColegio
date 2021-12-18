@@ -32,6 +32,7 @@ window.Vue = require('vue').default;
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('tipoempleadoindex-component', require('./Components/Personal/TipoEmpleadoIndexComponent.vue').default);
+Vue.component('colegioindex-component',require('./Components/Administracion/Colegio/ColegioIndexComponent.vue').default);
 Vue.component('empleadoindex-component', require('./Components/Personal/EmpleadoIndexComponent.vue').default);
 Vue.component('empleadocreate-component', require('./Components/Personal/EmpleadoCreateComponent.vue').default);
 Vue.component('empleadoedit-component', require('./Components/Personal/EmpleadoEditComponent.vue').default);

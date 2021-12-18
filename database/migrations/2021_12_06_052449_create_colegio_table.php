@@ -17,9 +17,7 @@ class CreateColegioTable extends Migration
             $table->id();
             $table->string('ruc')->nullable();
             $table->string('razon_social')->nullable();
-            $table->string('nombre_comercial')->nullable();
             $table->string('direccion')->nullable();
-            $table->string('direccion_fiscal')->nullable();
             $table->string('nombre_imagen')->nullable();
             $table->string('url_imagen')->nullable();
             $table->string('telefono')->nullable();

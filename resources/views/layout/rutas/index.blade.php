@@ -127,6 +127,16 @@
                     </a>
                 </div>
             @endif
+            @if (auth()->user()->can('haveaccess', 'colegio.index'))
+                <div class="menu-item ">
+                    <a class="menu-link @yield('colegio-active')" href="{{ route('colegio.index') }}">
+                        <span class="menu-bullet">
+                            <span class="bullet bullet-dot"></span>
+                        </span>
+                        <span class="menu-title">Datos del Colegio</span>
+                    </a>
+                </div>
+            @endif
 
 
         </div>

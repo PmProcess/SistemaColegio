@@ -5692,6 +5692,431 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Colegio/ColegioIndexComponent.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Colegio/ColegioIndexComponent.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: ["csrf", "colegio"],
+  data: function data() {
+    return {
+      ruta: null
+    };
+  },
+  created: function created() {
+    this.ruta = route("colegio.store");
+  },
+  mounted: function mounted() {
+    if (this.colegio.url_imagen == null) {
+      $("#img_avatar_profile").css("background-image", "url(" + window.location.origin + "/metronic/media/avatars/blank.png" + ")");
+    } else {
+      $("#img_avatar_profile").css("background-image", "url(" + window.location.origin + "/" + this.colegio.url_imagen.replace("public", "storage") + ")");
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/GradoCursoIndexComponent.vue?vue&type=script&lang=js&":
 /*!**********************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/GradoCursoIndexComponent.vue?vue&type=script&lang=js& ***!
@@ -13340,6 +13765,7 @@ window.Vue = (__webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('tipoempleadoindex-component', (__webpack_require__(/*! ./Components/Personal/TipoEmpleadoIndexComponent.vue */ "./resources/js/Components/Personal/TipoEmpleadoIndexComponent.vue")["default"]));
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('colegioindex-component', (__webpack_require__(/*! ./Components/Administracion/Colegio/ColegioIndexComponent.vue */ "./resources/js/Components/Administracion/Colegio/ColegioIndexComponent.vue")["default"]));
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('empleadoindex-component', (__webpack_require__(/*! ./Components/Personal/EmpleadoIndexComponent.vue */ "./resources/js/Components/Personal/EmpleadoIndexComponent.vue")["default"]));
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('empleadocreate-component', (__webpack_require__(/*! ./Components/Personal/EmpleadoCreateComponent.vue */ "./resources/js/Components/Personal/EmpleadoCreateComponent.vue")["default"]));
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('empleadoedit-component', (__webpack_require__(/*! ./Components/Personal/EmpleadoEditComponent.vue */ "./resources/js/Components/Personal/EmpleadoEditComponent.vue")["default"]));
@@ -70011,6 +70437,45 @@ component.options.__file = "resources/js/Components/Administracion/Alumno/Alumno
 
 /***/ }),
 
+/***/ "./resources/js/Components/Administracion/Colegio/ColegioIndexComponent.vue":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/Components/Administracion/Colegio/ColegioIndexComponent.vue ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _ColegioIndexComponent_vue_vue_type_template_id_9b744292___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ColegioIndexComponent.vue?vue&type=template&id=9b744292& */ "./resources/js/Components/Administracion/Colegio/ColegioIndexComponent.vue?vue&type=template&id=9b744292&");
+/* harmony import */ var _ColegioIndexComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ColegioIndexComponent.vue?vue&type=script&lang=js& */ "./resources/js/Components/Administracion/Colegio/ColegioIndexComponent.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ColegioIndexComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ColegioIndexComponent_vue_vue_type_template_id_9b744292___WEBPACK_IMPORTED_MODULE_0__.render,
+  _ColegioIndexComponent_vue_vue_type_template_id_9b744292___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Components/Administracion/Colegio/ColegioIndexComponent.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/Components/Administracion/GradoCursoIndexComponent.vue":
 /*!*****************************************************************************!*\
   !*** ./resources/js/Components/Administracion/GradoCursoIndexComponent.vue ***!
@@ -70451,6 +70916,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Components/Administracion/Colegio/ColegioIndexComponent.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************!*\
+  !*** ./resources/js/Components/Administracion/Colegio/ColegioIndexComponent.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ColegioIndexComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./ColegioIndexComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Colegio/ColegioIndexComponent.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ColegioIndexComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
 /***/ "./resources/js/Components/Administracion/GradoCursoIndexComponent.vue?vue&type=script&lang=js&":
 /*!******************************************************************************************************!*\
   !*** ./resources/js/Components/Administracion/GradoCursoIndexComponent.vue?vue&type=script&lang=js& ***!
@@ -70684,6 +71165,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AlumnoIndexComponent_vue_vue_type_template_id_2442f625___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AlumnoIndexComponent_vue_vue_type_template_id_2442f625___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AlumnoIndexComponent.vue?vue&type=template&id=2442f625& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Alumno/AlumnoIndexComponent.vue?vue&type=template&id=2442f625&");
+
+
+/***/ }),
+
+/***/ "./resources/js/Components/Administracion/Colegio/ColegioIndexComponent.vue?vue&type=template&id=9b744292&":
+/*!*****************************************************************************************************************!*\
+  !*** ./resources/js/Components/Administracion/Colegio/ColegioIndexComponent.vue?vue&type=template&id=9b744292& ***!
+  \*****************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ColegioIndexComponent_vue_vue_type_template_id_9b744292___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ColegioIndexComponent_vue_vue_type_template_id_9b744292___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ColegioIndexComponent_vue_vue_type_template_id_9b744292___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./ColegioIndexComponent.vue?vue&type=template&id=9b744292& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Colegio/ColegioIndexComponent.vue?vue&type=template&id=9b744292&");
 
 
 /***/ }),
@@ -75073,6 +75571,506 @@ var staticRenderFns = [
         ),
       ]
     )
+  },
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Colegio/ColegioIndexComponent.vue?vue&type=template&id=9b744292&":
+/*!********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Colegio/ColegioIndexComponent.vue?vue&type=template&id=9b744292& ***!
+  \********************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "post d-flex flex-column-fluid",
+        attrs: { id: "kt_post" },
+      },
+      [
+        _c(
+          "div",
+          {
+            staticClass: "container-xxl",
+            attrs: { id: "kt_content_container" },
+          },
+          [
+            _c("div", { staticClass: "card" }, [
+              _c(
+                "form",
+                {
+                  attrs: {
+                    action: _vm.ruta,
+                    method: "POST",
+                    enctype: "multipart/form-data",
+                  },
+                },
+                [
+                  _c("input", {
+                    attrs: { type: "hidden", name: "_token" },
+                    domProps: { value: _vm.csrf },
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "container" }, [
+                    _c("div", { staticClass: "row mb-4" }, [
+                      _c("div", { staticClass: "col-md-6" }, [
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-md-6" }, [
+                            _vm._m(1),
+                            _vm._v(" "),
+                            _c("input", {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.colegio.ruc,
+                                  expression: "colegio.ruc",
+                                },
+                              ],
+                              staticClass:
+                                "\n                                                form-control\n                                                form-control-solid\n                                                form-control-sm\n                                            ",
+                              attrs: { type: "number", name: "ruc" },
+                              domProps: { value: _vm.colegio.ruc },
+                              on: {
+                                input: function ($event) {
+                                  if ($event.target.composing) {
+                                    return
+                                  }
+                                  _vm.$set(
+                                    _vm.colegio,
+                                    "ruc",
+                                    $event.target.value
+                                  )
+                                },
+                              },
+                            }),
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-md-6" }, [
+                            _vm._m(2),
+                            _vm._v(" "),
+                            _c("input", {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.colegio.telefono,
+                                  expression: "colegio.telefono",
+                                },
+                              ],
+                              staticClass:
+                                "\n                                                form-control\n                                                form-control-solid\n                                                form-control-sm\n                                            ",
+                              attrs: { type: "text", name: "telefono" },
+                              domProps: { value: _vm.colegio.telefono },
+                              on: {
+                                input: function ($event) {
+                                  if ($event.target.composing) {
+                                    return
+                                  }
+                                  _vm.$set(
+                                    _vm.colegio,
+                                    "telefono",
+                                    $event.target.value
+                                  )
+                                },
+                              },
+                            }),
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-md-12" }, [
+                            _vm._m(3),
+                            _vm._v(" "),
+                            _c("input", {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.colegio.razon_social,
+                                  expression: "colegio.razon_social",
+                                },
+                              ],
+                              staticClass:
+                                "\n                                                form-control\n                                                form-control-solid\n                                                form-control-sm\n                                            ",
+                              attrs: { type: "text", name: "razon_social" },
+                              domProps: { value: _vm.colegio.razon_social },
+                              on: {
+                                input: function ($event) {
+                                  if ($event.target.composing) {
+                                    return
+                                  }
+                                  _vm.$set(
+                                    _vm.colegio,
+                                    "razon_social",
+                                    $event.target.value
+                                  )
+                                },
+                              },
+                            }),
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-md-12" }, [
+                            _vm._m(4),
+                            _vm._v(" "),
+                            _c("input", {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.colegio.direccion,
+                                  expression: "colegio.direccion",
+                                },
+                              ],
+                              staticClass:
+                                "\n                                                form-control\n                                                form-control-solid\n                                                form-control-sm\n                                            ",
+                              attrs: { type: "text", name: "direccion" },
+                              domProps: { value: _vm.colegio.direccion },
+                              on: {
+                                input: function ($event) {
+                                  if ($event.target.composing) {
+                                    return
+                                  }
+                                  _vm.$set(
+                                    _vm.colegio,
+                                    "direccion",
+                                    $event.target.value
+                                  )
+                                },
+                              },
+                            }),
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-md-12" }, [
+                            _vm._m(5),
+                            _vm._v(" "),
+                            _c("input", {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.colegio.correo,
+                                  expression: "colegio.correo",
+                                },
+                              ],
+                              staticClass:
+                                "\n                                                form-control\n                                                form-control-solid\n                                                form-control-sm\n                                            ",
+                              attrs: { type: "text", name: "correo" },
+                              domProps: { value: _vm.colegio.correo },
+                              on: {
+                                input: function ($event) {
+                                  if ($event.target.composing) {
+                                    return
+                                  }
+                                  _vm.$set(
+                                    _vm.colegio,
+                                    "correo",
+                                    $event.target.value
+                                  )
+                                },
+                              },
+                            }),
+                          ]),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _vm._m(6),
+                    ]),
+                    _vm._v(" "),
+                    _vm._m(7),
+                  ]),
+                ]
+              ),
+            ]),
+          ]
+        ),
+      ]
+    ),
+  ])
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "toolbar", attrs: { id: "kt_toolbar" } }, [
+      _c(
+        "div",
+        {
+          staticClass: "container-fluid d-flex flex-stack",
+          attrs: { id: "kt_toolbar_container" },
+        },
+        [
+          _c(
+            "div",
+            {
+              staticClass:
+                "\n                    page-title\n                    d-flex\n                    align-items-center\n                    flex-wrap\n                    me-3\n                    mb-5 mb-lg-0\n                ",
+              attrs: {
+                "data-kt-swapper": "true",
+                "data-kt-swapper-mode": "prepend",
+                "data-kt-swapper-parent":
+                  "{default: '#kt_content_container', 'lg': '#kt_toolbar_container'}",
+              },
+            },
+            [
+              _c(
+                "h1",
+                {
+                  staticClass:
+                    "\n                        d-flex\n                        align-items-center\n                        text-dark\n                        fw-bolder\n                        fs-3\n                        my-1\n                    ",
+                },
+                [_vm._v("\n                    Colegio\n                ")]
+              ),
+              _vm._v(" "),
+              _c("span", {
+                staticClass: "h-20px border-gray-200 border-start mx-4",
+              }),
+              _vm._v(" "),
+              _c(
+                "ul",
+                {
+                  staticClass:
+                    "\n                        breadcrumb breadcrumb-separatorless\n                        fw-bold\n                        fs-7\n                        my-1\n                    ",
+                },
+                [
+                  _c("li", { staticClass: "breadcrumb-item text-dark" }, [
+                    _vm._v(
+                      "\n                        Datos del Colegio\n                    "
+                    ),
+                  ]),
+                ]
+              ),
+            ]
+          ),
+        ]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                d-flex\n                                                align-items-center\n                                                fs-6\n                                                fw-bold\n                                                mt-4\n                                                mb-2\n                                            ",
+      },
+      [
+        _c("span", { staticClass: "required" }, [_vm._v("Ruc")]),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                    fas\n                                                    fa-exclamation-circle\n                                                    ms-2\n                                                    fs-7\n                                                ",
+          attrs: { "data-bs-toggle": "tooltip", title: "El ruc de colegio" },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                d-flex\n                                                align-items-center\n                                                fs-6\n                                                fw-bold\n                                                mt-4\n                                                mb-2\n                                            ",
+      },
+      [
+        _c("span", { staticClass: "required" }, [_vm._v("Telefono")]),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                    fas\n                                                    fa-exclamation-circle\n                                                    ms-2\n                                                    fs-7\n                                                ",
+          attrs: {
+            "data-bs-toggle": "tooltip",
+            title: "El Telefono de colegio",
+          },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                d-flex\n                                                align-items-center\n                                                fs-6\n                                                fw-bold\n                                                mt-4\n                                                mb-2\n                                            ",
+      },
+      [
+        _c("span", { staticClass: "required" }, [_vm._v("Razon Social")]),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                    fas\n                                                    fa-exclamation-circle\n                                                    ms-2\n                                                    fs-7\n                                                ",
+          attrs: {
+            "data-bs-toggle": "tooltip",
+            title: "La Razon Social del colegio",
+          },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                d-flex\n                                                align-items-center\n                                                fs-6\n                                                fw-bold\n                                                mt-4\n                                                mb-2\n                                            ",
+      },
+      [
+        _c("span", { staticClass: "required" }, [_vm._v("Direccion")]),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                    fas\n                                                    fa-exclamation-circle\n                                                    ms-2\n                                                    fs-7\n                                                ",
+          attrs: {
+            "data-bs-toggle": "tooltip",
+            title: "La Direccion del colegio",
+          },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                                d-flex\n                                                align-items-center\n                                                fs-6\n                                                fw-bold\n                                                mt-4\n                                                mb-2\n                                            ",
+      },
+      [
+        _c("span", { staticClass: "required" }, [_vm._v("Correo")]),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                    fas\n                                                    fa-exclamation-circle\n                                                    ms-2\n                                                    fs-7\n                                                ",
+          attrs: {
+            "data-bs-toggle": "tooltip",
+            title: "El Correo del colegio",
+          },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-6" }, [
+      _c(
+        "div",
+        {
+          staticClass: "image-input image-input-empty mt-2",
+          attrs: { id: "img_avatar_profile", "data-kt-image-input": "true" },
+        },
+        [
+          _c("div", {
+            staticClass:
+              "\n                                            image-input-wrapper\n                                            w-300px\n                                            h-300px\n                                        ",
+          }),
+          _vm._v(" "),
+          _c(
+            "label",
+            {
+              staticClass:
+                "\n                                            btn\n                                            btn-icon\n                                            btn-circle\n                                            btn-active-color-primary\n                                            w-25px\n                                            h-25px\n                                            bg-white\n                                            shadow\n                                        ",
+              attrs: {
+                "data-kt-image-input-action": "change",
+                "data-bs-toggle": "tooltip",
+                "data-bs-dismiss": "click",
+                title: "Change avatar",
+              },
+            },
+            [
+              _c("i", { staticClass: "bi bi-pencil-fill fs-7" }),
+              _vm._v(" "),
+              _c("input", {
+                attrs: {
+                  type: "file",
+                  name: "avatar",
+                  accept: ".png, .jpg, .jpeg",
+                },
+              }),
+              _vm._v(" "),
+              _c("input", { attrs: { type: "hidden", name: "avatar_remove" } }),
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "span",
+            {
+              staticClass:
+                "\n                                            btn\n                                            btn-icon\n                                            btn-circle\n                                            btn-active-color-primary\n                                            w-25px\n                                            h-25px\n                                            bg-white\n                                            shadow\n                                        ",
+              attrs: {
+                "data-kt-image-input-action": "cancel",
+                "data-bs-toggle": "tooltip",
+                "data-bs-dismiss": "click",
+                title: "Cancel avatar",
+              },
+            },
+            [_c("i", { staticClass: "bi bi-x fs-2" })]
+          ),
+          _vm._v(" "),
+          _c(
+            "span",
+            {
+              staticClass:
+                "\n                                            btn\n                                            btn-icon\n                                            btn-circle\n                                            btn-active-color-primary\n                                            w-25px\n                                            h-25px\n                                            bg-white\n                                            shadow\n                                        ",
+              attrs: {
+                "data-kt-image-input-action": "remove",
+                "data-bs-toggle": "tooltip",
+                "data-bs-dismiss": "click",
+                title: "Remove avatar",
+              },
+            },
+            [_c("i", { staticClass: "bi bi-x fs-2" })]
+          ),
+        ]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mb-4", staticStyle: { float: "right" } }, [
+      _c(
+        "button",
+        { staticClass: "btn btn-primary btn-sm", attrs: { type: "submit" } },
+        [
+          _vm._v(
+            "\n                                Guardar\n                            "
+          ),
+        ]
+      ),
+    ])
   },
 ]
 render._withStripped = true
