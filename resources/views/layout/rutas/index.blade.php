@@ -137,6 +137,16 @@
                     </a>
                 </div>
             @endif
+            @if (auth()->user()->can('haveaccess', 'matricula.index'))
+            <div class="menu-item ">
+                <a class="menu-link @yield('matricula-active')" href="{{ route('matricula.index') }}">
+                    <span class="menu-bullet">
+                        <span class="bullet bullet-dot"></span>
+                    </span>
+                    <span class="menu-title">Matriculas</span>
+                </a>
+            </div>
+        @endif
 
 
         </div>

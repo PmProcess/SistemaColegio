@@ -16,4 +16,12 @@ class GradoSeccion extends Model
         'descripcion'
     ];
     public $timestamps=true;
+    public function grado()
+    {
+        return $this->belongsTo(Grado::class,'grado_id');
+    }
+    public function seccion()
+    {
+        return $this->belongsTo(Seccion::class,'seccion_id');
+    }
 }

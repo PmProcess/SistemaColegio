@@ -17,10 +17,10 @@ class Grado extends Model
     public $timestamps = true;
     public function secciones()
     {
-        return $this->belongsToMany(Seccion::class,'grado_seccion','grado_id','seccion_id')->withTimestamps()->withPivot(['n_alumnos','descripcion']);
+        return $this->belongsToMany(Seccion::class,'grado_seccion','grado_id','seccion_id')->withTimestamps()->withPivot(['n_alumnos','descripcion','id']);
     }
     public function cursos()
     {
-        return $this->belongsToMany(Curso::class,'grado_curso','grado_id','curso_id')->withTimestamps()->withPivot(['horas','descripcion']);
+        return $this->belongsToMany(Curso::class,'grado_curso','grado_id','curso_id')->withTimestamps()->withPivot(['horas','descripcion','id']);
     }
 }
