@@ -32,7 +32,7 @@
                             my-1
                         "
                     >
-                        Empleado
+                        Alumno
                     </h1>
                     <!--end::Title-->
                     <!--begin::Separator-->
@@ -73,7 +73,7 @@
                         <!--end::Item-->
                         <!--begin::Item-->
                         <li class="breadcrumb-item text-dark">
-                            Lista de Empleados
+                            Create Alumnos
                         </li>
                         <!--end::Item-->
                     </ul>

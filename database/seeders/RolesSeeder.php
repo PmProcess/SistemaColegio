@@ -51,11 +51,33 @@ class RolesSeeder extends Seeder
         $permission_all[] = $permission->id;
 
         $permission = Permission::create([
-            'name' => 'Listar Grado',
+            'name' => 'Listar Grados',
             'slug' => 'grado.index',
             'description' => 'Un usuario puede ver el modulo de Grado'
         ]);
         $permission_all[] = $permission->id;
+
+        $permission = Permission::create([
+            'name' => 'Listar Alumnos',
+            'slug' => 'alumno.index',
+            'description' => 'Un usuario puede ver el modulo de Alumno'
+        ]);
+        $permission_all[] = $permission->id;
+
+        $permission = Permission::create([
+            'name' => 'Datos del Colegio',
+            'slug' => 'colegio.index',
+            'description' => 'Un usuario puede Modificar Datos del Colegio'
+        ]);
+        $permission_all[] = $permission->id;
+
+        $permission = Permission::create([
+            'name' => 'Listar Matriculas',
+            'slug' => 'matricula.index',
+            'description' => 'Un usuario puede ver el modulo Matriculas'
+        ]);
+        $permission_all[] = $permission->id;
+
 
         $roladmin->permissions()->sync($permission_all);
     }

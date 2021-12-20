@@ -3,6 +3,7 @@
 use App\Http\Controllers\Administracion\AlumnoController;
 use App\Http\Controllers\Administracion\ColegioControler;
 use App\Http\Controllers\Administracion\GradoController;
+use App\Http\Controllers\Administracion\MatriculaController;
 use App\Http\Controllers\Administracion\RolController;
 use App\Http\Controllers\GradoCursoController;
 use App\Http\Controllers\GradoSeccionController;
@@ -77,6 +78,15 @@ Route::prefix('rol')->middleware('auth')->group(function () {
 Route::prefix('colegio')->middleware('auth')->group(function(){
     Route::get('/',[ColegioControler::class,'index'])->name('colegio.index');
     Route::post('/store',[ColegioControler::class,'store'])->name('colegio.store');
+});
+Route::prefix('matricula')->middleware('auth')->group(function(){
+    Route::get('/',[MatriculaController::class,'index'])->name('matricula.index');
+    Route::get('/create',[MatriculaController::class,'create'])->name('matricula.create');
+    Route::post('/store',[MatriculaController::class,'store'])->name('matricula.store');
+    Route::get('/edit/{id}',[MatriculaController::class,'edit'])->name('matricula.edit');
+    Route::post('/update/{id}',[MatriculaController::class,'update'])->name('matricula.update');
+    Route::get('/destroy/{id}',[MatriculaController::class,'destroy'])->name('matricula.destroy');
+    Route::get('/getList', [MatriculaController::class, 'getList'])->name('matricula.getList');
 });
 Route::prefix('grado')->middleware('auth')->group(function () {
     Route::get('/', [GradoController::class, 'index'])->name('grado.index');

@@ -1,5 +1,9 @@
 <?php
 
+use App\Models\Administracion\Alumno;
+use App\Models\Administracion\Curso;
+use App\Models\Administracion\Grado;
+use App\Models\Administracion\YearEscolar;
 use App\Models\Personal\TipoEmpleado;
 use App\Models\Ubigeo\Departamento;
 use App\Models\Ubigeo\Distrito;
@@ -34,5 +38,22 @@ if(!function_exists('permisos'))
 {
     function permisos(){
         return Permission::get();
+    }
+}
+if(!function_exists('alumnos'))
+{
+    function alumnos(){
+        return Alumno::with(['persona.personaDni'])->get();
+    }
+}
+if(!function_exists('grados'))
+{
+    function grados(){
+        return Grado::where('estado','ACTIVO')->with(['cursos','secciones'])->get();
+    }
+}
+if(!function_exists('gradoEscolar')){
+    function gradoEscolar(){
+        return YearEscolar::get();
     }
 }

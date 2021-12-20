@@ -370,21 +370,21 @@ export default {
                 $("#modalGrado").modal("show");
             }
         });
-        $(document).on("click",'.btn-list',function(){
+        $(document).on("click", ".btn-list", function () {
             let row = $this.table.row($(this).closest("tr")).data();
-            window.location.href=route('grado.seccion.index',row.id);
-        })
-        $(document).on("click",'.btn-list-curso',function(){
+            window.location.href = route("grado.seccion.index", row.id);
+        });
+        $(document).on("click", ".btn-list-curso", function () {
             let row = $this.table.row($(this).closest("tr")).data();
-            window.location.href=route('grado.curso.index',row.id);
-        })
+            window.location.href = route("grado.curso.index", row.id);
+        });
         $(document).on("click", ".btn-edit", function () {
             let row = $this.table.row($(this).closest("tr")).data();
             $this.limpiarErrores();
             $this.limpiarModelo();
-            $this.ruta = route("grado.update",row.id);
-            $this.modelo.grado=row.grado
-            $this.modelo.descripcion=row.descripcion
+            $this.ruta = route("grado.update", row.id);
+            $this.modelo.grado = row.grado;
+            $this.modelo.descripcion = row.descripcion;
             $("#modalGrado").modal("show");
         });
         $(document).on("click", ".btn-delete", function () {
@@ -426,9 +426,9 @@ export default {
             let $this = this;
             let errores_values = Object.entries(this.errores);
             errores_values.forEach((value, index, array) => {
-                $this.errores[value[0]].error=false
-                $this.errores[value[0]].mensaje=""
-            })
+                $this.errores[value[0]].error = false;
+                $this.errores[value[0]].mensaje = "";
+            });
         },
         limpiarModelo: function () {
             let $this = this;
@@ -453,7 +453,7 @@ export default {
                     {
                         data: null,
                         className: "text-center",
-                        width:"5%",
+                        width: "5%",
                         render: function (data) {
                             data;
                             return data.id;
@@ -462,27 +462,35 @@ export default {
                     {
                         data: null,
                         className: "text-center",
-                        width:"20%",
+                        width: "20%",
                         render: function (data) {
                             return data.grado;
                         },
                     },
                     {
                         data: null,
-                        width:"40%",
+                        width: "40%",
                         render: function (data) {
                             return data.descripcion;
                         },
                     },
                     {
                         data: null,
-                        className:"text-center",
+                        className: "text-center",
                         render: function (data) {
+                            // return '<div class="dropdown">' +
+                            //     '<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">afdas</button>' +
+                            //     '<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">' +
+                            //     '<a class="dropdown-item" href="#">Action</a>' +
+                            //     '<a class="dropdown-item" href="#">Another action</a>' +
+                            //     '<a class="dropdown-item" href="#">Something else here</a>' +
+                            //     '</div>' +
+                            //     '</div>'
                             return (
                                 "<div class='btn-group'>" +
                                 "<button title='Editar Grado' class='btn btn-primary btn-sm btn-edit'><i class='fas fa-pencil-alt'></i></button>" +
                                 "<button title='Ver secciones' class='btn btn-secondary btn-sm btn-list'><i class='fas fa-list'></i></button>" +
-                                "<button title='Ver cursos' class='btn btn-secondary btn-sm btn-list-curso'><i class='fas fa-list'></i></button>" +
+                                "<button title='Ver cursos' class='btn btn-secondary btn-sm btn-list-curso'><i class='fas fa-book'></i></button>" +
                                 "<button title='Elimar Grado' class='btn btn-danger btn-sm btn-delete'><i class='fa fa-trash'></i></button>" +
                                 "</div>"
                             );
