@@ -25,6 +25,8 @@ class CreateMatriculaTable extends Migration
             $table->foreign('year_escolar_id')->references('id')->on('year_escolar')->onDelete('cascade');
             $table->dateTime('fecha_registro');
             $table->decimal('monto_total');
+            $table->decimal('monto_deuda');
+            $table->enum('estado_pago',['PENDIENTE','PAGADO'])->default('PENDIENTE');
             $table->timestamps();
         });
     }

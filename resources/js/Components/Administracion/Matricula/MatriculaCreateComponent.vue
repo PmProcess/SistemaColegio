@@ -494,11 +494,10 @@ export default {
             fecha.getFullYear() +
             "-" +
             (fecha.getMonth() + 1 < 10
-                ? "0" + fecha.getMonth()
-                : fecha.getMonth()) +
+                ? "0" + (fecha.getMonth() + 1)
+                : fecha.getMonth() + 1) +
             "-" +
             (fecha.getDay() < 10 ? "0" + fecha.getDay() : fecha.getDay());
-        console.log(this.grados);
     },
     mounted() {
         let $this = this;

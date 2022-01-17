@@ -2,7 +2,9 @@
 
 namespace App\Models\Administracion;
 
+use App\Models\DocumentoPago;
 use App\Models\User;
+use CreateDocumentoPagoTable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -16,6 +18,7 @@ class Matricula extends Model
         'grado_seccion_id',
         'year_escolar_id',
         'fecha_registro',
+        'monto_deuda',
         'monto_total'
     ];
     public function alumno(){
@@ -29,6 +32,9 @@ class Matricula extends Model
     }
     public function yearEscolar(){
         return $this->belongsTo(YearEscolar::class,'year_escolar_id');
+    }
+    public function pagos(){
+        return $this->hasMany(DocumentoPago::class,'matricula_id');
     }
 
 }

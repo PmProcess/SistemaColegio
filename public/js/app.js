@@ -7816,7 +7816,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               switch (_context.prev = _context.next) {
                 case 0:
                   if (result.isConfirmed) {
-                    window.location.href = route("grado.seccion.destroy", {
+                    window.location.href = route("matricula.pago.destroy", {
                       id: item.id,
                       grado_id: item.pivot.grado_id
                     });
@@ -8336,8 +8336,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   created: function created() {
     var fecha = new Date();
-    this.modelo.fecha_registro = fecha.getFullYear() + "-" + (fecha.getMonth() + 1 < 10 ? "0" + fecha.getMonth() : fecha.getMonth()) + "-" + (fecha.getDay() < 10 ? "0" + fecha.getDay() : fecha.getDay());
-    console.log(this.grados);
+    this.modelo.fecha_registro = fecha.getFullYear() + "-" + (fecha.getMonth() + 1 < 10 ? "0" + (fecha.getMonth() + 1) : fecha.getMonth() + 1) + "-" + (fecha.getDay() < 10 ? "0" + fecha.getDay() : fecha.getDay());
   },
   mounted: function mounted() {
     var $this = this;
@@ -8603,6 +8602,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -8651,11 +8652,19 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         };
       }());
     });
+    $(document).on("click", ".btn-money", function () {
+      var row = $this.table.row($(this).closest("tr")).data();
+      window.location.href = route("matricula.pago.index", row.id);
+    });
+    $(document).on("click", ".btn-pdf", function () {
+      var row = $this.table.row($(this).closest("tr")).data();
+      window.location.href = route("matricula.pdf", row.id);
+    });
     $this.dataTableInicializacion();
   },
   methods: {
     createMatricula: function createMatricula() {
-      window.location.href = route('matricula.create');
+      window.location.href = route("matricula.create");
     },
     dataTableInicializacion: function dataTableInicializacion() {
       this.table = $("#tableMatriculas").DataTable({
@@ -8691,7 +8700,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           data: null,
           className: "text-center",
           render: function render(data) {
-            console.log(data);
             return data.grado_seccion.grado.grado + "-" + data.grado_seccion.seccion.seccion;
           }
         }, {
@@ -8702,11 +8710,809 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         }, {
           data: null,
           render: function render(data) {
+            return data.monto_deuda;
+          }
+        }, {
+          data: null,
+          render: function render(data) {
+            return data.monto_deuda == 0 ? 'PAGADO' : 'PENDIENTE';
+          }
+        }, {
+          data: null,
+          render: function render(data) {
             return "<div class='btn-group'>" + // "<button class='btn btn-primary btn-sm btn-edit'><i class='fas fa-pencil-alt'></i></button>" +
-            "<button class='btn btn-danger btn-sm btn-delete'><i class='fa fa-trash'></i></button>" + "</div>";
+            "<button class='btn btn-danger btn-sm btn-delete'><i class='fa fa-trash'></i></button>" + "<button class='btn btn-success btn-sm btn-money'><i class='fas fa-money-check-alt'></i></button>" + "<button class='btn btn-warning btn-sm btn-pdf'><i class='fas fa-file-pdf'></i></button>" + "</div>";
           }
         }]
       });
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Matricula/Pago/MatriculaPagoIndexComponent.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Matricula/Pago/MatriculaPagoIndexComponent.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: ["tiposdocumentos", "clientes", "csrf", "pagos", "matricula", "validaciones", "vista", "old", "elemento"],
+  data: function data() {
+    return {
+      ruta: "",
+      rutaprincipal: "",
+      modelo: {
+        tipo_documento_id: "",
+        documento: "",
+        nombre_cliente: "",
+        total: ""
+      },
+      errores: {
+        tipo_documento_id: {
+          error: false,
+          mensaje: ""
+        },
+        documento: {
+          error: false,
+          mensaje: ""
+        },
+        nombre_cliente: {
+          error: false,
+          mensaje: ""
+        },
+        total: {
+          error: false,
+          mensaje: ""
+        }
+      }
+    };
+  },
+  created: function created() {
+    this.rutaprincipal = window.location.origin;
+  },
+  mounted: function mounted() {
+    var $this = this;
+    var old_values = Object.entries(this.old);
+    old_values.forEach(function (value, index, array) {
+      if (value[0] != "_token") {
+        if (value[0] == "distrito_id") {
+          $this.getUbigeoOld(value[1]);
+        } else {
+          $this.modelo[value[0]] = value[1];
+        }
+      }
+    }); //------------------------
+
+    if (this.validaciones != null) {
+      var validaciones_values = Object.entries(this.validaciones);
+      validaciones_values.forEach(function (value, index, array) {
+        $this.errores[value[0]].error = true;
+        $this.errores[value[0]].mensaje = value[1][0];
+      });
+    } //--------------------
+
+
+    window.addEventListener("load", function (e) {
+      if ($this.vista != null) {
+        if ($this.vista == "create") {
+          $this.ruta = route("matricula.pago.store", {
+            matricula_id: $this.matricula.id
+          });
+        } else {
+          $this.ruta = route("matricula.pago.update", {
+            id: $this.elemento.id,
+            matricula_id: $this.matricula.id
+          });
+        }
+
+        $("#modalPago").modal("show");
+      }
+
+      $("#img_avatar_profile").css("background-image", "url(" + window.location.origin + "/metronic/media/avatars/blank.png" + ")");
+      $("#tipo_documento_id").on("change", function (e) {
+        $this.modelo.tipo_documento_id = $("#tipo_documento_id").val();
+      });
+    });
+  },
+  methods: {
+    createPago: function createPago() {
+      if (this.matricula.monto_deuda > 0) {
+        this.ruta = route("matricula.pago.store", {
+          matricula_id: this.matricula.id
+        });
+        $("#modalPago").modal("show");
+      } else {
+        toastr.error("La matricula ya esta pagada completamente");
+      }
+    },
+    editPago: function editPago(item) {
+      console.log(item);
+      this.ruta = route("matricula.pago.update", {
+        id: item.id,
+        matricula_id: this.matricula.id
+      });
+      $("#tipo_documento_id").val(item.tipo_documento_id).trigger("change");
+      this.modelo.documento = item.documento;
+      this.modelo.nombre_cliente = item.nombre_cliente;
+      this.modelo.total = item.total;
+      this.modelo.tipo_documento_id = item.tipo_documento_id;
+
+      if (item.url_imagen != null) {
+        console.log("lllgfd");
+        $("#img_avatar_profile").css("background-image", "url(" + window.location.origin + "/" + +item.url_imagen.replace("public", "storage") + ")");
+      }
+
+      $("#modalPago").modal("show");
+    },
+    deletePago: function deletePago(item) {
+      var $this = this;
+      Swal.fire({
+        title: "Estas Seguro?",
+        text: "Tu deseas eliminar este Registro",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Aceptar",
+        cancelButtonText: "Cancelar"
+      }).then( /*#__PURE__*/function () {
+        var _ref = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee(result) {
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
+            while (1) {
+              switch (_context.prev = _context.next) {
+                case 0:
+                  if (result.isConfirmed) {
+                    window.location.href = route("matricula.pago.destroy", {
+                      id: item.id,
+                      matricula_id: $this.matricula.id
+                    });
+                  }
+
+                case 1:
+                case "end":
+                  return _context.stop();
+              }
+            }
+          }, _callee);
+        }));
+
+        return function (_x) {
+          return _ref.apply(this, arguments);
+        };
+      }());
     }
   }
 });
@@ -14653,6 +15459,7 @@ vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('empleadoedit-component', 
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('matriculaindex-component', (__webpack_require__(/*! ./Components/Administracion/Matricula/MatriculaIndexComponent.vue */ "./resources/js/Components/Administracion/Matricula/MatriculaIndexComponent.vue")["default"]));
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('matriculacreate-component', (__webpack_require__(/*! ./Components/Administracion/Matricula/MatriculaCreateComponent.vue */ "./resources/js/Components/Administracion/Matricula/MatriculaCreateComponent.vue")["default"]));
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('matriculaedit-component', (__webpack_require__(/*! ./Components/Administracion/Matricula/MatriculaEditComponent.vue */ "./resources/js/Components/Administracion/Matricula/MatriculaEditComponent.vue")["default"]));
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('matriculapagoindex-component', (__webpack_require__(/*! ./Components/Administracion/Matricula/Pago/MatriculaPagoIndexComponent.vue */ "./resources/js/Components/Administracion/Matricula/Pago/MatriculaPagoIndexComponent.vue")["default"]));
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('alumnoindex-component', (__webpack_require__(/*! ./Components/Administracion/Alumno/AlumnoIndexComponent.vue */ "./resources/js/Components/Administracion/Alumno/AlumnoIndexComponent.vue")["default"]));
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('alumnocreate-component', (__webpack_require__(/*! ./Components/Administracion/Alumno/AlumnoCreateComponent.vue */ "./resources/js/Components/Administracion/Alumno/AlumnoCreateComponent.vue")["default"]));
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('alumnoedit-component', (__webpack_require__(/*! ./Components/Administracion/Alumno/AlumnoEditComponent.vue */ "./resources/js/Components/Administracion/Alumno/AlumnoEditComponent.vue")["default"]));
@@ -14795,7 +15602,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* The container */\n.container_custom {\n    display: block;\n    position: relative;\n    padding-left: 35px;\n    margin-bottom: 12px;\n    cursor: pointer;\n    font-size: 22px;\n    -webkit-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    user-select: none;\n}\n\n/* Hide the browser's default checkbox */\n.container_custom input {\n    position: absolute;\n    opacity: 0;\n    cursor: pointer;\n    height: 0;\n    width: 0;\n}\n\n/* Create a custom checkbox */\n.checkmark {\n    position: absolute;\n    top: 0;\n    left: 0;\n    height: 25px;\n    width: 25px;\n    background-color: #eee;\n}\n\n/* On mouse-over, add a grey background color */\n.container_custom :hover input ~ .checkmark {\n    background-color: #ccc;\n}\n\n/* When the checkbox is checked, add a blue background */\n.container_custom input:checked ~ .checkmark {\n    background-color: #2196f3;\n}\n\n/* Create the checkmark/indicator (hidden when not checked) */\n.checkmark:after {\n    content: \"\";\n    position: absolute;\n    display: none;\n}\n\n/* Show the checkmark when checked */\n.container_custom input:checked ~ .checkmark:after {\n    display: block;\n}\n\n/* Style the checkmark/indicator */\n.container_custom .checkmark:after {\n    left: 9px;\n    top: 5px;\n    width: 5px;\n    height: 10px;\n    border: solid white;\n    border-width: 0 3px 3px 0;\n    transform: rotate(45deg);\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* The container */\n.container_custom {\n    display: block;\n    position: relative;\n    padding-left: 35px;\n    margin-bottom: 12px;\n    cursor: pointer;\n    font-size: 22px;\n    -webkit-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    user-select: none;\n}\n\n/* Hide the browser's default checkbox */\n.container_custom input {\n    position: absolute;\n    opacity: 0;\n    cursor: pointer;\n    height: 0;\n    width: 0;\n}\n\n/* Create a custom checkbox */\n.checkmark {\n    position: absolute;\n    top: 0;\n    left: 0;\n    height: 25px;\n    width: 25px;\n    background-color: #eee;\n}\n\n/* On mouse-over, add a grey background color */\n.container_custom :hover input ~ .checkmark {\n    background-color: #ccc;\n}\n\n/* When the checkbox is checked, add a blue background */\n.container_custom input:checked ~ .checkmark {\n    background-color: #2196f3;\n}\n\n/* Create the checkmark/indicator (hidden when not checked) */\n.checkmark:after {\n    content: \"\";\n    position: absolute;\n    display: none;\n}\n\n/* Show the checkmark when checked */\n.container_custom input:checked ~ .checkmark:after {\n    display: block;\n}\n\n/* Style the checkmark/indicator */\n.container_custom .checkmark:after {\n    left: 9px;\n    top: 5px;\n    width: 5px;\n    height: 10px;\n    border: solid white;\n    border-width: 0 3px 3px 0;\n    transform: rotate(45deg);\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -71645,6 +72452,45 @@ component.options.__file = "resources/js/Components/Administracion/Matricula/Mat
 
 /***/ }),
 
+/***/ "./resources/js/Components/Administracion/Matricula/Pago/MatriculaPagoIndexComponent.vue":
+/*!***********************************************************************************************!*\
+  !*** ./resources/js/Components/Administracion/Matricula/Pago/MatriculaPagoIndexComponent.vue ***!
+  \***********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _MatriculaPagoIndexComponent_vue_vue_type_template_id_6d04bf42___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./MatriculaPagoIndexComponent.vue?vue&type=template&id=6d04bf42& */ "./resources/js/Components/Administracion/Matricula/Pago/MatriculaPagoIndexComponent.vue?vue&type=template&id=6d04bf42&");
+/* harmony import */ var _MatriculaPagoIndexComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MatriculaPagoIndexComponent.vue?vue&type=script&lang=js& */ "./resources/js/Components/Administracion/Matricula/Pago/MatriculaPagoIndexComponent.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _MatriculaPagoIndexComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _MatriculaPagoIndexComponent_vue_vue_type_template_id_6d04bf42___WEBPACK_IMPORTED_MODULE_0__.render,
+  _MatriculaPagoIndexComponent_vue_vue_type_template_id_6d04bf42___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Components/Administracion/Matricula/Pago/MatriculaPagoIndexComponent.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/Components/Administracion/RolCreateComponent.vue":
 /*!***********************************************************************!*\
   !*** ./resources/js/Components/Administracion/RolCreateComponent.vue ***!
@@ -72064,6 +72910,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Components/Administracion/Matricula/Pago/MatriculaPagoIndexComponent.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************!*\
+  !*** ./resources/js/Components/Administracion/Matricula/Pago/MatriculaPagoIndexComponent.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MatriculaPagoIndexComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./MatriculaPagoIndexComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Matricula/Pago/MatriculaPagoIndexComponent.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MatriculaPagoIndexComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
 /***/ "./resources/js/Components/Administracion/RolCreateComponent.vue?vue&type=script&lang=js&":
 /*!************************************************************************************************!*\
   !*** ./resources/js/Components/Administracion/RolCreateComponent.vue?vue&type=script&lang=js& ***!
@@ -72364,6 +73226,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_MatriculaIndexComponent_vue_vue_type_template_id_2059a1e3___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_MatriculaIndexComponent_vue_vue_type_template_id_2059a1e3___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./MatriculaIndexComponent.vue?vue&type=template&id=2059a1e3& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Matricula/MatriculaIndexComponent.vue?vue&type=template&id=2059a1e3&");
+
+
+/***/ }),
+
+/***/ "./resources/js/Components/Administracion/Matricula/Pago/MatriculaPagoIndexComponent.vue?vue&type=template&id=6d04bf42&":
+/*!******************************************************************************************************************************!*\
+  !*** ./resources/js/Components/Administracion/Matricula/Pago/MatriculaPagoIndexComponent.vue?vue&type=template&id=6d04bf42& ***!
+  \******************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_MatriculaPagoIndexComponent_vue_vue_type_template_id_6d04bf42___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_MatriculaPagoIndexComponent_vue_vue_type_template_id_6d04bf42___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_MatriculaPagoIndexComponent_vue_vue_type_template_id_6d04bf42___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./MatriculaPagoIndexComponent.vue?vue&type=template&id=6d04bf42& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Matricula/Pago/MatriculaPagoIndexComponent.vue?vue&type=template&id=6d04bf42&");
 
 
 /***/ }),
@@ -79767,6 +80646,10 @@ var staticRenderFns = [
                             _vm._v(" "),
                             _c("th", [_vm._v("Monto Total")]),
                             _vm._v(" "),
+                            _c("th", [_vm._v("Monto Deuda")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("Estado")]),
+                            _vm._v(" "),
                             _c("th", [_vm._v("Acciones")]),
                           ]),
                         ]),
@@ -79780,6 +80663,832 @@ var staticRenderFns = [
         ),
       ]
     )
+  },
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Matricula/Pago/MatriculaPagoIndexComponent.vue?vue&type=template&id=6d04bf42&":
+/*!*********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Administracion/Matricula/Pago/MatriculaPagoIndexComponent.vue?vue&type=template&id=6d04bf42& ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c("div", { staticClass: "toolbar", attrs: { id: "kt_toolbar" } }, [
+      _c(
+        "div",
+        {
+          staticClass: "container-fluid d-flex flex-stack",
+          attrs: { id: "kt_toolbar_container" },
+        },
+        [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("div", { staticClass: "d-flex align-items-center py-1" }, [
+            _c(
+              "a",
+              {
+                staticClass: "btn btn-sm btn-primary",
+                attrs: { href: "#" },
+                on: {
+                  click: function ($event) {
+                    return _vm.createPago()
+                  },
+                },
+              },
+              [_c("i", { staticClass: "fa fa-plus" }), _vm._v(" Create")]
+            ),
+          ]),
+        ]
+      ),
+    ]),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "post d-flex flex-column-fluid",
+        attrs: { id: "kt_post" },
+      },
+      [
+        _c(
+          "div",
+          {
+            staticClass: "container-xxl",
+            attrs: { id: "kt_content_container" },
+          },
+          [
+            _c("div", { staticClass: "card" }, [
+              _c("div", { staticClass: "container" }, [
+                _c(
+                  "div",
+                  { staticClass: "row" },
+                  _vm._l(_vm.pagos, function (item) {
+                    return _c(
+                      "div",
+                      {
+                        key: item.id,
+                        staticClass: "col-md-6 col-lg-4 col-xl-3",
+                      },
+                      [
+                        _c("div", { staticClass: "card h-100" }, [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "\n                                        card-body\n                                        d-flex\n                                        justify-content-center\n                                        text-center\n                                        flex-column\n                                        p-8\n                                    ",
+                            },
+                            [
+                              _c(
+                                "a",
+                                {
+                                  staticClass:
+                                    "\n                                            text-gray-800 text-hover-primary\n                                            d-flex\n                                            flex-column\n                                        ",
+                                  attrs: { href: "#" },
+                                },
+                                [
+                                  _c(
+                                    "div",
+                                    { staticClass: "symbol symbol-75px mb-5" },
+                                    [
+                                      _c("img", {
+                                        attrs: {
+                                          src:
+                                            _vm.rutaprincipal +
+                                            "/metronic/media/svg/files/folder-document.svg",
+                                          alt: "",
+                                        },
+                                      }),
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    { staticClass: "fs-5 fw-bolder mb-2" },
+                                    [
+                                      _vm._v(
+                                        "\n                                            " +
+                                          _vm._s("Pago: " + item.total) +
+                                          "\n                                        "
+                                      ),
+                                    ]
+                                  ),
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "fs-7 fw-bold text-gray-400" },
+                                [
+                                  _vm._v(
+                                    "\n                                        " +
+                                      _vm._s(
+                                        "Persona : " + item.nombre_cliente
+                                      ) +
+                                      "\n                                    "
+                                  ),
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c("div", { staticClass: "row" }, [
+                                _c("div", { staticClass: "col-md-6" }, [
+                                  _c(
+                                    "button",
+                                    {
+                                      staticClass:
+                                        "\n                                                    btn btn-warning btn-sm\n                                                ",
+                                      on: {
+                                        click: function ($event) {
+                                          return _vm.editPago(item)
+                                        },
+                                      },
+                                    },
+                                    [
+                                      _c("i", {
+                                        staticClass:
+                                          "\n                                                        fas\n                                                        fa-pencil-alt\n                                                    ",
+                                      }),
+                                    ]
+                                  ),
+                                ]),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "col-md-6" }, [
+                                  _c(
+                                    "button",
+                                    {
+                                      staticClass:
+                                        "\n                                                    btn btn-danger btn-sm\n                                                ",
+                                      on: {
+                                        click: function ($event) {
+                                          return _vm.deletePago(item)
+                                        },
+                                      },
+                                    },
+                                    [_c("i", { staticClass: "fa fa-trash" })]
+                                  ),
+                                ]),
+                              ]),
+                            ]
+                          ),
+                        ]),
+                      ]
+                    )
+                  }),
+                  0
+                ),
+              ]),
+            ]),
+          ]
+        ),
+      ]
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "modal fade",
+        attrs: { id: "modalPago", tabindex: "-1", "aria-hidden": "true" },
+      },
+      [
+        _c(
+          "div",
+          { staticClass: "modal-dialog modal-dialog-centered mw-650px" },
+          [
+            _c("div", { staticClass: "modal-content rounded" }, [
+              _c(
+                "form",
+                {
+                  attrs: {
+                    action: _vm.ruta,
+                    method: "POST",
+                    enctype: "multipart/form-data",
+                  },
+                },
+                [
+                  _c("input", {
+                    attrs: { type: "hidden", name: "_token" },
+                    domProps: { value: _vm.csrf },
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "\n                            modal-header\n                            pb-0\n                            border-0\n                            justify-content-end\n                        ",
+                    },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "\n                                btn btn-sm btn-icon btn-active-color-primary\n                            ",
+                          attrs: { "data-bs-dismiss": "modal" },
+                        },
+                        [
+                          _c("span", { staticClass: "svg-icon svg-icon-1" }, [
+                            _c(
+                              "svg",
+                              {
+                                attrs: {
+                                  xmlns: "http://www.w3.org/2000/svg",
+                                  width: "24",
+                                  height: "24",
+                                  viewBox: "0 0 24 24",
+                                  fill: "none",
+                                },
+                              },
+                              [
+                                _c("rect", {
+                                  attrs: {
+                                    opacity: "0.5",
+                                    x: "6",
+                                    y: "17.3137",
+                                    width: "16",
+                                    height: "2",
+                                    rx: "1",
+                                    transform: "rotate(-45 6 17.3137)",
+                                    fill: "black",
+                                  },
+                                }),
+                                _vm._v(" "),
+                                _c("rect", {
+                                  attrs: {
+                                    x: "7.41422",
+                                    y: "6",
+                                    width: "16",
+                                    height: "2",
+                                    rx: "1",
+                                    transform: "rotate(45 7.41422 6)",
+                                    fill: "black",
+                                  },
+                                }),
+                              ]
+                            ),
+                          ]),
+                        ]
+                      ),
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "\n                            modal-body\n                            scroll-y\n                            px-10 px-lg-15\n                            pt-0\n                            pb-15\n                        ",
+                    },
+                    [
+                      _c("div", { staticClass: "mb-13 text-center" }, [
+                        _c("h1", { staticClass: "mb-3" }, [
+                          _vm._v(
+                            "\n                                Monto Restante:\n                                " +
+                              _vm._s(_vm.matricula.monto_deuda) +
+                              "\n                            "
+                          ),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "d-flex flex-column mb-8 fv-row" },
+                        [
+                          _vm._m(1),
+                          _vm._v(" "),
+                          _c(
+                            "select",
+                            {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.modelo.tipo_documento_id,
+                                  expression: "modelo.tipo_documento_id",
+                                },
+                              ],
+                              staticClass: "form-select form-select-white",
+                              class: _vm.errores.tipo_documento_id.error
+                                ? "is-invalid"
+                                : "",
+                              attrs: {
+                                name: "tipo_documento_id",
+                                id: "tipo_documento_id",
+                                "data-control": "select2",
+                                "data-placeholder": "Seleciona una opcion",
+                              },
+                              on: {
+                                change: function ($event) {
+                                  var $$selectedVal = Array.prototype.filter
+                                    .call($event.target.options, function (o) {
+                                      return o.selected
+                                    })
+                                    .map(function (o) {
+                                      var val =
+                                        "_value" in o ? o._value : o.value
+                                      return val
+                                    })
+                                  _vm.$set(
+                                    _vm.modelo,
+                                    "tipo_documento_id",
+                                    $event.target.multiple
+                                      ? $$selectedVal
+                                      : $$selectedVal[0]
+                                  )
+                                },
+                              },
+                            },
+                            [
+                              _c("option", { attrs: { value: "" } }),
+                              _vm._v(" "),
+                              _vm._l(_vm.tiposdocumentos, function (item) {
+                                return _c(
+                                  "option",
+                                  {
+                                    key: item.id,
+                                    domProps: { value: item.id },
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                                    " +
+                                        _vm._s(item.tipo) +
+                                        "\n                                "
+                                    ),
+                                  ]
+                                )
+                              }),
+                            ],
+                            2
+                          ),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "col-md-4" }, [
+                          _c(
+                            "div",
+                            { staticClass: "d-flex flex-column mb-8 fv-row" },
+                            [
+                              _vm._m(2),
+                              _vm._v(" "),
+                              _c("input", {
+                                directives: [
+                                  {
+                                    name: "model",
+                                    rawName: "v-model",
+                                    value: _vm.modelo.documento,
+                                    expression: "modelo.documento",
+                                  },
+                                ],
+                                staticClass:
+                                  "\n                                            form-control form-control-solid\n                                        ",
+                                attrs: {
+                                  name: "documento",
+                                  type: "text",
+                                  placeholder: "Ingrese el Nombre del cliente",
+                                },
+                                domProps: { value: _vm.modelo.documento },
+                                on: {
+                                  input: function ($event) {
+                                    if ($event.target.composing) {
+                                      return
+                                    }
+                                    _vm.$set(
+                                      _vm.modelo,
+                                      "documento",
+                                      $event.target.value
+                                    )
+                                  },
+                                },
+                              }),
+                              _vm._v(" "),
+                              _vm.errores.documento.error
+                                ? _c(
+                                    "div",
+                                    {
+                                      staticClass:
+                                        "\n                                            fv-plugins-message-container\n                                            invalid-feedback\n                                        ",
+                                    },
+                                    [
+                                      _c(
+                                        "div",
+                                        {
+                                          attrs: {
+                                            "data-field": "text_input",
+                                            "data-validator": "notEmpty",
+                                          },
+                                        },
+                                        [
+                                          _vm._v(
+                                            "\n                                            " +
+                                              _vm._s(
+                                                _vm.errores.documento.mensaje
+                                              ) +
+                                              "\n                                        "
+                                          ),
+                                        ]
+                                      ),
+                                    ]
+                                  )
+                                : _vm._e(),
+                            ]
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-md-8" }, [
+                          _c(
+                            "div",
+                            { staticClass: "d-flex flex-column mb-8 fv-row" },
+                            [
+                              _vm._m(3),
+                              _vm._v(" "),
+                              _c("input", {
+                                directives: [
+                                  {
+                                    name: "model",
+                                    rawName: "v-model",
+                                    value: _vm.modelo.nombre_cliente,
+                                    expression: "modelo.nombre_cliente",
+                                  },
+                                ],
+                                staticClass:
+                                  "\n                                            form-control form-control-solid\n                                        ",
+                                attrs: {
+                                  name: "nombre_cliente",
+                                  type: "text",
+                                  placeholder: "Ingrese el Nombre del cliente",
+                                },
+                                domProps: { value: _vm.modelo.nombre_cliente },
+                                on: {
+                                  input: function ($event) {
+                                    if ($event.target.composing) {
+                                      return
+                                    }
+                                    _vm.$set(
+                                      _vm.modelo,
+                                      "nombre_cliente",
+                                      $event.target.value
+                                    )
+                                  },
+                                },
+                              }),
+                              _vm._v(" "),
+                              _vm.errores.nombre_cliente.error
+                                ? _c(
+                                    "div",
+                                    {
+                                      staticClass:
+                                        "\n                                            fv-plugins-message-container\n                                            invalid-feedback\n                                        ",
+                                    },
+                                    [
+                                      _c(
+                                        "div",
+                                        {
+                                          attrs: {
+                                            "data-field": "text_input",
+                                            "data-validator": "notEmpty",
+                                          },
+                                        },
+                                        [
+                                          _vm._v(
+                                            "\n                                            " +
+                                              _vm._s(
+                                                _vm.errores.nombre_cliente
+                                                  .mensaje
+                                              ) +
+                                              "\n                                        "
+                                          ),
+                                        ]
+                                      ),
+                                    ]
+                                  )
+                                : _vm._e(),
+                            ]
+                          ),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "d-flex flex-column mb-8 fv-row" },
+                        [
+                          _vm._m(4),
+                          _vm._v(" "),
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.modelo.total,
+                                expression: "modelo.total",
+                              },
+                            ],
+                            staticClass: "form-control form-control-solid",
+                            attrs: {
+                              name: "total",
+                              type: "number",
+                              placeholder: "Ingrese el monto Total",
+                            },
+                            domProps: { value: _vm.modelo.total },
+                            on: {
+                              input: function ($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.modelo,
+                                  "total",
+                                  $event.target.value
+                                )
+                              },
+                            },
+                          }),
+                          _vm._v(" "),
+                          _vm.errores.total.error
+                            ? _c(
+                                "div",
+                                {
+                                  staticClass:
+                                    "\n                                    fv-plugins-message-container\n                                    invalid-feedback\n                                ",
+                                },
+                                [
+                                  _c(
+                                    "div",
+                                    {
+                                      attrs: {
+                                        "data-field": "text_input",
+                                        "data-validator": "notEmpty",
+                                      },
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n                                    " +
+                                          _vm._s(_vm.errores.total.mensaje) +
+                                          "\n                                "
+                                      ),
+                                    ]
+                                  ),
+                                ]
+                              )
+                            : _vm._e(),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _vm._m(5),
+                      _vm._v(" "),
+                      _vm._m(6),
+                    ]
+                  ),
+                ]
+              ),
+            ]),
+          ]
+        ),
+      ]
+    ),
+  ])
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "\n                    page-title\n                    d-flex\n                    align-items-center\n                    flex-wrap\n                    me-3\n                    mb-5 mb-lg-0\n                ",
+        attrs: {
+          "data-kt-swapper": "true",
+          "data-kt-swapper-mode": "prepend",
+          "data-kt-swapper-parent":
+            "{default: '#kt_content_container', 'lg': '#kt_toolbar_container'}",
+        },
+      },
+      [
+        _c(
+          "h1",
+          {
+            staticClass:
+              "\n                        d-flex\n                        align-items-center\n                        text-dark\n                        fw-bolder\n                        fs-3\n                        my-1\n                    ",
+          },
+          [_vm._v("\n                    Pagos\n                ")]
+        ),
+        _vm._v(" "),
+        _c("span", { staticClass: "h-20px border-gray-200 border-start mx-4" }),
+        _vm._v(" "),
+        _c(
+          "ul",
+          {
+            staticClass:
+              "\n                        breadcrumb breadcrumb-separatorless\n                        fw-bold\n                        fs-7\n                        my-1\n                    ",
+          },
+          [
+            _c("li", { staticClass: "breadcrumb-item text-dark" }, [
+              _vm._v(
+                "\n                        Lista de Pagos\n                    "
+              ),
+            ]),
+          ]
+        ),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                    d-flex\n                                    align-items-center\n                                    fs-6\n                                    fw-bold\n                                    mb-2\n                                ",
+      },
+      [
+        _c("span", { staticClass: "required" }, [_vm._v("Tipo Documento")]),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                        fas\n                                        fa-exclamation-circle\n                                        ms-2\n                                        fs-7\n                                    ",
+          attrs: {
+            "data-bs-toggle": "tooltip",
+            title: "Especifica el tipo de documento",
+          },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                            d-flex\n                                            align-items-center\n                                            fs-6\n                                            fw-bold\n                                            mb-2\n                                        ",
+      },
+      [
+        _c("span", { staticClass: "required" }, [_vm._v("Documento")]),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                fas\n                                                fa-exclamation-circle\n                                                ms-2\n                                                fs-7\n                                            ",
+          attrs: {
+            "data-bs-toggle": "tooltip",
+            title: "Especifica el numero de documento",
+          },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                            d-flex\n                                            align-items-center\n                                            fs-6\n                                            fw-bold\n                                            mb-2\n                                        ",
+      },
+      [
+        _c("span", { staticClass: "required" }, [_vm._v("Nombre")]),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                                fas\n                                                fa-exclamation-circle\n                                                ms-2\n                                                fs-7\n                                            ",
+          attrs: {
+            "data-bs-toggle": "tooltip",
+            title: "Especifica el nombre del cliente",
+          },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      {
+        staticClass:
+          "\n                                    d-flex\n                                    align-items-center\n                                    fs-6\n                                    fw-bold\n                                    mb-2\n                                ",
+      },
+      [
+        _c("span", { staticClass: "required" }, [_vm._v("Monto Total")]),
+        _vm._v(" "),
+        _c("i", {
+          staticClass:
+            "\n                                        fas\n                                        fa-exclamation-circle\n                                        ms-2\n                                        fs-7\n                                    ",
+          attrs: { "data-bs-toggle": "tooltip", title: "monto total" },
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text-center" }, [
+      _c(
+        "div",
+        {
+          staticClass: "image-input image-input-empty",
+          staticStyle: { width: "100%", "background-size": "100% 100%" },
+          attrs: { id: "img_avatar_profile", "data-kt-image-input": "true" },
+        },
+        [
+          _c("div", {
+            staticClass: "image-input-wrapper h-300px",
+            staticStyle: {
+              width: "100% !important",
+              "background-size": "100% 100%",
+            },
+          }),
+          _vm._v(" "),
+          _c(
+            "label",
+            {
+              staticClass:
+                "\n                                        btn\n                                        btn-icon\n                                        btn-circle\n                                        btn-active-color-primary\n                                        w-25px\n                                        h-25px\n                                        bg-white\n                                        shadow\n                                    ",
+              attrs: {
+                "data-kt-image-input-action": "change",
+                "data-bs-toggle": "tooltip",
+                "data-bs-dismiss": "click",
+                title: "Change avatar",
+              },
+            },
+            [
+              _c("i", { staticClass: "bi bi-pencil-fill fs-7" }),
+              _vm._v(" "),
+              _c("input", {
+                attrs: {
+                  type: "file",
+                  name: "avatar",
+                  accept: ".png, .jpg, .jpeg",
+                },
+              }),
+              _vm._v(" "),
+              _c("input", { attrs: { type: "hidden", name: "avatar_remove" } }),
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "span",
+            {
+              staticClass:
+                "\n                                        btn\n                                        btn-icon\n                                        btn-circle\n                                        btn-active-color-primary\n                                        w-25px\n                                        h-25px\n                                        bg-white\n                                        shadow\n                                    ",
+              attrs: {
+                "data-kt-image-input-action": "cancel",
+                "data-bs-toggle": "tooltip",
+                "data-bs-dismiss": "click",
+                title: "Cancel avatar",
+              },
+            },
+            [_c("i", { staticClass: "bi bi-x fs-2" })]
+          ),
+          _vm._v(" "),
+          _c(
+            "span",
+            {
+              staticClass:
+                "\n                                        btn\n                                        btn-icon\n                                        btn-circle\n                                        btn-active-color-primary\n                                        w-25px\n                                        h-25px\n                                        bg-white\n                                        shadow\n                                    ",
+              attrs: {
+                "data-kt-image-input-action": "remove",
+                "data-bs-toggle": "tooltip",
+                "data-bs-dismiss": "click",
+                title: "Remove avatar",
+              },
+            },
+            [_c("i", { staticClass: "bi bi-x fs-2" })]
+          ),
+        ]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text-center" }, [
+      _c(
+        "button",
+        { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+        [_c("span", { staticClass: "indicator-label" }, [_vm._v("Guardar")])]
+      ),
+    ])
   },
 ]
 render._withStripped = true

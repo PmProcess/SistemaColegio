@@ -19,5 +19,6 @@ class DatabaseSeeder extends Seeder
         $this->call(RolesSeeder::class);
         $this->call(ColegioSeeder::class);
         $this->call(YearEscolarSeeder::class);
+        $this->call(TipoDocumentoSeeder::class);
     }
 }

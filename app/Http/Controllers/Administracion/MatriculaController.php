@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Administracion;
 
 use App\Http\Controllers\Controller;
+use App\Models\Administracion\Colegio;
 use App\Models\Administracion\DetalleMatricula;
 use App\Models\Administracion\Matricula;
 use Exception;
@@ -12,6 +13,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
 use Yajra\DataTables\Facades\DataTables;
+use Barryvdh\DomPDF\Facade as PDF;
 
 class MatriculaController extends Controller
 {
@@ -25,6 +27,7 @@ class MatriculaController extends Controller
             $matricula->n_cursos = DetalleMatricula::where('matricula_id', $matricula->id)->count();
             $matricula->gradoSeccion->seccion;
             $matricula->gradoSeccion->grado;
+            $matricula->estado = $matricula->monto_total == $matricula->monto_deuda ? 'PENDIENTE' : 'PAGADO';
             return $matricula;
         });
         return DataTables::of($matriculas)->toJson();
@@ -54,8 +57,9 @@ class MatriculaController extends Controller
             if ($validator->fails()) {
                 return redirect()->back()->withInput()->with('errores', $validator->errors());
             }
-            $d_request=$request->only(['alumno_id', 'grado_seccion_id', 'year_escolar_id', 'monto_total','fecha_registro']);
-            $d_request['user_id']=Auth::user()->id;
+            $d_request = $request->only(['alumno_id', 'grado_seccion_id', 'year_escolar_id', 'monto_total', 'fecha_registro']);
+            $d_request['user_id'] = Auth::user()->id;
+            $d_request['monto_deuda'] = $request->monto_total;
             $matricula = Matricula::create($d_request);
             foreach (json_decode($request->detalle_matricula) as $key => $value) {
                 if ($value->estado == "SI") {
@@ -111,5 +115,15 @@ class MatriculaController extends Controller
             Log::info($e);
             return redirect()->back();
         }
+    }
+    public function pdf($id)
+    {
+        $matricula = Matricula::findOrFail($id);
+        $colegio = Colegio::first();
+        $pdf = PDF::loadview('reportes.matriculapago', [
+            'matricula' => $matricula,
+            'colegio' => $colegio
+        ])->setPaper('a4')->setWarnings(false);
+        return $pdf->stream();
     }
 }

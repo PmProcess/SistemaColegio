@@ -8,9 +8,11 @@ use App\Http\Controllers\Administracion\RolController;
 use App\Http\Controllers\GradoCursoController;
 use App\Http\Controllers\GradoSeccionController;
 use App\Http\Controllers\InicioController;
+use App\Http\Controllers\MatriculaPagoController;
 use App\Http\Controllers\Personal\EmpleadoController;
 use App\Http\Controllers\Personal\TipoEmpleadoController;
 use App\Models\Administracion\Grado;
+use App\Models\Administracion\Matricula;
 use App\Models\Administracion\Seccion;
 use App\Permission\Models\Role;
 use Illuminate\Support\Facades\Auth;
@@ -87,6 +89,15 @@ Route::prefix('matricula')->middleware('auth')->group(function(){
     Route::post('/update/{id}',[MatriculaController::class,'update'])->name('matricula.update');
     Route::get('/destroy/{id}',[MatriculaController::class,'destroy'])->name('matricula.destroy');
     Route::get('/getList', [MatriculaController::class, 'getList'])->name('matricula.getList');
+    Route::get('/pdf/{id}', [MatriculaController::class, 'pdf'])->name('matricula.pdf');
+    Route::prefix('pago')->middleware('auth')->group(function(){
+        Route::get('/{id}',[MatriculaPagoController::class,'index'])->name('matricula.pago.index');
+        Route::post('/store/{matricula_id}',[MatriculaPagoController::class,'store'])->name('matricula.pago.store');
+        Route::post('/update/{id}/{matricula_id}',[MatriculaPagoController::class,'update'])->name('matricula.pago.update');
+        Route::get('/destroy/{id}/{matricula_id}',[MatriculaPagoController::class,'destroy'])->name('matricula.pago.destroy');
+
+        // Route::post('/storeCliente',[MatriculaPagoController::class,'storeCliente'])->name('matricula.pago.storeCliente');
+    });
 });
 Route::prefix('grado')->middleware('auth')->group(function () {
     Route::get('/', [GradoController::class, 'index'])->name('grado.index');

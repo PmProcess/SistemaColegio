@@ -117,6 +117,8 @@
                                             <th>N°Cursos</th>
                                             <th>Grado-Seccion</th>
                                             <th>Monto Total</th>
+                                            <th>Monto Deuda</th>
+                                            <th>Estado</th>
                                             <th>Acciones</th>
                                         </tr>
                                     </thead>
@@ -136,11 +138,11 @@ import "datatables.net-buttons-bs4";
 export default {
     data() {
         return {
-            table:null
+            table: null,
         };
     },
     mounted() {
-        let $this=this;
+        let $this = this;
         $(document).on("click", ".btn-edit", function () {
             let row = $this.table.row($(this).closest("tr")).data();
             window.location.href = route("matricula.edit", row.id);
@@ -158,15 +160,24 @@ export default {
                 cancelButtonText: "Cancelar",
             }).then(async (result) => {
                 if (result.isConfirmed) {
-                    window.location.href=route("matricula.destroy", row.id)
+                    window.location.href = route("matricula.destroy", row.id);
                 }
             });
         });
+        $(document).on("click", ".btn-money", function () {
+            let row = $this.table.row($(this).closest("tr")).data();
+            window.location.href = route("matricula.pago.index", row.id);
+        });
+        $(document).on("click", ".btn-pdf", function () {
+            let row = $this.table.row($(this).closest("tr")).data();
+            window.location.href = route("matricula.pdf", row.id);
+        });
+
         $this.dataTableInicializacion();
     },
     methods: {
-        createMatricula:function(){
-            window.location.href=route('matricula.create')
+        createMatricula: function () {
+            window.location.href = route("matricula.create");
         },
         dataTableInicializacion: function () {
             this.table = $("#tableMatriculas").DataTable({
@@ -192,7 +203,11 @@ export default {
                         data: null,
                         className: "text-center",
                         render: function (data) {
-                            return data.alumno.persona.persona_dni.apellidos+" "+data.alumno.persona.persona_dni.nombres;
+                            return (
+                                data.alumno.persona.persona_dni.apellidos +
+                                " " +
+                                data.alumno.persona.persona_dni.nombres
+                            );
                         },
                     },
                     {
@@ -206,8 +221,11 @@ export default {
                         data: null,
                         className: "text-center",
                         render: function (data) {
-                            console.log(data)
-                            return data.grado_seccion.grado.grado+"-"+data.grado_seccion.seccion.seccion;
+                            return (
+                                data.grado_seccion.grado.grado +
+                                "-" +
+                                data.grado_seccion.seccion.seccion
+                            );
                         },
                     },
                     {
@@ -219,10 +237,24 @@ export default {
                     {
                         data: null,
                         render: function (data) {
+                            return data.monto_deuda;
+                        },
+                    },
+                    {
+                        data: null,
+                        render: function (data) {
+                            return data.monto_deuda==0?'PAGADO':'PENDIENTE';
+                        },
+                    },
+                    {
+                        data: null,
+                        render: function (data) {
                             return (
                                 "<div class='btn-group'>" +
                                 // "<button class='btn btn-primary btn-sm btn-edit'><i class='fas fa-pencil-alt'></i></button>" +
                                 "<button class='btn btn-danger btn-sm btn-delete'><i class='fa fa-trash'></i></button>" +
+                                "<button class='btn btn-success btn-sm btn-money'><i class='fas fa-money-check-alt'></i></button>" +
+                                "<button class='btn btn-warning btn-sm btn-pdf'><i class='fas fa-file-pdf'></i></button>" +
                                 "</div>"
                             );
                         },

@@ -3,7 +3,9 @@
 use App\Models\Administracion\Alumno;
 use App\Models\Administracion\Curso;
 use App\Models\Administracion\Grado;
+use App\Models\Administracion\TipoDocumento;
 use App\Models\Administracion\YearEscolar;
+use App\Models\Cliente;
 use App\Models\Personal\TipoEmpleado;
 use App\Models\Ubigeo\Departamento;
 use App\Models\Ubigeo\Distrito;
@@ -55,5 +57,19 @@ if(!function_exists('grados'))
 if(!function_exists('gradoEscolar')){
     function gradoEscolar(){
         return YearEscolar::get();
+    }
+}
+if(!function_exists('tiposDocumentos'))
+{
+    function tiposDocumentos()
+    {
+        return TipoDocumento::get();
+    }
+}
+if(!function_exists('clientes'))
+{
+    function clientes()
+    {
+        return Cliente::with(['persona'])->get();
     }
 }

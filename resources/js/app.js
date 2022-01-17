@@ -41,6 +41,8 @@ Vue.component('matriculaindex-component', require('./Components/Administracion/M
 Vue.component('matriculacreate-component', require('./Components/Administracion/Matricula/MatriculaCreateComponent.vue').default);
 Vue.component('matriculaedit-component', require('./Components/Administracion/Matricula/MatriculaEditComponent.vue').default);
 
+Vue.component('matriculapagoindex-component',require('./Components/Administracion/Matricula/Pago/MatriculaPagoIndexComponent.vue').default);
+
 Vue.component('alumnoindex-component', require('./Components/Administracion/Alumno/AlumnoIndexComponent.vue').default);
 Vue.component('alumnocreate-component', require('./Components/Administracion/Alumno/AlumnoCreateComponent.vue').default);
 Vue.component('alumnoedit-component', require('./Components/Administracion/Alumno/AlumnoEditComponent.vue').default);

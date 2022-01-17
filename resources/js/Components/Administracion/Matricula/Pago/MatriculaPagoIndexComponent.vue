@@ -32,7 +32,7 @@
                             my-1
                         "
                     >
-                        Seccion
+                        Pagos
                     </h1>
                     <!--end::Title-->
                     <!--begin::Separator-->
@@ -73,7 +73,7 @@
                         <!--end::Item-->
                         <!--begin::Item-->
                         <li class="breadcrumb-item text-dark">
-                            Lista de Seccion
+                            Lista de Pagos
                         </li>
                         <!--end::Item-->
                     </ul>
@@ -85,7 +85,7 @@
                     <a
                         href="#"
                         class="btn btn-sm btn-primary"
-                        @click="createSeccion()"
+                        @click="createPago()"
                         ><i class="fa fa-plus"></i> Create</a
                     >
                 </div>
@@ -101,7 +101,7 @@
                         <div class="row">
                             <div
                                 class="col-md-6 col-lg-4 col-xl-3"
-                                v-for="item in secciones"
+                                v-for="item in pagos"
                                 :key="item.id"
                             >
                                 <!--begin::Card-->
@@ -133,7 +133,7 @@
                                                 <img
                                                     :src="
                                                         rutaprincipal +
-                                                        'metronic/media/svg/files/folder-document.svg'
+                                                        '/metronic/media/svg/files/folder-document.svg'
                                                     "
                                                     alt=""
                                                 />
@@ -141,7 +141,7 @@
                                             <!--end::Image-->
                                             <!--begin::Title-->
                                             <div class="fs-5 fw-bolder mb-2">
-                                                {{ "Seccion: " + item.seccion }}
+                                                {{ "Pago: " + item.total }}
                                             </div>
                                             <!--end::Title-->
                                         </a>
@@ -149,15 +149,15 @@
                                         <!--begin::Description-->
                                         <div class="fs-7 fw-bold text-gray-400">
                                             {{
-                                                "N alumnos: " +
-                                                item.pivot.n_alumnos
+                                                "Persona : " +
+                                                item.nombre_cliente
                                             }}
                                         </div>
 
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <button
-                                                    @click="editSeccion(item)"
+                                                    @click="editPago(item)"
                                                     class="
                                                         btn btn-warning btn-sm
                                                     "
@@ -171,7 +171,8 @@
                                                 </button>
                                             </div>
                                             <div class="col-md-6">
-                                                <button @click="deleteSeccion(item)"
+                                                <button
+                                                    @click="deletePago(item)"
                                                     class="
                                                         btn btn-danger btn-sm
                                                     "
@@ -213,18 +214,17 @@
                 </div>
             </div>
         </div>
-        <div
-            class="modal fade"
-            id="modalSeccion"
-            tabindex="-1"
-            aria-hidden="true"
-        >
+        <div class="modal fade" id="modalPago" tabindex="-1" aria-hidden="true">
             <!--begin::Modal dialog-->
             <div class="modal-dialog modal-dialog-centered mw-650px">
                 <!--begin::Modal content-->
                 <div class="modal-content rounded">
                     <!--begin::Modal header-->
-                    <form :action="ruta" method="POST">
+                    <form
+                        :action="ruta"
+                        method="POST"
+                        enctype="multipart/form-data"
+                    >
                         <input type="hidden" name="_token" :value="csrf" />
                         <div
                             class="
@@ -289,7 +289,10 @@
                             <!--begin::Heading-->
                             <div class="mb-13 text-center">
                                 <!--begin::Title-->
-                                <h1 class="mb-3">Crear Seccion</h1>
+                                <h1 class="mb-3">
+                                    Monto Restante:
+                                    {{ matricula.monto_deuda }}
+                                </h1>
                                 <!--end::Title-->
                             </div>
                             <!--end::Heading-->
@@ -305,7 +308,7 @@
                                         mb-2
                                     "
                                 >
-                                    <span class="required">Seccion</span>
+                                    <span class="required">Tipo Documento</span>
                                     <i
                                         class="
                                             fas
@@ -314,32 +317,143 @@
                                             fs-7
                                         "
                                         data-bs-toggle="tooltip"
-                                        title="Especifica la seccion"
+                                        title="Especifica el tipo de documento"
                                     ></i>
                                 </label>
                                 <!--end::Label-->
-                                <input
-                                    type="text"
-                                    class="form-control form-control-solid"
-                                    placeholder="Ingrese la Seccion"
-                                    v-model="modelo.seccion"
-                                    name="seccion"
-                                />
-                                <div
-                                    v-if="errores.seccion.error"
-                                    class="
-                                        fv-plugins-message-container
-                                        invalid-feedback
+                                <select
+                                    class="form-select form-select-white"
+                                    name="tipo_documento_id"
+                                    id="tipo_documento_id"
+                                    v-model="modelo.tipo_documento_id"
+                                    data-control="select2"
+                                    :class="
+                                        errores.tipo_documento_id.error
+                                            ? 'is-invalid'
+                                            : ''
                                     "
+                                    data-placeholder="Seleciona una opcion"
                                 >
-                                    <div
-                                        data-field="text_input"
-                                        data-validator="notEmpty"
+                                    <option value=""></option>
+                                    <option
+                                        v-for="item in tiposdocumentos"
+                                        :key="item.id"
+                                        :value="item.id"
                                     >
-                                        {{ errores.seccion.mensaje }}
+                                        {{ item.tipo }}
+                                    </option>
+                                </select>
+                            </div>
+                            <!--end::Input group-->
+                            <!--begin::Input group-->
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="d-flex flex-column mb-8 fv-row">
+                                        <!--begin::Label-->
+                                        <label
+                                            class="
+                                                d-flex
+                                                align-items-center
+                                                fs-6
+                                                fw-bold
+                                                mb-2
+                                            "
+                                        >
+                                            <span class="required"
+                                                >Documento</span
+                                            >
+                                            <i
+                                                class="
+                                                    fas
+                                                    fa-exclamation-circle
+                                                    ms-2
+                                                    fs-7
+                                                "
+                                                data-bs-toggle="tooltip"
+                                                title="Especifica el numero de documento"
+                                            ></i>
+                                        </label>
+                                        <!--end::Label-->
+                                        <input
+                                            class="
+                                                form-control form-control-solid
+                                            "
+                                            name="documento"
+                                            type="text"
+                                            v-model="modelo.documento"
+                                            placeholder="Ingrese el Nombre del cliente"
+                                        />
+                                        <div
+                                            v-if="errores.documento.error"
+                                            class="
+                                                fv-plugins-message-container
+                                                invalid-feedback
+                                            "
+                                        >
+                                            <div
+                                                data-field="text_input"
+                                                data-validator="notEmpty"
+                                            >
+                                                {{ errores.documento.mensaje }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="d-flex flex-column mb-8 fv-row">
+                                        <!--begin::Label-->
+                                        <label
+                                            class="
+                                                d-flex
+                                                align-items-center
+                                                fs-6
+                                                fw-bold
+                                                mb-2
+                                            "
+                                        >
+                                            <span class="required">Nombre</span>
+                                            <i
+                                                class="
+                                                    fas
+                                                    fa-exclamation-circle
+                                                    ms-2
+                                                    fs-7
+                                                "
+                                                data-bs-toggle="tooltip"
+                                                title="Especifica el nombre del cliente"
+                                            ></i>
+                                        </label>
+                                        <!--end::Label-->
+                                        <input
+                                            class="
+                                                form-control form-control-solid
+                                            "
+                                            name="nombre_cliente"
+                                            type="text"
+                                            v-model="modelo.nombre_cliente"
+                                            placeholder="Ingrese el Nombre del cliente"
+                                        />
+                                        <div
+                                            v-if="errores.nombre_cliente.error"
+                                            class="
+                                                fv-plugins-message-container
+                                                invalid-feedback
+                                            "
+                                        >
+                                            <div
+                                                data-field="text_input"
+                                                data-validator="notEmpty"
+                                            >
+                                                {{
+                                                    errores.nombre_cliente
+                                                        .mensaje
+                                                }}
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
                             <!--end::Input group-->
                             <!--begin::Input group-->
                             <div class="d-flex flex-column mb-8 fv-row">
@@ -353,7 +467,7 @@
                                         mb-2
                                     "
                                 >
-                                    <span class="required">N° Alumnos</span>
+                                    <span class="required">Monto Total</span>
                                     <i
                                         class="
                                             fas
@@ -362,18 +476,19 @@
                                             fs-7
                                         "
                                         data-bs-toggle="tooltip"
-                                        title="N° de Alumnos de la seccion"
+                                        title="monto total"
                                     ></i>
                                 </label>
                                 <!--end::Label-->
                                 <input
                                     class="form-control form-control-solid"
-                                    name="n_alumnos"
-                                    v-model="modelo.n_alumnos"
-                                    placeholder="Ingrese el numero de alumnos en la seccion"
+                                    name="total"
+                                    type="number"
+                                    v-model="modelo.total"
+                                    placeholder="Ingrese el monto Total"
                                 />
                                 <div
-                                    v-if="errores.n_alumnos.error"
+                                    v-if="errores.total.error"
                                     class="
                                         fv-plugins-message-container
                                         invalid-feedback
@@ -383,59 +498,107 @@
                                         data-field="text_input"
                                         data-validator="notEmpty"
                                     >
-                                        {{ errores.n_alumnos.mensaje }}
+                                        {{ errores.total.mensaje }}
                                     </div>
                                 </div>
                             </div>
                             <!--end::Input group-->
-                            <!--begin::Input group-->
-                            <div class="d-flex flex-column mb-8 fv-row">
-                                <!--begin::Label-->
-                                <label
-                                    class="
-                                        d-flex
-                                        align-items-center
-                                        fs-6
-                                        fw-bold
-                                        mb-2
-                                    "
-                                >
-                                    <span class="required">Descripcion</span>
-                                    <i
-                                        class="
-                                            fas
-                                            fa-exclamation-circle
-                                            ms-2
-                                            fs-7
-                                        "
-                                        data-bs-toggle="tooltip"
-                                        title="Descripcion de la Seccion"
-                                    ></i>
-                                </label>
-                                <!--end::Label-->
-                                <textarea
-                                    class="form-control form-control-solid"
-                                    rows="3"
-                                    name="descripcion"
-                                    v-model="modelo.descripcion"
-                                    placeholder="Ingrese la descripcion de la Seccion"
-                                ></textarea>
+                            <div class="text-center">
+                                <!--begin::Image input-->
                                 <div
-                                    v-if="errores.descripcion.error"
-                                    class="
-                                        fv-plugins-message-container
-                                        invalid-feedback
+                                    class="image-input image-input-empty"
+                                    id="img_avatar_profile"
+                                    style="
+                                        width: 100%;
+                                        background-size: 100% 100%;
                                     "
+                                    data-kt-image-input="true"
                                 >
+                                    <!--begin::Image preview wrapper-->
                                     <div
-                                        data-field="text_input"
-                                        data-validator="notEmpty"
+                                        class="image-input-wrapper h-300px"
+                                        style="
+                                            width: 100% !important;
+                                            background-size: 100% 100%;
+                                        "
+                                    ></div>
+                                    <!--end::Image preview wrapper-->
+                                    <!--begin::Edit button-->
+                                    <label
+                                        class="
+                                            btn
+                                            btn-icon
+                                            btn-circle
+                                            btn-active-color-primary
+                                            w-25px
+                                            h-25px
+                                            bg-white
+                                            shadow
+                                        "
+                                        data-kt-image-input-action="change"
+                                        data-bs-toggle="tooltip"
+                                        data-bs-dismiss="click"
+                                        title="Change avatar"
                                     >
-                                        {{ errores.descripcion.mensaje }}
-                                    </div>
+                                        <i class="bi bi-pencil-fill fs-7"></i>
+                                        <!--begin::Inputs-->
+                                        <input
+                                            type="file"
+                                            name="avatar"
+                                            accept=".png, .jpg, .jpeg"
+                                        />
+                                        <input
+                                            type="hidden"
+                                            name="avatar_remove"
+                                        />
+                                        <!--end::Inputs-->
+                                    </label>
+                                    <!--end::Edit button-->
+                                    <!--begin::Cancel button-->
+                                    <span
+                                        class="
+                                            btn
+                                            btn-icon
+                                            btn-circle
+                                            btn-active-color-primary
+                                            w-25px
+                                            h-25px
+                                            bg-white
+                                            shadow
+                                        "
+                                        data-kt-image-input-action="cancel"
+                                        data-bs-toggle="tooltip"
+                                        data-bs-dismiss="click"
+                                        title="Cancel avatar"
+                                    >
+                                        <i class="bi bi-x fs-2"></i>
+                                    </span>
+                                    <!--end::Cancel button-->
+
+                                    <!--begin::Remove button-->
+                                    <span
+                                        class="
+                                            btn
+                                            btn-icon
+                                            btn-circle
+                                            btn-active-color-primary
+                                            w-25px
+                                            h-25px
+                                            bg-white
+                                            shadow
+                                        "
+                                        data-kt-image-input-action="remove"
+                                        data-bs-toggle="tooltip"
+                                        data-bs-dismiss="click"
+                                        title="Remove avatar"
+                                    >
+                                        <i class="bi bi-x fs-2"></i>
+                                    </span>
+                                    <!--end::Remove button-->
                                 </div>
+                                <!--end::Image input-->
                             </div>
-                            <!--end::Input group-->
+
                             <!--begin::Actions-->
                             <div class="text-center">
                                 <button type="submit" class="btn btn-primary">
@@ -453,38 +616,43 @@
         </div>
     </div>
 </template>
-
 <script>
 export default {
     props: [
-        "old",
-        "errores_laravel",
-        "error",
-        "id",
-        "idgrado",
+        "tiposdocumentos",
+        "clientes",
         "csrf",
-        "secciones",
-        "tipo",
+        "pagos",
+        "matricula",
+        "validaciones",
+        "vista",
+        "old",
+        "elemento",
     ],
     data() {
         return {
-            ruta: null,
-            rutaprincipal: null,
+            ruta: "",
+            rutaprincipal: "",
             modelo: {
-                seccion: null,
-                n_alumnos: null,
-                descripcion: null,
+                tipo_documento_id: "",
+                documento: "",
+                nombre_cliente: "",
+                total: "",
             },
             errores: {
-                seccion: {
+                tipo_documento_id: {
                     error: false,
                     mensaje: "",
                 },
-                descripcion: {
+                documento: {
                     error: false,
                     mensaje: "",
                 },
-                n_alumnos: {
+                nombre_cliente: {
+                    error: false,
+                    mensaje: "",
+                },
+                total: {
                     error: false,
                     mensaje: "",
                 },
@@ -492,56 +660,94 @@ export default {
         };
     },
     created() {
+        this.rutaprincipal = window.location.origin;
+    },
+    mounted() {
         let $this = this;
-        $this.rutaprincipal = window.location.origin + "/";
-        if (this.errores_laravel != null) {
-            let errores_laravel_values = Object.entries(this.errores_laravel);
-            errores_laravel_values.forEach((value, index, array) => {
+        let old_values = Object.entries(this.old);
+        old_values.forEach((value, index, array) => {
+            if (value[0] != "_token") {
+                if (value[0] == "distrito_id") {
+                    $this.getUbigeoOld(value[1]);
+                } else {
+                    $this.modelo[value[0]] = value[1];
+                }
+            }
+        });
+        //------------------------
+        if (this.validaciones != null) {
+            let validaciones_values = Object.entries(this.validaciones);
+            validaciones_values.forEach((value, index, array) => {
                 $this.errores[value[0]].error = true;
                 $this.errores[value[0]].mensaje = value[1][0];
             });
         }
-        let old_values = Object.entries(this.old);
-        old_values.forEach((value, index, array) => {
-            if (value != "_token") {
-                $this.modelo[value[0]] = value[1];
-            }
-        });
-        window.addEventListener("load", () => {
-            if ($this.tipo != null) {
-                if ($this.tipo == "create") {
-                    $this.ruta = route("grado.seccion.store", {
-                        grado_id: $this.idgrado,
+        //--------------------
+        window.addEventListener("load", function (e) {
+            if ($this.vista != null) {
+                if ($this.vista == "create") {
+                    $this.ruta = route("matricula.pago.store", {
+                        matricula_id: $this.matricula.id,
                     });
                 } else {
-                    $this.ruta = route("grado.seccion.update", {
-                        grado_id: $this.idgrado,
-                        id: $this.id,
+                    $this.ruta = route("matricula.pago.update", {
+                        id: $this.elemento.id,
+                        matricula_id: $this.matricula.id,
                     });
                 }
-                $("#modalSeccion").modal("show");
+                $("#modalPago").modal("show");
             }
+            $("#img_avatar_profile").css(
+                "background-image",
+                "url(" +
+                    window.location.origin +
+                    "/metronic/media/avatars/blank.png" +
+                    ")"
+            );
+            $("#tipo_documento_id").on("change", function (e) {
+                $this.modelo.tipo_documento_id = $("#tipo_documento_id").val();
+            });
         });
     },
     methods: {
-        createSeccion: function () {
-            this.ruta = route("grado.seccion.store", {
-                grado_id: this.idgrado,
-            });
-            $("#modalSeccion").modal("show");
+        createPago: function () {
+            if (this.matricula.monto_deuda > 0) {
+                this.ruta = route("matricula.pago.store", {
+                    matricula_id: this.matricula.id,
+                });
+                $("#modalPago").modal("show");
+            } else {
+                toastr.error("La matricula ya esta pagada completamente");
+            }
         },
-        editSeccion: function (item) {
-            let $this = this;
-            $this.ruta = route("grado.seccion.update", {
+        editPago: function (item) {
+            console.log(item);
+            this.ruta = route("matricula.pago.update", {
                 id: item.id,
-                grado_id: item.pivot.grado_id,
+                matricula_id: this.matricula.id,
             });
-            $this.modelo.seccion = item.seccion;
-            $this.modelo.n_alumnos = item.pivot.n_alumnos;
-            $this.modelo.descripcion = item.pivot.descripcion;
-            $("#modalSeccion").modal("show");
+            $("#tipo_documento_id")
+                .val(item.tipo_documento_id)
+                .trigger("change");
+            this.modelo.documento = item.documento;
+            this.modelo.nombre_cliente = item.nombre_cliente;
+            this.modelo.total = item.total;
+            this.modelo.tipo_documento_id = item.tipo_documento_id;
+            if (item.url_imagen != null) {
+                console.log("lllgfd")
+                $("#img_avatar_profile").css(
+                    "background-image",
+                    "url(" +
+                        window.location.origin +
+                        "/" +
+                        +item.url_imagen.replace("public", "storage") +
+                        ")"
+                );
+            }
+            $("#modalPago").modal("show");
         },
-        deleteSeccion: function (item) {
+        deletePago: function (item) {
+            let $this = this;
             Swal.fire({
                 title: "Estas Seguro?",
                 text: "Tu deseas eliminar este Registro",
@@ -555,7 +761,7 @@ export default {
                 if (result.isConfirmed) {
                     window.location.href = route("matricula.pago.destroy", {
                         id: item.id,
-                        grado_id: item.pivot.grado_id,
+                        matricula_id: $this.matricula.id,
                     });
                 }
             });
