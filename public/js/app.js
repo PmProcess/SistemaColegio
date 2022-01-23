@@ -8336,7 +8336,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   created: function created() {
     var fecha = new Date();
-    this.modelo.fecha_registro = fecha.getFullYear() + "-" + (fecha.getMonth() + 1 < 10 ? "0" + (fecha.getMonth() + 1) : fecha.getMonth() + 1) + "-" + (fecha.getDay() < 10 ? "0" + fecha.getDay() : fecha.getDay());
+    this.modelo.fecha_registro = fecha.getFullYear() + "-" + (fecha.getMonth() + 1 < 10 ? "0" + (fecha.getMonth() + 1) : fecha.getMonth() + 1) + "-" + (fecha.getDate() < 10 ? "0" + fecha.getDate() : fecha.getDate());
   },
   mounted: function mounted() {
     var $this = this;

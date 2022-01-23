@@ -497,7 +497,7 @@ export default {
                 ? "0" + (fecha.getMonth() + 1)
                 : fecha.getMonth() + 1) +
             "-" +
-            (fecha.getDay() < 10 ? "0" + fecha.getDay() : fecha.getDay());
+            (fecha.getDate() < 10 ? "0" + fecha.getDate() : fecha.getDate());
     },
     mounted() {
         let $this = this;

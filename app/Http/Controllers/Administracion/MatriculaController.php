@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Administracion\Colegio;
 use App\Models\Administracion\DetalleMatricula;
 use App\Models\Administracion\Matricula;
+use App\Models\Administracion\YearEscolar;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -34,6 +35,14 @@ class MatriculaController extends Controller
     }
     public function create()
     {
+        $fecha=date('Y',time());
+        if(YearEscolar::where('year',$fecha)->count()==0)
+        {
+            YearEscolar::create([
+                'year'=>$fecha,
+                'descripcion'=>$fecha
+            ]);
+        }
         return view('administracion.matricula.create');
     }
     public function store(Request $request)
