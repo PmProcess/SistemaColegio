@@ -1,8 +1,10 @@
 @extends('layout.index')
 @section('contenido')
+@section('pago-ver','visibility: visible!important')
 @section('administracion-active', 'active')
 @section('administracion-show', 'show')
-@section('matricula-active', 'active')
+@section('pago-active', 'active')
+{{-- @section('matricula-active', 'active') --}}
 <div id="app">
     <matriculapagoindex-component :tiposdocumentos="{{ json_encode(tiposDocumentos()) }}"
         :csrf="{{ json_encode(csrf_token()) }}" :clientes="{{ json_encode(clientes()) }}"

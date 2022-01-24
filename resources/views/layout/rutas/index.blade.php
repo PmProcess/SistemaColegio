@@ -138,15 +138,21 @@
                 </div>
             @endif
             @if (auth()->user()->can('haveaccess', 'matricula.index'))
-            <div class="menu-item ">
-                <a class="menu-link @yield('matricula-active')" href="{{ route('matricula.index') }}">
-                    <span class="menu-bullet">
-                        <span class="bullet bullet-dot"></span>
-                    </span>
-                    <span class="menu-title">Matriculas</span>
-                </a>
-            </div>
-        @endif
+                <div class="menu-item ">
+                    <a class="menu-link @yield('matricula-active')" href="{{ route('matricula.index') }}">
+                        <span class="menu-bullet">
+                            <span class="bullet bullet-dot"></span>
+                        </span>
+                        <span class="menu-title">Matriculas</span>
+                    </a>
+                    <a class="menu-link @yield('pago-active')" style="@yield('pago-ver','visibility: hidden !important')">
+                        <span class="menu-bullet">
+                            <span class="bullet bullet-dot"></span>
+                        </span>
+                        <span class="menu-title">Pagos</span>
+                    </a>
+                </div>
+            @endif
 
 
         </div>
